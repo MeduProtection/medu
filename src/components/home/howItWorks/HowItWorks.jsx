@@ -3,7 +3,7 @@ import React from 'react'
 function HowItWorks() {
     return (
       <div className="container mx-auto flex flex-wrap  md:flex-nowrap">
-        <div className="flex flex-col lg:flex-row items-center py-12 px-4 lg:px-12 bg-white">
+        <div className="w-full flex flex-col lg:flex-row items-center py-12 px-4 lg:px-12 bg-white">
           <div className=" max-w-lg">
             <h2 className="text-[53px] font-bold mb-4 text-center text-[#1B3954]">
               How it <span className="text-[#5587B6]">works</span>.
