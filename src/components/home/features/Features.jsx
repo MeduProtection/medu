@@ -3,12 +3,16 @@ import React from 'react'
 function Features() {
     return (
         <div className="flex flex-col items-center py-12 bg-blue-900 text-white">
-          <h2 className="text-2xl font-bold mb-4 text-center text-green-400">
+          <h2 className="text-[21px] font-bold mb-4 text-center text-green-400">
             What has changed in the past 80 years?
           </h2>
-          <p className="text-center mb-8 max-w-3xl">
+          <p className="text-center mb-4 max-w-4xl text-[20px]">
             Nearly everything—except the desire to preserve the health and safety of patients and caregivers.
-            Created with a proprietary process that yields the highest levels of protection and sterility, Medu brings protective coverings into the 21st Century with reusable Level 4 gowns and coveralls that require no special laundering and prevent cross-contamination.
+            
+          </p>
+          <p className="text-center mb-8 max-w-4xl text-[20px]">
+          Created with a proprietary process that yields the highest levels of protection and sterility, Medu brings protective coverings into the 21st Century with reusable Level 4 gowns and coveralls that require no special laundering and prevent cross-contamination.
+            
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             <div>
