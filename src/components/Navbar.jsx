@@ -7,8 +7,8 @@ function Navbar() {
     <nav className="bg-white px-4 py-2 shadow-md">
         <div className="container mx-auto flex flex-wrap items-center justify-between">
           <a href="#" className="flex items-center">
-            <img src="/placeholder.svg" alt="Logo" className="mr-3 h-10" />
-            <span className="self-center text-xl font-semibold whitespace-nowrap">MEDU</span>
+            <img src="/assets/navbar/logo.png" alt="Logo" className="mr-3 h-10" />
+            
           </a>
           <div className="flex md:order-2">
             <button className="text-white bg-[#10B981] hover:bg-[#059669] focus:ring-4 focus:ring-[#059669] font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0">
@@ -25,7 +25,7 @@ function Navbar() {
             </button>
           </div>
           <div className="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="mobile-menu-2">
-            <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+            <ul className="flex flex-col items-center mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
               <li>
                 <a
                   href="#"
