@@ -3,14 +3,14 @@ import React from 'react'
 function HowItWorks() {
     return (
         <div className="flex flex-col lg:flex-row items-center py-12 px-4 lg:px-12 bg-white">
-          <div className="lg:w-1/2">
+          <div className="lg:w-1/2 max-w-lg">
             <h2 className="text-[53px] font-bold mb-4 text-center text-[#1B3954]">
               How it <span className="text-[#5587B6]">works</span>.
             </h2>
-            <p className="text-[#5587B6] mb-4 font-bold text-[23px]">
+            <p className="text-[#5587B6] mb-4 font-bold text-[23px] max-w-lg">
               Reducing the cost of protective gowns by up to 80% while ensuring health and safety may sound too good to be true. But it isn’t.
             </p>
-            <p className="mb-8 text-[21px]">
+            <p className="mb-8 text-[21px] max-w-lg">
               Our patent-pending, anti-viral, anti-bacterial fabric can be washed up to 50 times with conventional hospital system detergents and equipment without losing protective properties and prevents cross-contamination, enabling caregivers to dramatically reduce gown changes.
             </p>
           </div>

@@ -23,7 +23,7 @@ function Hero() {
             
           </div>
           <div className="w-full md:w-1/2 lg:w-3/5 px-4">
-            <img src="/placeholder.svg" alt="Antiviral Gown" className="rounded-xl" />
+            <img src="/assets/hero/hero.png" alt="Antiviral Gown" className="rounded-xl" />
           </div>
         </div>
         <div className='flex justify-center'>
