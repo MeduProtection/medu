@@ -3,8 +3,8 @@ import React from 'react'
 function Hero() {
   return (
     
-    <header className="bg-[#ECFDF5]">
-        <div className="container mx-auto flex flex-wrap py-24 md:flex-nowrap">
+    <header className="bg-[#ECFDF5] py-24">
+        <div className="container mx-auto flex flex-wrap  md:flex-nowrap">
           <div className="w-full md:w-1/2 lg:w-2/5 flex flex-col justify-center px-4">
             <h1 className="text-4xl font-bold leading-tight text-[#1B3954]  mb-4">
               <span className='text-[#95BC67]'>
@@ -27,7 +27,6 @@ function Hero() {
           </div>
         </div>
         <div className='flex justify-center'>
-
         <p className="mt-4 text-sm text-[#1B3954] font-bold">
               Currently in trial with some of the most respected medical facilities in the U.S.
             </p>
