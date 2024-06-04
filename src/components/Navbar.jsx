@@ -14,7 +14,7 @@ function Navbar() {
             <button className="text-[#1B3954] bg-white   font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0">
                 I'm a Distributor
             </button>
-            <button className="text-white bg-[#10B981] hover:bg-[#059669]  font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0">
+            <button className="text-white bg-[#95BC67] hover:bg-[#059669]  font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0">
               Get Started
             </button>
             <button
@@ -58,11 +58,7 @@ function Navbar() {
                   About Us
                 </a>
               </li>
-              <li>
-                <button variant="outline" className="rounded-lg text-sm px-5 py-2.5 text-center text-white text-[16px]">
-                  I'm a Distributor
-                </button>
-              </li>
+             
             </ul>
           </div>
         </div>
