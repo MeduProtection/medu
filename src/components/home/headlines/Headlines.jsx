@@ -12,12 +12,12 @@ function Headlines() {
           <h3 className="text-lg font-semibold mb-4 text-center text-[#5587B6]">
             As seen in:
           </h3>
-          <div className="flex flex-wrap justify-center items-center space-x-4 mb-8">
-            <img src="/path-to-logo1.png" alt="WSJ" className="h-8" />
-            <img src="/path-to-logo2.png" alt="Bloomberg" className="h-8" />
-            <img src="/path-to-logo3.png" alt="Expansión" className="h-8" />
-            <img src="/path-to-logo4.png" alt="TechCrunch" className="h-8" />
-            <img src="/path-to-logo5.png" alt="Waste360" className="h-8" />
+          <div className="flex flex-wrap justify-center items-center space-x-4  gap-x-[56px]">
+            <img src="/assets/headlines/wsj.png" alt="WSJ" className="h-8" />
+            <img src="/assets/headlines/bloomberg.png" alt="Bloomberg" className="h-8" />
+            <img src="/assets/headlines/espansion.svg" alt="Expansión" className="h-8" />
+            <img src="/assets/headlines/techCrunch.svg" alt="TechCrunch" className="h-8" />
+            <img src="/assets/headlines/waste.png" alt="Waste360" className="h-[173px]" />
           </div>
           <div className="bg-[#5587B6] text-white py-4 px-6 rounded-lg mb-8 w-full">
             <p className="text-center text-[36px] font-semibold italic">
