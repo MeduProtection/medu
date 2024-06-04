@@ -8,6 +8,8 @@ import HowItWorks from "@/components/home/howItWorks/HowItWorks";
 import AppDemo from "@/components/home/appDemo/AppDemo";
 import Headlines from "@/components/home/headlines/Headlines";
 import MedicalMiracle from "@/components/home/medicalMiracle/MedicalMiracle";
+import Difference from "@/components/home/difference/Difference";
+import CallToAction from "@/components/home/callToAction/CallToAction";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +24,8 @@ export default function Home() {
       <AppDemo/>
       <Headlines/>
       <MedicalMiracle/>
+      <Difference/>
+      <CallToAction/>
     </div>
   );
 }
