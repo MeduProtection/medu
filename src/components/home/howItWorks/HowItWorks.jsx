@@ -4,7 +4,7 @@ function HowItWorks() {
     return (
         <div className="flex flex-col lg:flex-row items-center py-12 px-4 lg:px-12 bg-white">
           <div className="lg:w-1/2">
-            <h2 className="text-[53px] font-bold mb-4 text-center">
+            <h2 className="text-[53px] font-bold mb-4 text-center text-[#1B3954]">
               How it <span className="text-[#5587B6]">works</span>.
             </h2>
             <p className="text-[#5587B6] mb-4 font-bold text-[23px]">

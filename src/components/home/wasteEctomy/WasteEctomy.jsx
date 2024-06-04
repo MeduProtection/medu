@@ -4,8 +4,8 @@ function WasteEctomy() {
     return (
         <div className="flex flex-col lg:flex-row items-center py-12 px-4 lg:px-12 bg-white">
           <div className="lg:w-1/2">
-            <h2 className="text-[50px] font-bold mb-4">
-              Give your hospital  <br/> a <span className="text-blue-600"> waste-ectomy.</span>
+            <h2 className="text-[50px] font-bold mb-4 text-[#1B3954]">
+              Give your hospital  <br/> a <span className="text-[#4E88B0]"> waste-ectomy.</span>
             </h2>
             <p className="mb-8 max-w-md text-[20px]">
               Medical waste is a 5,000,000-ton, 935 billion-dollar problem, compromising public health and creating significant financial strain on healthcare systems. Medu’s innovative medical gowns and coveralls offer an unparalleled ability to increase savings, while dramatically reducing landfill waste. After all, the planet deserves a long, healthy life, too.

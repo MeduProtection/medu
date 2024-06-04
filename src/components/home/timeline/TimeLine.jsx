@@ -15,8 +15,8 @@ const Timeline = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className="flex flex-col items-center py-8 bg-gradient-to-r from-green-100 to-blue-100">
-      <h2 className="text-[50px] font-bold mb-4 text-center">
+    <div className="flex flex-col items-center py-8 ">
+      <h2 className="text-[50px] font-bold mb-4 text-center text-[#1B3954]">
         Changing the fabric of medicine <br/> <span className="text-[#5587B6]">for good.</span>
       </h2>
       <p className="text-center mb-8 text-[22px]">

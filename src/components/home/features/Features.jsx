@@ -2,7 +2,7 @@ import React from 'react'
 
 function Features() {
     return (
-        <div className="flex flex-col items-center py-12 bg-blue-900 text-white">
+        <div className="flex flex-col items-center py-12 bg-[#1B3954] text-white">
           <h2 className="text-[21px] font-bold mb-4 text-center text-green-400">
             What has changed in the past 80 years?
           </h2>
