@@ -16,10 +16,10 @@ const Timeline = () => {
 
   return (
     <div className="flex flex-col items-center py-8 bg-gradient-to-r from-green-100 to-blue-100">
-      <h2 className="text-3xl font-bold mb-4 text-center">
-        Changing the fabric of medicine <span className="text-blue-600">for good.</span>
+      <h2 className="text-[50px] font-bold mb-4 text-center">
+        Changing the fabric of medicine <br/> <span className="text-[#5587B6]">for good.</span>
       </h2>
-      <p className="text-center mb-8">
+      <p className="text-center mb-8 text-[22px]">
         The medical gowns used today were designed in the 1940s.
       </p>
       <div className="flex flex-wrap justify-center items-center space-y-4 lg:space-y-0 lg:space-x-8">
@@ -54,10 +54,10 @@ const Timeline = () => {
           <p>Pandemic Response and Future</p>
         </div>
       </div>
-      <div className="mt-8 text-center max-w-lg">
-        <h3 className="text-xl font-semibold mb-2">Typical Gowns</h3>
-        <p>
-          Created with a proprietary process that yields the highest levels of protection and sterility, Medu brings protective coverings into the 21st Century with reusable Level 4 gowns and coveralls that require no special laundering and prevent cross-contamination.
+      <div className="mt-8 text-center max-w-4xl">
+        <h3 className="text-xl font-semibold mb-2 text-[#5587B6]">Early 20th Century: Introduction of Surgical Gowns</h3>
+        <p className='text-[20px]'>
+        The Spanish flu pandemic increases awareness of the need for protective clothing in medical environments. The first cotton surgical gowns appear, aimed at reducing disease transmission.
         </p>
       </div>
       <div className="flex justify-center mt-8">
