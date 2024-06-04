@@ -8,7 +8,7 @@ function Hero() {
           <div className="w-full md:w-1/2 lg:w-2/5 flex flex-col justify-center px-4">
             <h1 className="text-4xl font-bold leading-tight text-[#1B3954]  mb-4">
               <span className='text-[#95BC67]'>
-                Save $150k per day</span> with the world's <br/> first Level 4 antiviral <span className='text-[#4E88B0]'>reusable gown</span>.
+                Save $150k per day</span> <br/> with the world's <br/> first Level 4 antiviral <br/> <span className='text-[#4E88B0]'>reusable gown</span>.
             </h1>
             <p className="mb-8 text-gray-700">
               You save lives. Now you can save the planet, along with tens of millions of dollars every month with the
@@ -17,7 +17,7 @@ function Hero() {
             <p className="mb-8 font-bold text-[#5587B6]">
             See how our revolutionary technology is transforming healthcare.
             </p>
-            <button className="text-white bg-[#95BC67] hover:bg-[#059669]  focus:ring-[#059669]  rounded-3xl text-lg px-5 py-2.5 text-center">
+            <button className="text-white bg-[#95BC67] hover:bg-[#059669]  focus:ring-[#059669]  rounded-3xl text-lg px-5 py-2.5 text-center w-1/3">
               Get Started Now
             </button>
             

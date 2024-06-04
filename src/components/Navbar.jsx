@@ -5,13 +5,16 @@ import MenuIcon from './icons/MenuIcon'
 function Navbar() {
   return (
     <nav className="bg-white px-4 py-2 shadow-md">
-        <div className="container mx-auto flex flex-wrap items-center justify-between">
+        <div className="container mx-auto flex flex-wrap items-center justify-between bg-[#1B3954] rounded-[98px] py-8 xl:px-20">
           <a href="#" className="flex items-center">
             <img src="/assets/navbar/logo.png" alt="Logo" className="mr-3 h-10" />
             
           </a>
-          <div className="flex md:order-2">
-            <button className="text-white bg-[#10B981] hover:bg-[#059669] focus:ring-4 focus:ring-[#059669] font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0">
+          <div className="flex md:order-2 gap-4">
+            <button className="text-[#1B3954] bg-white   font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0">
+                I'm a Distributor
+            </button>
+            <button className="text-white bg-[#10B981] hover:bg-[#059669]  font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0">
               Get Started
             </button>
             <button
@@ -29,35 +32,35 @@ function Navbar() {
               <li>
                 <a
                   href="#"
-                  className="block py-2 pr-4 pl-3 text-gray-700 rounded md:bg-transparent md:p-0"
+                  className="block py-2 pr-4 pl-3 text-white text-[16px] rounded md:bg-transparent md:p-0"
                   aria-current="page"
                 >
                   Our Products
                 </a>
               </li>
               <li>
-                <a href="#" className="block py-2 pr-4 pl-3 text-gray-700 rounded md:bg-transparent md:p-0">
+                <a href="#" className="block py-2 pr-4 pl-3 text-white text-[16px] rounded md:bg-transparent md:p-0">
                   How it works
                 </a>
               </li>
               <li>
-                <a href="#" className="block py-2 pr-4 pl-3 text-gray-700 rounded md:bg-transparent md:p-0">
+                <a href="#" className="block py-2 pr-4 pl-3 text-white text-[16px] rounded md:bg-transparent md:p-0">
                   Industries
                 </a>
               </li>
               <li>
-                <a href="#" className="block py-2 pr-4 pl-3 text-gray-700 rounded md:bg-transparent md:p-0">
+                <a href="#" className="block py-2 pr-4 pl-3 text-white text-[16px] rounded md:bg-transparent md:p-0">
                   Insights
                 </a>
               </li>
               <li>
-                <a href="#" className="block py-2 pr-4 pl-3 text-gray-700 rounded md:bg-transparent md:p-0">
+                <a href="#" className="block py-2 pr-4 pl-3 text-white text-[16px] rounded md:bg-transparent md:p-0">
                   About Us
                 </a>
               </li>
               <li>
-                <button variant="outline" className="rounded-lg text-sm px-5 py-2.5 text-center">
-                  I\'m a Distributor
+                <button variant="outline" className="rounded-lg text-sm px-5 py-2.5 text-center text-white text-[16px]">
+                  I'm a Distributor
                 </button>
               </li>
             </ul>
