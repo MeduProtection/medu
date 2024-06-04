@@ -14,7 +14,9 @@ function Features() {
           Created with a proprietary process that yields the highest levels of protection and sterility, Medu brings protective coverings into the 21st Century with reusable Level 4 gowns and coveralls that require no special laundering and prevent cross-contamination.
             
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+          <div className='w-full flex flex-col items-center'>
+            
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 text-center">
             <div>
               <div className="bg-blue-700 p-4 rounded-full inline-block mb-2">
                 <img src="/path-to-icon1.png" alt="Icon 1" className="h-8 w-8" />
@@ -29,7 +31,9 @@ function Features() {
               <h3 className="font-semibold">Maximum resistance to virus penetration:</h3>
               <p>Level 4 AAMI PB70</p>
             </div>
-            <div>
+          </div>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center'>
+          <div  >
               <div className="bg-blue-700 p-4 rounded-full inline-block mb-2">
                 <img src="/path-to-icon3.png" alt="Icon 3" className="h-8 w-8" />
               </div>
@@ -50,6 +54,7 @@ function Features() {
               <h3 className="font-semibold">Excellent water repellency:</h3>
               <p>and resistance to liquid penetration</p>
             </div>
+          </div>
           </div>
           <div className="mt-8">
             <button className="bg-green-500 text-blue-900 py-2 px-6 rounded-full hover:bg-green-600 transition">
