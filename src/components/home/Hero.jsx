@@ -22,8 +22,8 @@ function Hero() {
             </button>
             
           </div>
-          <div className="w-full md:w-1/2 lg:w-3/5 px-4">
-            <img src="/assets/hero/hero.png" alt="Antiviral Gown" className="rounded-xl" />
+          <div className="w-full md:w-1/2 lg:w-3/5 px-4 bg-red-500">
+            <img src="/assets/hero/hero.png" alt="Antiviral Gown" className="w-full h-full object-cover bg-green-500" />
           </div>
         </div>
         <div className='flex justify-center'>
