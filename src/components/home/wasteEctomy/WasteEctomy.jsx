@@ -3,7 +3,7 @@ import React from 'react'
 function WasteEctomy() {
     return (
       <div className="container mx-auto flex flex-wrap  md:flex-nowrap">
-        <div className="w-full flex flex-col lg:flex-row items-center py-12 px-4 lg:px-12 bg-white">
+        <div className="w-full flex flex-col lg:flex-row items-center justify-between py-12 px-4 lg:px-12 bg-white">
         <div className=" max-w-lg">
             <h2 className="text-[50px] font-bold mb-4 text-[#1B3954] ">
               Give your hospital  <br/> a <span className="text-[#4E88B0]"> waste-ectomy.</span>
@@ -23,10 +23,10 @@ function WasteEctomy() {
               </p>
             </div>
           </div>
-          <div className="lg:w-1/2 flex justify-center mt-8 lg:mt-0">
-            <div className="relative">
-              <img src="/assets/waste/bata.png" alt="Medical Gown" className="max-w-full h-auto" />
-              <p className="absolute bottom-0 right-0 mb-4 mr-4 text-gray-600">360° view</p>
+          <div className="lg:w-1/2 flex justify-center items-center mt-8 lg:mt-0  ">
+            <div className="relative  ">
+              <img src="/assets/waste/bata.png" alt="Medical Gown" className="max-w-full h-[70%]  " />
+              
             </div>
           </div>
         </div>
