@@ -17,7 +17,7 @@ function HowItWorks() {
           </div>
           <div className="lg:w-1/2 flex justify-center mt-8 lg:mt-0">
             <div className="relative">
-              <img src="/image.png" alt="How it works" className="max-w-full h-auto rounded-full" />
+              <img src="/assets/works/poster.png" alt="How it works" className="max-w-full h-auto rounded-full" />
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="bg-white bg-opacity-75 p-4 rounded-full">
                   <svg className="h-12 w-12 text-blue-600" fill="currentColor" viewBox="0 0 24 24">

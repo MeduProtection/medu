@@ -60,8 +60,10 @@ const Timeline = () => {
         The Spanish flu pandemic increases awareness of the need for protective clothing in medical environments. The first cotton surgical gowns appear, aimed at reducing disease transmission.
         </p>
       </div>
-      <div className="flex justify-center mt-8">
-        <img src="/timeline.png" alt="Medical Gowns" className="max-w-full h-auto" />
+      <div className="flex justify-center mt-8 relative">
+        <img src="/assets/timeline/1.png" alt="Medical Gowns" className="max-w-full h-auto" />
+        <img src="/assets/timeline/1-1.png" alt="Medical Gowns" className="w-[272px] h-[272px] absolute top-[50px] -right-[100px]" />
+        
       </div>
     </div>
   );

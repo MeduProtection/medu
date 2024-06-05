@@ -25,7 +25,7 @@ function WasteEctomy() {
           </div>
           <div className="lg:w-1/2 flex justify-center mt-8 lg:mt-0">
             <div className="relative">
-              <img src="/image.png" alt="Medical Gown" className="max-w-full h-auto" />
+              <img src="/assets/waste/bata.png" alt="Medical Gown" className="max-w-full h-auto" />
               <p className="absolute bottom-0 right-0 mb-4 mr-4 text-gray-600">360° view</p>
             </div>
           </div>
