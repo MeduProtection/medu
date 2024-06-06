@@ -10,6 +10,7 @@ import Headlines from "@/components/home/headlines/Headlines";
 import MedicalMiracle from "@/components/home/medicalMiracle/MedicalMiracle";
 import Difference from "@/components/home/difference/Difference";
 import CallToAction from "@/components/home/callToAction/CallToAction";
+import Form from "@/components/home/form/Form";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function Home() {
       <Timeline/>
       <Features/>
       <WasteEctomy/>
+      <Form/>
       <HowItWorks/>
       <AppDemo/>
       <Headlines/>
