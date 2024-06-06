@@ -1,6 +1,24 @@
-import React from 'react'
+import React, { useRef } from 'react';
 
 function HowItWorks() {
+
+  const videoRef = useRef(null);
+
+  const handlePlayVideo = () => {
+    if (videoRef.current) {
+      videoRef.current.play();
+      if (videoRef.current.requestFullscreen) {
+        videoRef.current.requestFullscreen();
+      } else if (videoRef.current.mozRequestFullScreen) { /* Firefox */
+        videoRef.current.mozRequestFullScreen();
+      } else if (videoRef.current.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+        videoRef.current.webkitRequestFullscreen();
+      } else if (videoRef.current.msRequestFullscreen) { /* IE/Edge */
+        videoRef.current.msRequestFullscreen();
+      }
+    }
+  };
+
     return (
       <div className="container mx-auto flex flex-wrap  md:flex-nowrap ">
         <div className="w-full flex flex-col lg:flex-row items-center justify-between py-12 px-4 lg:px-12 bg-white">
@@ -17,12 +35,17 @@ function HowItWorks() {
           </div>
           <div className="lg:w-1/2 flex justify-end items-center mt-8 lg:mt-0  ">
             <div className="relative flex justify-end items-center">
-              <img src="/assets/works/poster.png" alt="How it works" className="w-[90%]  rounded-full object-cover " />
-              <div className="absolute inset-0 flex items-center justify-center ml-20 ">
-                <div className="bg-white bg-opacity-75 p-4 rounded-full">
-                  <svg className="h-12 w-12 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
+            <video
+              ref={videoRef}
+              src="/assets/video/video.mp4"
+              className="w-[90%] rounded-full object-cover"
+              poster="/assets/works/poster.png"
+            />
+            <div className="absolute inset-0 flex items-center justify-center ml-20 ">
+              <div className="bg-white bg-opacity-75 p-4 rounded-full cursor-pointer" onClick={handlePlayVideo}>
+                <svg className="h-12 w-12 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
                 </div>
               </div>
             </div>
