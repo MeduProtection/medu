@@ -13,11 +13,32 @@ function Headlines() {
             As seen in:
           </h3>
           <div className="flex flex-wrap justify-center items-center space-x-4  gap-x-[56px]">
+            <a href="https://venturecapital.cmail19.com/t/ViewEmail/d/59087F56673457FF2540EF23F30FEDED/DC774908B0D14D50D57E886DBB2F7C8E?alternativeLink=False"  
+            target="_blank"
+            >
             <img src="/assets/headlines/wsj.png" alt="WSJ" className="h-8" />
+            </a>
+            <a href="https://www.bloomberglinea.com/2022/08/31/mexicana-de-22-anos-recibe-us4-m-para-su-startup-de-indumentaria-medica-sustentable/
+"  
+            target="_blank"
+            >
             <img src="/assets/headlines/bloomberg.png" alt="Bloomberg" className="h-8" />
+            </a>
+            <a href="https://expansion.mx/revista-digital-abril-2023"  
+            target="_blank"
+            >
             <img src="/assets/headlines/espansion.svg" alt="Expansión" className="h-8" />
+            </a>
+            <a href="https://techcrunch.com/2022/08/30/medu-4m-reusable-ppe/"  
+            target="_blank"
+            >
             <img src="/assets/headlines/techCrunch.svg" alt="TechCrunch" className="h-8" />
+            </a>
+            <a href="https://www.waste360.com/medical-waste/medu-s-answer-to-personal-protective-equipment-waste"  
+            target="_blank"
+            >
             <img src="/assets/headlines/waste.png" alt="Waste360" className="h-[173px]" />
+            </a>
           </div>
           <div className="bg-[#5587B6] text-white py-4 px-6 rounded-lg mb-8 w-full">
             <p className="text-center text-[36px] font-semibold italic">

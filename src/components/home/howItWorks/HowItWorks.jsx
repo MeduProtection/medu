@@ -1,21 +1,18 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 
 function HowItWorks() {
 
   const videoRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
 
-  const handlePlayVideo = () => {
+  const handlePlayPauseVideo = () => {
     if (videoRef.current) {
-      videoRef.current.play();
-      if (videoRef.current.requestFullscreen) {
-        videoRef.current.requestFullscreen();
-      } else if (videoRef.current.mozRequestFullScreen) { /* Firefox */
-        videoRef.current.mozRequestFullScreen();
-      } else if (videoRef.current.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
-        videoRef.current.webkitRequestFullscreen();
-      } else if (videoRef.current.msRequestFullscreen) { /* IE/Edge */
-        videoRef.current.msRequestFullscreen();
+      if (isPlaying) {
+        videoRef.current.pause();
+      } else {
+        videoRef.current.play();
       }
+      setIsPlaying(!isPlaying);
     }
   };
 
@@ -34,20 +31,27 @@ function HowItWorks() {
             </p>
           </div>
           <div className="lg:w-1/2 flex justify-end items-center mt-8 lg:mt-0  ">
-            <div className="relative flex justify-end items-center">
-            <video
+          <div className="relative flex justify-end items-center  cursor-pointer"  onClick={handlePlayPauseVideo}>
+          <video
               ref={videoRef}
               src="/assets/video/video.mp4"
-              className="w-[90%] rounded-full object-cover"
-              poster="/assets/works/poster.png"
+              className={`w-[90%] object-cover`} 
+              /* poster={isPlaying ? null : "/assets/works/poster.png"}  */
+              onPause={() => setIsPlaying(false)}
+              onPlay={() => setIsPlaying(true)}
+              controls={true}
             />
-            <div className="absolute inset-0 flex items-center justify-center ml-20 ">
-              <div className="bg-white bg-opacity-75 p-4 rounded-full cursor-pointer" onClick={handlePlayVideo}>
+          <div className={isPlaying? 'hidden':"absolute inset-0 flex items-center justify-center ml-20 "}>
+              <div className="bg-white bg-opacity-75 p-4 rounded-full cursor-pointer" onClick={handlePlayPauseVideo}>
                 <svg className="h-12 w-12 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z" />
+                  {isPlaying ? (
+                    <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" /> // Pause icon
+                  ) : (
+                    <path d="M8 5v14l11-7z" /> // Play icon
+                  )}
                 </svg>
-                </div>
               </div>
+              </div> 
             </div>
           </div>
         </div>
