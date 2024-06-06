@@ -2,7 +2,7 @@ import React from 'react'
 
 function Headlines() {
     return (
-        <div className="flex flex-col items-center py-12 px-4 lg:px-12 ">
+        <div className="flex flex-col items-center py-12  ">
           <h2 className="text-[50px] font-bold mb-4 text-center text-[#1B3954]">
             Making headlines. <span className="text-[#5587B6]">Creating change.</span>
           </h2>
