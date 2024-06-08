@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import Hero from "@/components/home/Hero";
 import Timeline from "@/components/home/timeline/TimeLine";
 import Features from "@/components/home/features/Features";
 import WasteEctomy from "@/components/home/wasteEctomy/WasteEctomy";
@@ -11,6 +10,7 @@ import MedicalMiracle from "@/components/home/medicalMiracle/MedicalMiracle";
 import Difference from "@/components/home/difference/Difference";
 import CallToAction from "@/components/home/callToAction/CallToAction";
 import Form from "@/components/home/form/Form";
+import Hero from "@/components/home/hero/Hero";
 
 const inter = Inter({ subsets: ["latin"] });
 
