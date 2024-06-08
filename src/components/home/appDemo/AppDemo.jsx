@@ -16,10 +16,10 @@ function AppDemo() {
         </ul>
         </div>
          
-            <img src="/assets/demo/demo.png" alt="App Demo" className="h-full" />
+            <img src="/assets/demo/demo.png" alt="App Demo" className="h-[258px] lg:h-full" />
             </div>
             <div className="mt-8">
-            <button className="bg-[#95BC67]  py-4 px-8 rounded-[40px] hover:bg-green-600 transition text-[28px] text-white">
+            <button className="bg-[#95BC67]  py-4 px-8 rounded-[40px] hover:bg-green-600 transitiontext-[14px] lg:text-[28px] text-white">
               See How Medu Works
             </button>
           </div>
