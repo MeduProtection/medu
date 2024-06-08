@@ -7,7 +7,7 @@ function Headlines() {
             Making headlines. <br className='lg:hidden'/><span className="text-[#5587B6]">Creating change.</span>
           </h2>
           <p className="text-center mb-8 max-w-2xl text-[10px] lg:text-[20px] px-10">
-            Medu is making news, and it's easy to see why. As the first and only medical products of its kind, we’ve received attention and accolades the world over.
+            Medu is making news, and it&apos;s easy to see why. As the first and only medical products of its kind, we&apos;ve received attention and accolades the world over.
           </p>
           <h3 className="text-lg font-semibold mb-4 text-center text-[#5587B6]">
             As seen in:
@@ -42,7 +42,7 @@ function Headlines() {
           </div>
           <div className="bg-[#5587B6] text-white py-4 px-6 rounded-lg mb-8 w-full">
             <p className="text-center text-[12px] lg:text-[36px] font-semibold italic">
-              "MEDU is changing the world one gown at a time"
+            &apos;&apos;MEDU is changing the world one gown at a time&apos;&apos;
             </p>
             <p className="text-center mt-2 text-[8px] lg:text-[22px]">— Hillary Clinton</p>
           </div>

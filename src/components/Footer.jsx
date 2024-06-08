@@ -16,7 +16,7 @@ function Footer() {
                 <a href="#" className="hover:text-gray-400">Insights</a>
                 <a href="#" className="hover:text-gray-400">About Us</a>
                 <button className="bg-white text-blue-900 py-2 px-4 rounded-full hover:bg-gray-100 transition">
-                  I'm a Distributor
+                  I&apos;m a Distributor
                 </button>
               </div>
             </div>

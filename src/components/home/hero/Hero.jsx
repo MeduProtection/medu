@@ -11,7 +11,7 @@ function Hero() {
           <div className="w-full md:w-1/2 lg:w-2/5 flex flex-col justify-center items-center lg:items-start text-center lg:text-start px-4">
             <h1 className="text-[28px] lg:text-[55px] font-bold leading-tight text-[#1B3954]  mb-4">
               <span className='text-[#95BC67]  text-[17px] lg:text-[34px]'>
-                Save $150k per day</span> <br/> with the world's <br/> first Level 4 antiviral <br/> <span className='text-[#4E88B0]'>reusable gown</span>.
+                Save $150k per day</span> <br/> with the world&apos;s <br/> first Level 4 antiviral <br/> <span className='text-[#4E88B0]'>reusable gown</span>.
             </h1>
             <p className="mb-8 text-gray-700 text-[10px] lg:text-[21px]">
               You save lives. Now you can save the planet, along with tens of millions of dollars every month with the
