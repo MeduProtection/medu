@@ -33,7 +33,7 @@ function Hero() {
           </div>
         </div>
         <div className='flex justify-center'>
-        <p className="mt-4 text-[21px] text-[#1B3954] font-bold">
+        <p className="mt-4 text-[11px] text-center lg:text-start lg:text-[21px] text-[#1B3954] font-bold w-[60%] lg:w-full">
               Currently in trial with some of the most respected medical facilities in the U.S.
             </p>
         </div>
