@@ -4,17 +4,19 @@ import MenuIcon from './icons/MenuIcon'
 
 function Navbar() {
   return (
-    <nav className="bg-white px-4 py-2 ">
-        <div className="container mx-auto flex flex-wrap items-center justify-between bg-[#1B3954] rounded-[98px] py-8 xl:px-20">
+    <>
+    
+    <nav className="hidden bg-white px-4 py-2 ">
+        <div className="container mx-auto flex flex-wrap items-center justify-between bg-[#1B3954] rounded-[30px] lg:rounded-[98px] py-8 xl:px-20">
           <a href="#" className="flex items-center">
             <img src="/assets/navbar/logo.png" alt="Logo" className="mr-3 h-10" />
             
           </a>
           <div className="flex md:order-2 gap-4">
-            <button className="text-[#1B3954] bg-white   font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0">
+            <button className="hidden lg:bl text-[#1B3954] bg-white   font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0">
                 I'm a Distributor
             </button>
-            <button className="text-white bg-[#95BC67] hover:bg-[#059669]  font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0">
+            <button className="text-white hidden lg:block bg-[#95BC67] hover:bg-[#059669]  font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0">
               Get Started
             </button>
             <button
@@ -63,6 +65,20 @@ function Navbar() {
           </div>
         </div>
       </nav>
+      <nav className='flex justify-around lg:hidden'>
+          <img src='/assets/navbar/logoSM.png' alt='logo' className='h-[116px] w-[116px] mr-3'/>
+
+          <button
+              data-collapse-toggle="mobile-menu-2"
+              type="button"
+              className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+              aria-controls="mobile-menu-2"
+              aria-expanded="false"
+            >
+              <img src='/assets/navbar/hamburguerSM.svg' className="w-[35px] h-[21px]" />
+            </button>
+      </nav>
+      </>
   )
 }
 
