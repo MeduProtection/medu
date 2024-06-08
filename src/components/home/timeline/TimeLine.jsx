@@ -45,74 +45,74 @@ const Timeline = () => {
     <div className="container mx-auto flex flex-wrap  md:flex-nowrap">
       
     <div className="w-full flex flex-col items-center py-8  ">
-      <h2 className="text-[50px] font-bold mb-4 text-center text-[#1B3954]">
-        Changing the fabric of medicine <br/> <span className="text-[#5587B6]">for good.</span>
+      <h2 className="text-[22px] lg:text-[50px] font-bold mb-4 text-center text-[#1B3954] w-[80%] lg:w-full">
+        Changing the fabric of medicine <br className='hidden lg:block'/> <span className="text-[#5587B6]">for good.</span>
       </h2>
-      <p className="text-center mb-8 text-[22px]">
+      <p className="text-center mb-8 text-[10px] lg:text-[22px]">
         The medical gowns used today were designed in the 1940s.
       </p>
-      <div className="flex  justify-between mt-10 space-y-4 lg:space-y-0 lg:space-x-8 relative w-full h-[350px]">
-        <img src='/assets/timeline/line.png' alt="Medical Gowns" className="w-full h-auto absolute -z-10" />
-        <div className="flex flex-col items-center text-center translate-y-12 ">
+      <div className="flex  justify-between mt-10 space-y-4 lg:space-y-0 lg:space-x-8 relative w-full lg:h-[350px]">
+        <img src='/assets/timeline/line.png' alt="Medical Gowns" className="w-full h-auto absolute -z-10 px-4 lg:px-0" />
+        <div className="flex flex-col items-center text-center translate-x-8 -translate-y-4 lg:translate-y-12 lg:translate-x-0 ">
           
         <div 
         onClick={()=> setFechaActiva(0)}
-        className={`cursor-pointer w-[161px] h-[161px] flex flex-col items-center justify-center text-[30px] text-white p-4 rounded-full mb-2 ${fechaActiva == 0 ? 'bg-[#95BC67]' : 'bg-[#4E88B0] hover:bg-[#95BC67]'}`}>
+        className={`cursor-pointer w-[47px] h-[47px] lg:w-[161px] lg:h-[161px] flex flex-col items-center justify-center text-[9px] lg:text-[30px] text-white p-4 rounded-full mb-2 ${fechaActiva == 0 ? 'bg-[#95BC67]' : 'bg-[#4E88B0] hover:bg-[#95BC67]'}`}>
 {/*   <div className='bg-white rounded-full w-[170px] h-[170px] absolute -z-10 top-0 left-0'/>
  */}    1918s
 </div>
-          <p className='max-w-[200px] text-[#1B3954] text-[22px]'>Introduction of
+          <p className='hidden lg:block max-w-[200px] text-[#1B3954] text-[22px]'>Introduction of
 Surgical Gowns</p>
         </div>
         <div className="flex flex-col items-center text-center">
           <div 
           onClick={()=> setFechaActiva(1)}
-          className={`cursor-pointer w-[161px] h-[161px] flex flex-col items-center justify-center text-[30px] text-white p-4 rounded-full mb-2 ${fechaActiva == 1 ? 'bg-[#95BC67]' : 'bg-[#4E88B0] hover:bg-[#95BC67]'}`}>
+          className={`cursor-pointer w-[47px] h-[47px] lg:w-[161px] lg:h-[161px] flex flex-col items-center justify-center text-[9px] lg:text-[30px] text-white p-4 rounded-full mb-2 -translate-y-6 translate-x-4 lg:translate-x-0 lg:translate-y-0 ${fechaActiva == 1 ? 'bg-[#95BC67]' : 'bg-[#4E88B0] hover:bg-[#95BC67]'}`}>
             1930s
           </div>
-          <p className='max-w-[200px] text-[#1B3954] text-[22px]'>Development
+          <p className='hidden lg:block max-w-[200px] text-[#1B3954] text-[22px]'>Development
 and Standards</p>
         </div>
-        <div className="flex flex-col items-center text-center  translate-y-32 -translate-x-8">
+        <div className="flex flex-col items-center text-center  translate-y-4  lg:translate-y-32 lg:-translate-x-8">
           <div 
           onClick={()=> setFechaActiva(2)}
-          className={`cursor-pointer w-[161px] h-[161px] flex flex-col items-center justify-center text-[30px] text-white p-4 rounded-full mb-2 ${fechaActiva == 2 ? 'bg-[#95BC67]' : 'bg-[#4E88B0] hover:bg-[#95BC67]'}`}>
+          className={`cursor-pointer w-[47px] h-[47px] lg:w-[161px] lg:h-[161px] flex flex-col items-center justify-center text-[9px] lg:text-[30px] text-white p-4 rounded-full mb-2 ${fechaActiva == 2 ? 'bg-[#95BC67]' : 'bg-[#4E88B0] hover:bg-[#95BC67]'}`}>
             1970s
           </div>
-          <p className='max-w-[200px] text-[#1B3954] text-[22px]'>Regulations and
+          <p className='hidden lg:block max-w-[200px] text-[#1B3954] text-[22px]'>Regulations and
 Safety Environment</p>
         </div>
         <div className="flex flex-col items-center text-center -translate-y-8">
           <div 
           onClick={()=> setFechaActiva(3)}
-          className={`cursor-pointer w-[161px] h-[161px] flex flex-col items-center justify-center text-[30px] text-white p-4 rounded-full mb-2 ${fechaActiva == 3 ? 'bg-[#95BC67]' : 'bg-[#4E88B0] hover:bg-[#95BC67]'}`}>
+          className={`cursor-pointer w-[47px] h-[47px] lg:w-[161px] lg:h-[161px] flex flex-col items-center justify-center text-[9px] lg:text-[30px] text-white p-4 rounded-full mb-2 ${fechaActiva == 3 ? 'bg-[#95BC67]' : 'bg-[#4E88B0] hover:bg-[#95BC67]'}`}>
             1952
           </div>
-          <p className='max-w-[200px] text-[#1B3954] text-[22px]'>Efficiency and
+          <p className='hidden lg:block max-w-[200px] text-[#1B3954] text-[22px]'>Efficiency and
 Sustainability</p>
         </div>
-        <div className="flex flex-col items-center text-center translate-y-16">
+        <div className="flex flex-col items-center text-center translate-y-0 -translate-x-4 lg:translate-y-16 lg:translate-x-0">
           <div
           onClick={()=> setFechaActiva(4)}
-          className={`cursor-pointer w-[161px] h-[161px] flex flex-col items-center justify-center text-[30px] text-white p-4 rounded-full mb-2 ${fechaActiva == 4 ? 'bg-[#95BC67]' : 'bg-[#4E88B0] hover:bg-[#95BC67]'}`}>
+          className={`cursor-pointer w-[47px] h-[47px] lg:w-[161px] lg:h-[161px] flex flex-col items-center justify-center text-[9px] lg:text-[30px] text-white p-4 rounded-full mb-2 ${fechaActiva == 4 ? 'bg-[#95BC67]' : 'bg-[#4E88B0] hover:bg-[#95BC67]'}`}>
             2020s
           </div>
-          <p className='max-w-[200px] text-[#1B3954] text-[22px]'>Pandemic 
+          <p className='hidden lg:block max-w-[200px] text-[#1B3954] text-[22px]'>Pandemic 
 Response and Future</p>
         </div>
       </div>
       <div className="mt-8 text-center max-w-4xl py-8">
-        <h3 className="text-xl font-semibold mb-2 text-[#5587B6]">{informacion[fechaActiva].titulo }</h3>
-        <p className='text-[20px]'>
+        <h3 className="text-[14px] lg:text-xl font-semibold mb-2 text-[#5587B6]">{informacion[fechaActiva].titulo }</h3>
+        <p className='text-[10px] lg:text-[20px] px-10'>
         {informacion[fechaActiva].descripcion1 }
         </p>
-        <p className='text-[20px]'>
+        <p className='text-[10px] lg:text-[20px] px-10'>
         {informacion[fechaActiva].descripcion2 }
         </p>
       </div>
       <div className="flex justify-center mt-8 relative">
-        <img src={`/assets/timeline/${fechaActiva}.png`} alt="Medical Gowns" className="w-[501px] h-[501px] object-cover" />
-        <img src={`/assets/timeline/${fechaActiva}-${fechaActiva}.png`} alt="Medical Gowns" className="w-[272px] h-[272px] absolute top-[50px] -right-[100px]" />
+        <img src={`/assets/timeline/${fechaActiva}.png`} alt="Medical Gowns" className="w-[252px] lg:w-[501px] h-[252px] lg:h-[501px] object-cover" />
+        <img src={`/assets/timeline/${fechaActiva}-${fechaActiva}.png`} alt="Medical Gowns" className="w-[136px] lg:w-[272px] h-[138px] lg:h-[272px] absolute lg:top-[50px] -right-[50px] lg:-right-[100px]" />
         
       </div>
     </div>
