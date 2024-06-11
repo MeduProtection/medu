@@ -109,7 +109,7 @@ function Navbar() {
         <button
           data-collapse-toggle="mobile-menu-2"
           type="button"
-          className="inline-flex items-center  text-sm  rounded-lg md:hidden  "
+          className="inline-flex items-center  text-sm  rounded-lg lg:hidden  "
           aria-controls="mobile-menu-2"
           aria-expanded="false"
         >
