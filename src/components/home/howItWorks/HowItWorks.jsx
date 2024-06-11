@@ -19,14 +19,14 @@ function HowItWorks() {
     return (
       <div className="container mx-auto flex flex-wrap  md:flex-nowrap ">
         <div className="w-full flex flex-col lg:flex-row items-center justify-between py-12 px-4 lg:px-12 bg-white">
-          <div className=" max-w-lg">
-            <h2 className="text-[22px] lg:text-[53px] font-bold mb-4 text-center text-[#1B3954]">
+          <div className=" max-w-lg ">
+            <h2 className="text-[22px] md:text-[37px] lg:text-[53px] font-bold mb-4 text-center text-[#1B3954]">
               How it <span className="text-[#5587B6]">works</span>.
             </h2>
-            <p className="text-[#5587B6] mb-4 font-bold text-[14px] text-center lg:text-start lg:text-[23px] max-w-lg">
+            <p className="text-[#5587B6] mb-4 font-bold text-[14px] text-center lg:text-start md:text-[23px] max-w-lg">
               Reducing the cost of protective gowns by up to 80% while ensuring health and safety may sound too good to be true. But it isn’t.
             </p>
-            <p className="mb-8 text-[10px] lg:text-[21px] max-w-lg text-center lg:text-start">
+            <p className="mb-8 text-[10px] md:text-[17px] lg:text-[21px] max-w-lg text-center lg:text-start">
               Our patent-pending, anti-viral, anti-bacterial fabric can be washed up to 50 times with conventional hospital system detergents and equipment without losing protective properties and prevents cross-contamination, enabling caregivers to dramatically reduce gown changes.
             </p>
           </div>
