@@ -101,16 +101,16 @@ Sustainability</p>
 Response and Future</p>
         </div>
       </div>
-      <div className="mt-8 text-center max-w-4xl py-8">
+      <div className="mt-8 text-center max-w-4xl py-8 h-[150px]">
         <h3 className="text-[14px] lg:text-xl font-semibold mb-2 text-[#5587B6]">{informacion[fechaActiva].titulo }</h3>
         <p className='text-[10px] lg:text-[20px] px-10'>
         {informacion[fechaActiva].descripcion1 }
         </p>
-        <p className='text-[10px] lg:text-[20px] px-10'>
+        <p className=' text-[10px] lg:text-[20px] px-10'>
         {informacion[fechaActiva].descripcion2 }
         </p>
       </div>
-      <div className="flex justify-center mt-8 relative">
+      <div className="flex justify-center mt-8 relative h-[250px]">
         <img src={`/assets/timeline/${fechaActiva}.png`} alt="Medical Gowns" className="w-[252px] lg:w-[501px] h-[252px] lg:h-[501px] object-cover" />
         <img src={`/assets/timeline/${fechaActiva}-${fechaActiva}.png`} alt="Medical Gowns" className="w-[136px] lg:w-[272px] h-[138px] lg:h-[272px] absolute lg:top-[50px] -right-[50px] lg:-right-[100px]" />
         
