@@ -3,7 +3,7 @@ import React from 'react'
 function Headlines() {
     return (
         <div className="flex flex-col items-center lg:py-12  ">
-          <h2 className="text-[2px]text-[50px] font-bold mb-4 text-center text-[#1B3954]">
+          <h2 className="text-[22px] lg:text-[50px] font-bold mb-4 text-center text-[#1B3954] leading-[25px]">
             Making headlines. <br className='lg:hidden'/><span className="text-[#5587B6]">Creating change.</span>
           </h2>
           <p className="text-center mb-8 max-w-2xl text-[10px] lg:text-[20px] px-10">
@@ -40,7 +40,7 @@ function Headlines() {
             <img src="/assets/headlines/waste.png" alt="Waste360" className="w-[80px] h-[80px] lg:h-[173px]" />
             </a>
           </div>
-          <div className="bg-[#5587B6] text-white py-4 px-6 rounded-lg mb-8 w-full">
+          <div className="bg-[#5587B6] text-white py-4 px-6  mb-8 w-full">
             <p className="text-center text-[12px] lg:text-[36px] font-semibold italic">
             &apos;&apos;MEDU is changing the world one gown at a time&apos;&apos;
             </p>
@@ -49,7 +49,7 @@ function Headlines() {
           <p className="text-center mb-8 text-[10px] lg:text-[20px] text-[#1B3954] font-bold">
             Read our press coverage, case studies, blog, and more.
           </p>
-          <button className="bg-[#95BC67] text-white py-4 px-8 rounded-full hover:bg-green-600 transition text-[14px] lg:text-[22px]">
+          <button className="bg-[#95BC67] text-white py-2 lg:py-4 px-8 rounded-full hover:bg-green-600 transition text-[14px] lg:text-[22px]">
             Gain Insights
           </button>
         </div>

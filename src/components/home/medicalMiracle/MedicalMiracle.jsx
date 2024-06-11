@@ -3,7 +3,7 @@ import React from 'react'
 function MedicalMiracle() {
     return (
         <div className="flex flex-col items-center py-12 px-4 lg:px-12 ">
-          <h2 className="text-[22px] lg:text-[50px] font-bold mb-4 text-center text-[#1B3954]">
+          <h2 className="text-[22px] lg:text-[50px] font-bold mb-4 text-center text-[#1B3954] leading-[25px]">
             Inventing a modern <br className='lg:hidden'/><span className="text-[#5587B6]">medical miracle</span>
           </h2>
           <p className="text-center mb-4 max-w-2xl text-[#1B3954] text-[10px] lg:text-[20px]">
@@ -12,7 +12,7 @@ function MedicalMiracle() {
           <a href="#" className="text-[#5587B6] mb-8 text-[10px] lg:text-[20px]">
             Read more about Medu’s origin and team.
           </a>
-          <button className="bg-[#95BC67] text-[14px] lg:text-[28px] text-white py-4 px-8 rounded-full hover:bg-green-600 transition">
+          <button className="bg-[#95BC67] text-[14px] lg:text-[28px] text-white py-2 lg:py-4 px-8 rounded-full hover:bg-green-600 transition">
             Learn About Us
           </button>
         </div>
