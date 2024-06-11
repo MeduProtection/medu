@@ -13,7 +13,7 @@ function Hero() {
               <span className='text-[#95BC67]  text-[17px] md:text-[27px] lg:text-[34px]'>
                 Save $150k per day</span> <br/> with the world&apos;s <br/> first Level 4 antiviral <br/> <span className='text-[#4E88B0]'>reusable gown</span>.
             </h1>
-            <p className="max-w-sm lg:max-w-full mb-8 text-gray-700 text-[10px] md:text-[17px] lg:text-[21px]">
+            <p className="max-w-sm md:max-w-md  lg:max-w-full mb-8 md:mb-4 text-gray-700 text-[10px] md:text-[17px] lg:text-[21px]">
               You save lives. Now you can save the planet, along with tens of millions of dollars every month with the
               only washable, sustainable medical gown of its kind.
             </p>
