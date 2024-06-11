@@ -4,7 +4,7 @@ function AppDemo() {
   return (
     <div className="flex flex-col items-center py-12  ">
       <div className='relative'>
-        <div className='absolute w-[322px] h-[230px] flex flex-col justify-center items-center text-[#1B3954] bg-[rgba(242,247,250,0.50)] shadow-md backdrop-blur-[2px] text-[20px] font-bold p-[40px] leading-[31px] top-20 -left-44 rounded-[37px]'>
+        <div className='absolute w-[118px] h-[84px] lg:w-[322px] lg:h-[230px] flex flex-col justify-center items-center text-[#1B3954] bg-[rgba(242,247,250,0.50)] shadow-md backdrop-blur-[2px] text-[7px] lg:text-[20px] font-bold lg:p-[40px] leading-[11px] lg:leading-[31px] top-20 lg:-left-44 rounded-md lg:rounded-[37px]'>
         Our app tracks the cleaning and life status of each Medu garment so you know the status and lifecycle stage.
         </div>
 
