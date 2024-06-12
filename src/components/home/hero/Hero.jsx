@@ -29,7 +29,7 @@ function Hero() {
           <Testimonio/>
           <Savings/>
           <Bar/>
-            <img src="/assets/hero/hero.png" alt="Antiviral Gown" className=" w-full md:w-[534px] lg:w-[1000px] 2xl:w-[65%] object-cover  " />
+            <img src="/assets/hero/hero.png" alt="Antiviral Gown" className=" w-full md:w-[534px] lg:w-[1000px]  object-cover  " />
           </div>
         </div>
         <div className='flex justify-center'>

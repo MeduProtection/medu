@@ -53,7 +53,7 @@ const Timeline = () => {
       </p>
       <div className="flex  justify-between mt-10 space-y-4 lg:space-y-0 lg:space-x-8 relative w-full lg:h-[350px]">
         <img src='/assets/timeline/line.png' alt="Medical Gowns" className="w-full h-auto absolute -z-10 px-4 lg:px-0" />
-        <div className="flex flex-col items-center text-center translate-x-8 -translate-y-4 xl:translate-y-12 lg:translate-x-0 ">
+        <div className="flex flex-col items-center text-center translate-x-8 -translate-y-4 xl:translate-y-2 lg:translate-x-0 ">
           
         <div 
         onClick={()=> setFechaActiva(0)}
@@ -91,7 +91,7 @@ Safety Environment</p>
           <p className='hidden lg:block max-w-[200px] text-[#1B3954] text-[22px]'>Efficiency and
 Sustainability</p>
         </div>
-        <div className="flex flex-col items-center text-center translate-y-0 -translate-x-4 xl:translate-y-16 xl:translate-x-0">
+        <div className="flex flex-col items-center text-center translate-y-0 -translate-x-4 xl:translate-y-8 xl:translate-x-0 ">
           <div
           onClick={()=> setFechaActiva(4)}
           className={`cursor-pointer w-[47px] h-[47px] md:w-[104px] md:h-[104px] xl:w-[161px] xl:h-[161px] flex flex-col items-center justify-center text-[9px] md:text-[20px] lg:text-[30px] text-white p-4 rounded-full mb-2 ${fechaActiva == 4 ? 'bg-[#95BC67]' : 'bg-[#4E88B0] hover:bg-[#95BC67]'}`}>
