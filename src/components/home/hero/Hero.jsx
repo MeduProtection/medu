@@ -6,7 +6,7 @@ import Bar from './Bar'
 function Hero() {
   return (
     
-    <header className=" lg:py-24">
+    <header className="lg:py-16 xl:py-24">
         <div className="container mx-auto flex flex-col lg:flex-row items-center">
           <div className="w-full flex flex-col justify-center items-center lg:items-start text-center lg:text-start px-4">
             <h1 className="text-[28px] md:text-[45px] xl:text-[55px] font-bold leading-tight text-[#1B3954]  mb-4">
