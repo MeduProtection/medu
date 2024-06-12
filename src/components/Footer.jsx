@@ -4,12 +4,12 @@ function Footer() {
     return (
         <footer className="bg-[#1B3954] text-white py-6">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col lg:flex-row justify-between items-center">
+            <div className="flex flex-col xl:flex-row justify-between items-center">
               <div className="flex  items-center space-x-4">
                 <img className="h-8 w-auto md:w-[133px] md:h-[58px]" src="/assets/navbar/logo.png" alt="Medu Logo" />
                 
               </div>
-              <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0  lg:space-x-8 mt-4 lg:mt-0 items-center md:text-[27px]">
+              <div className="flex flex-col xl:flex-row space-y-4 xl:space-y-0  xl:space-x-8 mt-4 xl:mt-0 items-center md:text-[27px]">
                 <a href="#" className="hover:text-gray-400">Our Products</a>
                 <a href="#" className="hover:text-gray-400">How it works</a>
                 <a href="#" className="hover:text-gray-400">Industries</a>
