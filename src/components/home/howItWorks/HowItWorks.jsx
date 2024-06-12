@@ -18,7 +18,7 @@ function HowItWorks() {
 
     return (
       <div className="container mx-auto flex flex-wrap  md:flex-nowrap ">
-        <div className="w-full flex flex-col lg:flex-row items-center justify-between py-12 px-4 lg:px-12 bg-white">
+        <div className="w-full flex flex-col lg:flex-row items-center justify-between py-12 px-4 lg:px-12 ">
           <div className=" max-w-lg ">
             <h2 className="text-[22px] md:text-[37px] lg:text-[53px] font-bold mb-4 text-center text-[#1B3954]">
               How it <span className="text-[#5587B6]">works</span>.
@@ -36,10 +36,10 @@ function HowItWorks() {
               ref={videoRef}
               src="/assets/video/video.mp4"
               className={`w-[90%] object-cover`} 
-              /* poster={isPlaying ? null : "/assets/works/poster.png"}  */
+              poster={isPlaying ? null : "/assets/works/poster.png"} 
               onPause={() => setIsPlaying(false)}
               onPlay={() => setIsPlaying(true)}
-              controls={true}
+              controls={isPlaying?true:false}
             />
           <div className={isPlaying? 'hidden':"absolute inset-0 flex items-center justify-center lg:ml-10 xl:ml-20  mb-8 xl:mb-0 "}>
               <div className="bg-white bg-opacity-75 p-4 rounded-full cursor-pointer" onClick={handlePlayPauseVideo}>

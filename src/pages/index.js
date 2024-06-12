@@ -18,13 +18,22 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       <Hero/>
+      <div className="relative ">
+      <img src='/assets/shadows/green.svg' alt='shadow' className='absolute h-[1000px] w-[900px] -top-[0px] left-0 w-full -z-10 '/>
       <Timeline/>
+      </div>
       <Features/>
       <WasteEctomy/>
+      <div className="relative">
+      <img src='/assets/shadows/green2.svg' alt='shadow' className='absolute h-[1000px] w-[900px] -top-[100px] left-0 w-full -z-10 '/>
       <Form/>
+      </div>
       <HowItWorks/>
       <AppDemo/>
+      <div className="relative">
+      <img src='/assets/shadows/blue2.svg' alt='shadow' className='absolute h-[1000px] w-[900px] -top-[100px] right-0 w-full -z-10 '/>
       <Headlines/>
+      </div>
       <MedicalMiracle/>
       <Difference/>
       <CallToAction/>

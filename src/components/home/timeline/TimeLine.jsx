@@ -42,7 +42,8 @@ const Timeline = () => {
   ]
   
   return (
-    <div className="container mx-auto flex flex-wrap  md:flex-nowrap">
+    <div className="container mx-auto flex flex-wrap  md:flex-nowrap relative">
+     
       
     <div className="w-full flex flex-col items-center py-8  ">
       <h2 className="text-[22px] md:text-[37px] lg:text-[50px] font-bold mb-4 text-center text-[#1B3954] w-[80%] md:w-[70%] lg:w-full lg:leading-[48px]">
