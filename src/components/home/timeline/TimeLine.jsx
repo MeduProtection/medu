@@ -110,7 +110,7 @@ Response and Future</p>
         {informacion[fechaActiva].descripcion2 }
         </p>
       </div>
-      <div className="flex justify-center mt-8 relative h-[250px] md:h-[450px]">
+      <div className="flex justify-center mt-8 relative h-[250px] md:h-[450px] xl:h-[550px]">
         <img src={`/assets/timeline/${fechaActiva}.png`} alt="Medical Gowns" className="w-[252px] md:w-[408px] md:h-[408px] xl:w-[501px] h-[252px] xl:h-[501px] object-cover" />
         <img src={`/assets/timeline/${fechaActiva}-${fechaActiva}.png`} alt="Medical Gowns" className="w-[136px] md:w-[221px] md:h-[221px] xl:w-[272px] h-[138px] xl:h-[272px] absolute lg:top-[50px] -right-[50px] md:-right-[100px]" />
         

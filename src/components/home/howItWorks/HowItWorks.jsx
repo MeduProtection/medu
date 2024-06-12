@@ -30,7 +30,7 @@ function HowItWorks() {
               Our patent-pending, anti-viral, anti-bacterial fabric can be washed up to 50 times with conventional hospital system detergents and equipment without losing protective properties and prevents cross-contamination, enabling caregivers to dramatically reduce gown changes.
             </p>
           </div>
-          <div className="lg:w-1/2 flex justify-center lg:justify-end items-center mt-8 xl:mt-0  ">
+          <div className="lg:w-1/2 flex justify-center lg:justify-end items-center mt-8 xl:mt-12  ">
           <div className="relative flex justify-center lg:justify-end items-center  cursor-pointer"  onClick={handlePlayPauseVideo}>
           <video
               ref={videoRef}

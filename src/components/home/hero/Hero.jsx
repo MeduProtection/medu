@@ -7,7 +7,7 @@ function Hero() {
   return (
     
     <header className="lg:py-16 xl:py-24">
-        <div className="container mx-auto flex flex-col lg:flex-row items-center">
+        <div className="container mx-auto flex flex-col lg:flex-row items-center xl:px-8">
           <div className="w-full flex flex-col justify-center items-center lg:items-start text-center lg:text-start px-4">
             <h1 className="text-[28px] md:text-[45px] xl:text-[55px] font-bold leading-tight text-[#1B3954]  mb-4">
               <span className='text-[#95BC67]  text-[17px] md:text-[27px] xl:text-[34px]'>
@@ -29,7 +29,7 @@ function Hero() {
           <Testimonio/>
           <Savings/>
           <Bar/>
-            <img src="/assets/hero/hero.png" alt="Antiviral Gown" className=" w-full md:w-[534px] lg:w-[1000px] xl:w-[65%] object-cover  " />
+            <img src="/assets/hero/hero.png" alt="Antiviral Gown" className=" w-full md:w-[534px] lg:w-[1000px] 2xl:w-[65%] object-cover  " />
           </div>
         </div>
         <div className='flex justify-center'>

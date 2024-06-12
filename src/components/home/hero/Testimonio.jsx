@@ -2,7 +2,7 @@ import React from 'react'
 
 function Testimonio() {
   return (
-    <div className='absolute w-[171px] h-[84px] md:w-[246px] md:h-[121px] flex  justify-between items-center text-[#1B3954] bg-[rgba(242,247,250,0.50)] shadow-md backdrop-blur-[2px]   left-0 md:left-20 top-16 lg:left-0  lg:top-auto lg:bottom-40 xl:left-80 rounded-[20px]'>
+    <div className='absolute w-[171px] h-[84px] md:w-[246px] md:h-[121px] flex  justify-between items-center text-[#1B3954] bg-[rgba(242,247,250,0.50)] shadow-md backdrop-blur-[2px]   left-0 md:left-20 top-16 lg:left-0  lg:top-auto lg:bottom-40 2xl:left-80 rounded-[20px]'>
         <div className='w-1/3  h-full flex flex-col items-center justify-center '>
             <img src='/assets/hero/doctor.svg' alt='doctor' className='w-[41px] h-[41px] md:w-[60px] md:h-[60px] object-cover '/>
         
