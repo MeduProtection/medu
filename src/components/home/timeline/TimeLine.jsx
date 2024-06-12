@@ -45,7 +45,7 @@ const Timeline = () => {
     <div className="container mx-auto flex flex-wrap  md:flex-nowrap">
       
     <div className="w-full flex flex-col items-center py-8  ">
-      <h2 className="text-[22px] md:text-[37px] lg:text-[50px] font-bold mb-4 text-center text-[#1B3954] w-[80%] md:w-[70%] lg:w-full leading-[48px]">
+      <h2 className="text-[22px] md:text-[37px] lg:text-[50px] font-bold mb-4 text-center text-[#1B3954] w-[80%] md:w-[70%] lg:w-full lg:leading-[48px]">
         Changing the fabric of medicine <br className='hidden lg:block'/> <span className="text-[#5587B6]">for good.</span>
       </h2>
       <p className="text-center mb-8 text-[10px] md:text-[17px] lg:text-[22px]">

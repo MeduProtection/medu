@@ -15,7 +15,7 @@ function Navbar() {
             />
           </a>
           <div className="flex md:order-2 gap-4">
-            <button className="hidden lg:bl text-[#1B3954] bg-white   font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0">
+            <button className="hidden lg:block text-[#1B3954] bg-white   font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0">
               I&apos;m a Distributor
             </button>
             <button className="text-white hidden lg:block bg-[#95BC67] hover:bg-[#059669]  font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0">

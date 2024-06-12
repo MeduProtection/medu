@@ -32,8 +32,8 @@ function Hero() {
             <img src="/assets/hero/hero.png" alt="Antiviral Gown" className=" w-full md:w-[534px] lg:w-[1000px]  object-cover  " />
           </div>
         </div>
-        <div className='flex justify-center'>
-        <p className="mt-4 text-[11px] text-center   md:text-[21px] text-[#1B3954] font-bold w-[60%] lg:w-full">
+        <div className='flex justify-center mt-10 '>
+        <p className=" text-[11px] text-center   md:text-[21px] text-[#1B3954] font-bold w-[60%] lg:w-full">
               Currently in trial with some of the most respected medical facilities in the U.S.
             </p>
         </div>
