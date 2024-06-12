@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <>
       <nav className="hidden lg:block bg-white px-4 py-2 ">
-        <div className="container mx-auto flex flex-wrap items-center justify-between bg-[#1B3954] rounded-[30px] lg:rounded-[98px] py-8 xl:px-20">
+        <div className="container mx-auto flex flex-wrap items-center justify-between bg-[#1B3954] rounded-[30px] lg:rounded-[98px] py-8 lg:px-20">
           <a href="#" className="flex items-center">
             <img
               src="/assets/navbar/logo.png"
