@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }) {
       <Component {...pageProps} />
       <Footer />
       <a
-        href="https://wa.me/+5255?text=Hello!%20Could%20you%20give%20me%20more%20information?"
+        href="https://wa.me/+525632197149?text=Hello!%20Could%20you%20give%20me%20more%20information?"
         className='animate-pulse transition-all duration-700 hover:animate-none hover:scale-110 '
         style={{
           position: 'fixed',

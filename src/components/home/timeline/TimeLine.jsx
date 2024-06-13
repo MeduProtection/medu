@@ -127,7 +127,7 @@ Safety Environment</p>
           <div 
           onClick={()=> setFechaActiva(3)}
           className={`cursor-pointer w-[47px] h-[47px] md:w-[104px] md:h-[104px] xl:w-[161px] xl:h-[161px] flex flex-col items-center justify-center text-[9px] md:text-[20px] lg:text-[30px] text-white p-4 rounded-full mb-2 ${fechaActiva == 3 ? 'bg-[#95BC67]' : 'bg-[#4E88B0] hover:bg-[#95BC67]'}`}>
-            1952
+            1990s
           </div>
           <p className='hidden lg:block max-w-[200px] text-[#1B3954] text-[22px]'>Efficiency and
 Sustainability</p>
