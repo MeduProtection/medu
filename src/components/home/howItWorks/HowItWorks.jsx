@@ -68,7 +68,7 @@ function HowItWorks() {
             <motion.video
               ref={videoRef}
               src="/assets/video/video.mp4"
-              className={`w-[90%] h-full object-cover`}
+              className={`w-full h-[400px] md:h-[500px] xl:h-[80%] object-contain`}
               poster={isPlaying ? null : "/assets/works/poster.png"}
               onPause={() => setIsPlaying(false)}
               onPlay={() => setIsPlaying(true)}
@@ -78,7 +78,7 @@ function HowItWorks() {
               transition={{ duration: 0.5 }}
             />
             <motion.div
-              className={isPlaying ? 'hidden' : "absolute inset-0 flex items-center justify-center lg:ml-10 xl:ml-20  mb-8 xl:mb-0"}
+              className={isPlaying ? 'hidden' : "absolute inset-0 flex items-center justify-center lg:ml-10   mb-8 xl:mb-0"}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
