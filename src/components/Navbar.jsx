@@ -5,7 +5,7 @@ function Navbar() {
   const [active, setActive] = useState(false);
   return (
     <>
-      <nav className="hidden lg:block bg-white px-4 py-2 ">
+      <nav className="hidden xl:block bg-white px-4 py-2 ">
         <div className="container mx-auto flex flex-wrap items-center justify-between bg-[#1B3954] rounded-[30px] lg:rounded-[98px] py-8 lg:px-20">
           <a href="#" className="flex items-center">
             <img
@@ -81,7 +81,7 @@ function Navbar() {
           </div>
         </div>
       </nav>
-      <nav className={`flex flex-col lg:hidden
+      <nav className={`flex flex-col xl:hidden
       ${active &&
         "bg-[#1B3954]"
       }
@@ -109,7 +109,7 @@ function Navbar() {
         <button
           data-collapse-toggle="mobile-menu-2"
           type="button"
-          className="inline-flex items-center  text-sm  rounded-lg lg:hidden  "
+          className="inline-flex items-center  text-sm  rounded-lg xl:hidden  "
           aria-controls="mobile-menu-2"
           aria-expanded="false"
         >
@@ -151,7 +151,7 @@ function Navbar() {
                   </button>
                 </div>
               </div>
-              <div className="border-t border-[#82BE62] lg:border-[#5587B6] my-6 pt-4 flex flex-col-reverse lg:flex-row justify-between items-center text-center lg:text-start">
+              <div className="border-t border-[#82BE62] lg:border-[#5587B6] my-6 pt-4 flex flex-col-reverse xl:flex-row justify-between items-center text-center xl:text-start">
                 <p className="text-sm text-gray-400 mt-4 lg:mt-0">&copy; 2024 Medu Protection</p>
                 <div className="lg:hidden flex justify-center gap-[55px] my-2">
                   <img src="/assets/footer/fb.svg" alt="Facebook" className="" />
