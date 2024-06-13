@@ -68,7 +68,7 @@ function HowItWorks() {
             <motion.video
               ref={videoRef}
               src="/assets/video/video.mp4"
-              className={`w-[90%] object-cover`}
+              className={`w-[90%] h-full object-cover`}
               poster={isPlaying ? null : "/assets/works/poster.png"}
               onPause={() => setIsPlaying(false)}
               onPlay={() => setIsPlaying(true)}
