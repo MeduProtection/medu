@@ -30,6 +30,9 @@ function Testimonio() {
                 <div className='flex mt-1'>
                     <img src='/assets/icons/star.svg' alt='quote' className='w-[7px] h-[7px] lg:w-[10px] lg:h-[10px]'/>
                     <img src='/assets/icons/star.svg' alt='quote' className='w-[7px] h-[7px] lg:w-[10px] lg:h-[10px]'/>
+                    <img src='/assets/icons/star.svg' alt='quote' className='w-[7px] h-[7px] lg:w-[10px] lg:h-[10px]'/>
+                    <img src='/assets/icons/star.svg' alt='quote' className='w-[7px] h-[7px] lg:w-[10px] lg:h-[10px]'/>
+                    <img src='/assets/icons/star.svg' alt='quote' className='w-[7px] h-[7px] lg:w-[10px] lg:h-[10px]'/>
                 </div>
             </div>
         </motion.div>
