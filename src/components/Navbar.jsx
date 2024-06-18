@@ -5,7 +5,7 @@ function Navbar() {
   const [active, setActive] = useState(false);
   return (
     <>
-      <nav className="hidden xl:block bg-white px-4 py-2 ">
+      <nav className="hidden xl:block bg-white px-4 py-2 fixed z-20 w-full ">
         <div className="container mx-auto flex flex-wrap items-center justify-between bg-[#1B3954] rounded-[30px] lg:rounded-[98px] py-8 lg:px-20">
           <a href="#" className="flex items-center">
             <img
@@ -81,9 +81,9 @@ function Navbar() {
           </div>
         </div>
       </nav>
-      <nav className={`flex flex-col xl:hidden
+      <nav className={`flex flex-col xl:hidden fixed z-20 w-full bg-white
       ${active &&
-        "bg-[#1B3954]"
+        "bg-[#1B3954] "
       }
       `}>
         <div className="flex justify-around">
