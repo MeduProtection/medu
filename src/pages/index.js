@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <>
     <Head>
-  <meta name="theme-color" content="#050409"/>
+  <meta name="theme-color" content="#FFFFF"/>
   <title>MEDU Protection.</title>
   <meta name="description" content="At MEDU Protection, we are committed to advancing healthcare safety with our state-of-the-art medical gowns and protective wear. Each piece is engineered for durability, offering up to 50 wash cycles without losing protective properties. This ensures that healthcare professionals can maintain the highest standards of hygiene and safety, repeatedly and cost-effectively." />
   <meta name="keywords" content="Medical gowns, Washable hospital gowns, Fluid-resistant gowns, ppe, anti cross-contamination, washable coverall, sustainable gowns, personal protective equipment" />
