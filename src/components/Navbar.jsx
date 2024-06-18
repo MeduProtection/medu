@@ -15,9 +15,9 @@ function Navbar() {
             />
           </a>
           <div className="flex md:order-2 gap-4">
-            <button className="hidden lg:block text-[#1B3954] bg-white   font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0">
+           {/*  <button className="hidden lg:block text-[#1B3954] bg-white   font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0">
               I&apos;m a Distributor
-            </button>
+            </button> */}
             <button className="text-white hidden lg:block bg-[#95BC67] hover:bg-[#059669]  font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0">
               Get Started
             </button>
@@ -35,7 +35,7 @@ function Navbar() {
             className="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
             id="mobile-menu-2"
           >
-            <ul className="flex flex-col items-center mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+            {/* <ul className="flex flex-col items-center mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
               <li>
                 <a
                   href="#"
@@ -77,13 +77,15 @@ function Navbar() {
                   About Us
                 </a>
               </li>
-            </ul>
+            </ul> */}
           </div>
         </div>
       </nav>
-      <nav className={`flex flex-col xl:hidden fixed z-20 w-full bg-white
-      ${active &&
+      <nav className={`flex flex-col xl:hidden fixed z-20 w-full 
+      ${active ?
         "bg-[#1B3954] "
+        :
+        "bg-white"
       }
       `}>
         <div className="flex justify-around">
@@ -133,19 +135,19 @@ function Navbar() {
           active && (
             <>
               <div className="mt-[70px]">
-                <ul className="text-white text-center space-y-[25px] text-[23px]">
+                {/* <ul className="text-white text-center space-y-[25px] text-[23px]">
                   <li>Our Products</li>
                   <li>How it Works</li>
                   <li>Industries</li>
                   <li>Insights</li>
                   <li>About Us</li>
-                </ul>
+                </ul> */}
               </div>
               <div className="w-full flex justify-center">
                 <div className="w-[40%] flex flex-col items-center gap-y-[36px] my-8">
-                  <button className=" text-[#1B3954] bg-white   font-medium rounded-3xl text-sm px-5 py-2.5 text-center lg:mr-3 md:mr-0">
+                 {/*  <button className=" text-[#1B3954] bg-white   font-medium rounded-3xl text-sm px-5 py-2.5 text-center lg:mr-3 md:mr-0">
                     I&apos;m a Distributor
-                  </button>
+                  </button> */}
                   <button className="text-white  bg-[#95BC67] hover:bg-[#059669]  font-medium rounded-3xl text-sm px-5 py-2.5 text-center lg:mr-3 md:mr-0">
                     Get Started
                   </button>
