@@ -25,10 +25,10 @@ export default function Home() {
   <meta name="keywords" content="Medical gowns, Washable hospital gowns, Fluid-resistant gowns, ppe, anti cross-contamination, washable coverall, sustainable gowns, personal protective equipment" />
   <meta property="og:title" content="MEDU Protection" />
   <meta property="og:description" content="At MEDU Protection, we are committed to advancing healthcare safety with our state-of-the-art medical gowns and protective wear. Each piece is engineered for durability, offering up to 50 wash cycles without losing protective properties. This ensures that healthcare professionals can maintain the highest standards of hygiene and safety, repeatedly and cost-effectively." />
-  <meta property="og:image" content="/assetsSecurity/ogimage.jpg" />
+  <meta property="og:image" content="/assets/ogimage.jpg" />
   <meta property="og:url" content="https://www.meduprotection.com" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="/assetsSecurity/ogimage.jpg" />
+  <meta name="twitter:image" content="/assets/ogimage.jpg" />
   <link rel="icon" href="favicon.ico" />
 </Head>
 
