@@ -31,9 +31,11 @@ function Form() {
   return (
     <div
     ref={ref}
+    
     className=''>
        <motion.h2
             className="text-[22px] md:text-[37px] lg:text-[53px] font-bold mb-4 text-center text-[#1B3954]"
+           
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ delay: 0.2, duration: 0.5 }}

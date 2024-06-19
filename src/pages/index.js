@@ -39,8 +39,10 @@ export default function Home() {
       <Timeline/>
       </div>
       <Features/>
-      <WasteEctomy/>
-      <div className="relative">
+      <WasteEctomy
+      />
+      <div className="relative"
+       id='Contact'>
       <img src='/assets/shadows/green2.svg' alt='shadow' className='absolute h-[1000px] w-[900px] -top-[100px] left-0 w-full -z-10 '/>
       <Form/>
       </div>

@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import MenuIcon from "./icons/MenuIcon";
+import {useRouter} from 'next/router'
 
 function Navbar() {
   const [active, setActive] = useState(false);
+  const router = useRouter()
   return (
     <>
       <nav className="hidden xl:block bg-white px-4 py-2 fixed z-20 w-full ">
@@ -18,7 +20,12 @@ function Navbar() {
            {/*  <button className="hidden lg:block text-[#1B3954] bg-white   font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0">
               I&apos;m a Distributor
             </button> */}
-            <button className="text-white hidden lg:block bg-[#95BC67] hover:bg-[#059669]  font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0">
+            <button className="text-white hidden lg:block bg-[#95BC67] hover:bg-[#059669]  font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
+          onClick={() => 
+            router.push('/#Contact')
+          }          
+
+            >
               Get Started
             </button>
             <button
@@ -148,7 +155,11 @@ function Navbar() {
                  {/*  <button className=" text-[#1B3954] bg-white   font-medium rounded-3xl text-sm px-5 py-2.5 text-center lg:mr-3 md:mr-0">
                     I&apos;m a Distributor
                   </button> */}
-                  <button className="text-white  bg-[#95BC67] hover:bg-[#059669]  font-medium rounded-3xl text-sm px-5 py-2.5 text-center lg:mr-3 md:mr-0">
+                  <button className="text-white  bg-[#95BC67] hover:bg-[#059669]  font-medium rounded-3xl text-sm px-5 py-2.5 text-center lg:mr-3 md:mr-0"
+                   onClick={() => 
+                    router.push('/#Contact')
+                  }      
+                  >
                     Get Started
                   </button>
                 </div>
