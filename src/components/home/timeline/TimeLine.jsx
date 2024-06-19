@@ -143,12 +143,14 @@ Sustainability</p>
 Response and Future</p>
         </motion.div>
       </div>
-      <div className="mt-8 text-center max-w-4xl py-8 h-[150px] md:h-[300px]">
-        <h3 className="text-[14px] md:text-xl font-semibold mb-2 text-[#5587B6]">{informacion[fechaActiva].titulo }</h3>
-        <p className='text-[10px] md:text-[20px] px-10'>
+      <div className='flex flex-col lg:flex-row w-full items-center  lg:items-start lg:mt-10 '>
+
+      <div className="mt-8 lg:w-1/2  max-w-4xl py-8 h-[150px] md:h-[300px]">
+        <h3 className="text-[14px] md:text-xl text-center lg:text-start xl:items-center font-semibold mb-2 px-10 lg:pr-10 text-[#5587B6]">{informacion[fechaActiva].titulo }</h3>
+        <p className='text-[10px] text-center lg:text-start md:text-[20px] px-10 lg:pr-10'>
         {informacion[fechaActiva].descripcion1 }
         </p>
-        <p className=' text-[10px] md:text-[20px] px-10'>
+        <p className=' text-[10px] text-center lg:text-start md:text-[20px] px-10 lg:pr-10'>
         {informacion[fechaActiva].descripcion2 }
         </p>
       </div>
@@ -156,6 +158,7 @@ Response and Future</p>
         <img src={`/assets/timeline/${fechaActiva}.png`} alt="Medical Gowns" className="w-[252px] md:w-[408px] md:h-[408px] xl:w-[501px] h-[252px] xl:h-[501px] object-cover" />
         <img src={`/assets/timeline/${fechaActiva}-${fechaActiva}.png`} alt="Medical Gowns" className="w-[136px] md:w-[221px] md:h-[221px] xl:w-[272px] h-[138px] xl:h-[272px] absolute lg:top-[50px] -right-[50px] md:-right-[100px]" />
         
+      </div>
       </div>
     </div>
     
