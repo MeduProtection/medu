@@ -15,6 +15,10 @@ export default function Document() {
             }}
           />
           {/* End Google Tag Manager */}
+          {/* Start of HubSpot Embed Code */}
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/25062945.js"></script>
+  {/* End of HubSpot Embed Code */}
+
         </Head>
       <body>
          {/* Google Tag Manager (noscript) */}
