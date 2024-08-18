@@ -1,4 +1,5 @@
 import Hero from '@/components/ourProducts/hero/Hero'
+import OnlyMedical from '@/components/ourProducts/onlymedical/OnlyMedical'
 import Head from 'next/head'
 import React from 'react'
 
@@ -21,6 +22,7 @@ function OurProducts() {
 
     <div className="overflow-hidden">
       <Hero/>
+      <OnlyMedical/>
       
     </div>
     </>

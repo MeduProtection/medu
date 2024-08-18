@@ -2,6 +2,8 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import InfoCost from './InfoCost'
 import InfoWeekly from './InfoWeekly'
+import InfoWaste from './InfoWaste'
+import InfoWash from './InfoWash'
 
 function Hero() {
   const containerVariants = {
@@ -69,9 +71,10 @@ function Hero() {
           {/* Aqui van las cositas de encima */}
           <InfoCost/>
           <InfoWeekly/>
-          {/* 
+          <InfoWaste/>
+          
           <InfoWash/>
-          <InfoWaste/> */}
+           
           <motion.img
             src="/assets/OurProducts/hero/heroFoto.png"
             alt="Antiviral Gown"
