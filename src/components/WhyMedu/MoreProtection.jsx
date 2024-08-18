@@ -7,17 +7,17 @@ function MoreProtection() {
   return (
     <div className="container mx-auto pt-[200px] xl:px-8">
       <div className="text-center mb-8 flex flex-col items-center">
-        <h2 className="text-2xl md:text-3xl font-bold text-[#1B3954]">
-          More protection. <span className="text-green-500">Less waste.</span>
+        <h2 className="text-2xl md:text-[50px] font-bold text-[#1B3954] mb-[29px]">
+          More protection. <span className="text-[#95BC67]">Less waste.</span>
         </h2>
-        <p className="text-[20px] mt-4 max-w-3xl">
+        <p className="text-[20px] mt-4 max-w-4xl">
           Medu is making a difference because we are different. With the only reusable, sustainable surgical gowns and coveralls of their kind, we’re decimating waste, drastically reducing costs, and improving provider comfort.
         </p>
       </div>
 
       <div className="text-center mb-8 text-[#5587B6]">
-        <h3 className="text-[40px] font-semibold">Here’s how we stack up</h3>
-        <p className="text-[18px]">Levels of Protection AN SI/AAMI PB70:2012</p>
+        <h3 className="text-[40px] font-bold">Here’s how we stack up</h3>
+        <p className="text-[18px] fotn-semibold">Levels of Protection AN SI/AAMI PB70:2012</p>
       </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-12">
