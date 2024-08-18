@@ -31,23 +31,29 @@ function Difference() {
         animate={inView ? "visible" : "hidden"}
         variants={containerVariants}
       >
-        <motion.h2
-          className="text-[16px] md:text-[37px] xl:text-[50px] font-bold mb-4"
-          variants={textVariants}
-        >
-          The difference that <span className="text-[#95BC67]">makes a difference.</span>
-        </motion.h2>
+        
         <motion.p
-          className="mb-8 max-w-2xl text-[7px] md:text-[17px] xl:text-[20px] px-10 xl:px-0"
+          className="mb-8 max-w-4xl text-[7px] md:text-[17px] xl:text-[20px] px-10 xl:px-0"
           variants={textVariants}
         >
-          Medu is not just the first of its kind. It’s the first of its kind offering a host of benefits to optimize savings of all kinds. See how Medu stacks up.
+          As the only medical gown that offers Level 4 protection with the ability to protect against cross-contamination, Medu gowns can be worn across multi patient visits, giving caregivers back time they would have spent changing.
         </motion.p>
+        <motion.p
+          className="mb-8 max-w-4xl text-[7px] md:text-[17px] xl:text-[20px] px-10 xl:px-0 text-[#4E88B0]"
+          variants={textVariants}
+        >
+         And less time changing clothes means more time changing–and saving–lives.
+        </motion.p>
+        <motion.p
+          className="mb-8 max-w-2xl text-[7px] md:text-[17px] xl:text-[20px] px-10 xl:px-0 text-[#95BC67]"
+          variants={textVariants}
+        >
+See for yourself.        </motion.p>
         <motion.button
           className="bg-[#95BC67] text-white  py-4 md:py-2 px-8 rounded-full hover:bg-green-600 transition text-[14px] md:text-[22px] xl:text-[28px]"
           variants={textVariants}
         >
-          Why MEDU
+          Get Started
         </motion.button>
       </motion.div>
     </div>

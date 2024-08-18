@@ -12,3 +12,15 @@ body {
   html {
     scroll-behavior: smooth;
   }
+
+  .levelShadow {
+    fill: rgba(242, 247, 250, 0.11);
+filter: drop-shadow(0px 3.496px 29.454px rgba(0, 0, 0, 0.14));
+backdrop-filter: blur(30.852237701416016px);
+  }
+
+  .colorShadow {
+    fill: rgba(242, 247, 250, 0.11);
+filter: drop-shadow(0px 3.99px 33.617px rgba(0, 0, 0, 0.14));
+backdrop-filter: blur(35.21283721923828px);
+  }
