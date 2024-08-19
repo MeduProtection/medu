@@ -13,7 +13,7 @@ function InfoWeekly() {
     }
   return (
     <motion.div
-        className='absolute w-[159px] md:w-[252px] lg:w-[200px] h-[137px] md:h-[217px] lg:h-[140px] xl:w-[218px] xl:h-[173px]  flex flex-col justify-center items-center text-[#1B3954] bg-[rgba(242,247,250,0.50)] shadow-md backdrop-blur-[2px] -bottom-20 lg:-bottom-28 left-8  lg:left-auto lg:right-[120px] rounded-[20px] px-4 leading-[30px] md:leading-[40px] lg:leading-[30px]'
+        className='absolute w-[159px] md:w-[252px] lg:w-[200px] h-[137px] md:h-[217px] lg:h-[140px] xl:w-[218px] xl:h-[173px]  flex flex-col justify-center items-center text-[#1B3954] bg-[rgba(242,247,250,0.50)] shadow-md backdrop-blur-[2px] -bottom-20 lg:-bottom-28 left-4 md:left-12  lg:left-auto lg:right-[120px] rounded-[20px] px-4 leading-[30px] md:leading-[40px] lg:leading-[30px] xl:leading-[40px]'
         initial="hidden"
         animate="visible"
         variants={variants}

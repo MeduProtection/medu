@@ -14,14 +14,14 @@ function Waste() {
 
     return (
         <motion.div
-            className='absolute w-[159px] md:w-[252px] lg:w-[170px] h-[137px] md:h-[217px] lg:h-[140px] xl:w-[218px] xl:h-[173px]  flex  justify-center items-center text-[#1B3954] bg-[rgba(242,247,250,0.50)] shadow-md backdrop-blur-[2px] top-32 md:top-44 lg:top-8 xl:top-0 md:right-20 lg:-right-10  right-0 rounded-[20px]'
+            className='absolute w-[159px] md:w-[252px] lg:w-[200px]  h-[137px] md:h-[217px] lg:h-[140px] xl:w-[218px] xl:h-[173px]  flex  justify-center items-center text-[#1B3954] bg-[rgba(242,247,250,0.50)] shadow-md backdrop-blur-[2px] -top-12  lg:top-0 right-4 md:right-20 lg:-right-10   rounded-[20px] leading-[20px] md:leading-[40px] lg:leading-[30px]'
             initial="hidden"
             animate="visible"
             variants={variants}
             transition={{ duration: 0.5 }}
         >
-            <p className='text-[#1B3954]  text-[20px] md:text-[24px] leading-[40px] text-center '>
-                <span className='text-[36px] md:text-[55px] font-bold'>90% </span><br/> waste <br/> reduction
+            <p className='text-[#1B3954]  text-[20px] md:text-[24px]  text-center '>
+                <span className='text-[36px] md:text-[55px] lg:text-[40px] xl:text-[55px] font-bold'>90% </span><br/> waste <br/> reduction
             </p>
         </motion.div>
     )
