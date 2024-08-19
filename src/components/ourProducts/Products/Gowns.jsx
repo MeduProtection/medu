@@ -3,13 +3,13 @@ import React from 'react'
 
 function Gowns() {
   return (
-    <div className='container mx-auto flex flex-col lg:flex-row items-center xl:px-8 mt-[116px]   '>
+    <div className='container mx-auto flex flex-col lg:flex-row items-center xl:px-8 mt-[50px] lg:mt-[116px]   '>
         <div className='w-full h-full flex flex-col justify-center items-center '>
-                <h1 className='text-[#1B3954] text-[85px] leading-[86px] text-left'>
+                <h1 className='w-full text-[#1B3954] text-[65px] lg:text-[85px] leading-[70px] lg:leading-[86px] text-center lg:text-left mb-4 lg:mb-0'>
                     MEDU <br/> <span className='text-[#4E88B0]'>Gowns</span>
                 </h1>
-                <Image src="/assets/OurProducts/Flap.png" width={336} height={334} alt="MEDU Gowns" />
-                <div className='w-[334px] h-[87px] rounded-[34px] border-2 px-[30px] flex text-[24px] leading-[28px] items-center mt-[73px] mb-[16px]'>
+                <Image src="/assets/OurProducts/Flap.png" width={336} height={334} className='w-[80%] md:w-[336px] ' alt="MEDU Gowns" />
+                <div className='w-[334px] h-[87px] rounded-[34px] border-2 px-[30px] flex text-[24px] leading-[28px] items-center mt-8 mb-[16px]'>
                 LEVEL 4 AAMI PB70 <br/>
                 PROTECTION
                 </div>
@@ -25,7 +25,7 @@ function Gowns() {
         </div>
         <div className='w-full h-full flex flex-col justify-center items-center '>
             <div className='h-[761px] w-[429px] bg-blue-500'/>
-            <div className='bg-[#1B3954] w-[251px]  h-[100px] flex justify-center items-center text-white rounded-[40px] mt-[66px]'><Image src="/assets/icons/ar.svg" width={46} height={163} alt='ar icon'/>AR view</div>
+            <div className='bg-[#1B3954] w-[251px]  h-[100px] flex justify-center items-center text-white rounded-[40px] mt-[30px] lg:mt-[66px]'><Image src="/assets/icons/ar.svg" width={46} height={163} alt='ar icon'/>AR view</div>
 
         </div>
     </div>

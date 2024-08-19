@@ -3,13 +3,13 @@ import React from 'react'
 
 function Coveralls() {
   return (
-    <div className='container mx-auto flex flex-col lg:flex-row-reverse items-center xl:px-8 mt-[82 px] mb-[127px]   '>
+    <div className='container mx-auto flex flex-col lg:flex-row-reverse items-center xl:px-8 mt-[82 px] mt-[50px] lg:mt-0 mb-[127px]   '>
         <div className='w-full h-full flex flex-col justify-center items-center '>
-                <h1 className='text-[#1B3954] text-[85px] leading-[86px] mb-[20px] text-right'>
+                <h1 className='w-full  text-[#1B3954] text-[65px] lg:text-[85px] leading-[86px] mb-4 text-center lg:text-right '>
                     MEDU <br/> <span className='text-[#4E88B0]'>Coveralls</span>
                 </h1>
-                <Image src="/assets/OurProducts/Flap.png" width={336} height={334} alt="MEDU Gowns" />
-                <div className='w-[334px] h-[87px] rounded-[34px] border-2 px-[30px] flex text-[24px] leading-[28px] items-center mt-[73px] mb-[16px]'>
+                <Image src="/assets/OurProducts/Flap.png" width={336} height={334} className='w-[80%] md:w-[336px] '  alt="MEDU Gowns" />
+                <div className='w-[334px] h-[87px] rounded-[34px] border-2 px-[30px] flex text-[24px] leading-[28px] items-center mt-8 mb-[16px]'>
                 LEVEL 4 AAMI PB70 <br/>
                 PROTECTION
                 </div>
