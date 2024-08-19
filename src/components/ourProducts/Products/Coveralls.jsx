@@ -3,9 +3,9 @@ import React from 'react'
 
 function Coveralls() {
   return (
-    <div className='container mx-auto flex flex-col lg:flex-row-reverse items-center xl:px-8 mt-[82 px] mt-[50px] lg:mt-0 mb-[127px]   '>
+    <div className='container mx-auto flex flex-col lg:flex-row-reverse items-center xl:px-8 mt-[82 px] mt-[50px]  mb-[127px]   '>
         <div className='w-full h-full flex flex-col justify-center items-center '>
-                <h1 className='w-full  text-[#1B3954] text-[65px] lg:text-[85px] leading-[86px] mb-4 text-center lg:text-right '>
+                <h1 className='w-full  text-[#1B3954] text-[65px] lg:text-[85px] leading-[86px] mb-4 text-center lg:text-right lg:pr-[100px] xl:pr-[150px] 2xl:pr-[200px]'>
                     MEDU <br/> <span className='text-[#4E88B0]'>Coveralls</span>
                 </h1>
                 <Image src="/assets/OurProducts/Flap.png" width={336} height={334} className='w-[80%] md:w-[336px] '  alt="MEDU Gowns" />

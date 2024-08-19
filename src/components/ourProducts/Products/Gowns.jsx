@@ -5,7 +5,7 @@ function Gowns() {
   return (
     <div className='container mx-auto flex flex-col lg:flex-row items-center xl:px-8 mt-[50px] lg:mt-[116px]   '>
         <div className='w-full h-full flex flex-col justify-center items-center '>
-                <h1 className='w-full text-[#1B3954] text-[65px] lg:text-[85px] leading-[70px] lg:leading-[86px] text-center lg:text-left mb-4 lg:mb-0'>
+                <h1 className='w-full text-[#1B3954] text-[65px] lg:text-[85px] leading-[70px] lg:leading-[86px] text-center lg:text-left lg:pl-[100px] xl:pl-[150px] 2xl:pl-[200px] mb-4 lg:mb-0'>
                     MEDU <br/> <span className='text-[#4E88B0]'>Gowns</span>
                 </h1>
                 <Image src="/assets/OurProducts/Flap.png" width={336} height={334} className='w-[80%] md:w-[336px] ' alt="MEDU Gowns" />
