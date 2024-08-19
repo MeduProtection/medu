@@ -41,14 +41,15 @@ function Hero() {
       <div className="container mx-auto flex flex-col lg:flex-row items-center xl:px-8">
         <div className="w-full flex flex-col justify-center items-center lg:items-start text-center lg:text-start px-4">
           <motion.h1
-            className="text-[28px] md:text-[45px] xl:text-[50px] font-bold leading-tight text-white  mb-4"
+            className="text-[28px] md:text-[45px] xl:text-[50px] font-bold leading-tight text-[#1B3954]  "
             variants={textVariants}
           >
            Medu for <span className='text-[#95BC67]'>medical</span>.
           </motion.h1>
+          <p className="text-[18px] fotn-semibold text-[#5587B6] my-2">Levels of Protection AN SI/AAMI PB70:2012</p>
          
           <motion.p
-            className="max-w-sm md:max-w-md  lg:max-w-full mb-8 md:mb-4 text-white text-[10px] md:text-[17px] xl:text-[21px]"
+            className="max-w-sm md:max-w-md  lg:max-w-full mb-8 md:mb-4 text-[#1B3954] text-[10px] md:text-[17px] xl:text-[21px]"
             variants={textVariants}
           >
          Medu medical gowns and coveralls were purpose-made for the medical industry. Developed to safeguard healthcare providers and patients from exposure to infectious agents, bodily fluids, chemicals, and other hazards present in healthcare settings, only Medu offers anti-cross-contamination Level 4 protection in a reusable, sustainable fabric.
@@ -66,14 +67,7 @@ function Hero() {
           />
         </div>
       </div>
-      <div className="flex justify-center mt-10 ">
-        <motion.p
-          className="text-[11px] text-center   md:text-[21px] text-[#1B3954] font-bold w-[60%] lg:w-full"
-          variants={textVariants}
-        >
-          Currently in trial with some of the most respected medical facilities in the U.S.
-        </motion.p>
-      </div>
+      
     </motion.header>
   )
 }
