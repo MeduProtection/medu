@@ -14,18 +14,18 @@ function OnlyMedical() {
 
     return (
         <motion.div
-            className='absolute w-[159px] md:w-[252px] lg:w-[170px] h-[137px] md:h-[217px] lg:h-[140px] xl:w-[218px] xl:h-[173px]  flex  justify-center items-center text-[#5587B6] bg-[rgba(242,247,250,0.50)] shadow-md backdrop-blur-[2px] top-32 md:top-44 lg:top-8 xl:top-80 md:right-20 lg:-right-20  right-0 rounded-[20px]'
+            className='absolute w-[159px] md:w-[252px] lg:w-[170px] h-[137px] md:h-[217px] lg:h-[140px] xl:w-[218px] xl:h-[173px]  flex  justify-center items-center text-[#5587B6] bg-[rgba(242,247,250,0.50)] shadow-md backdrop-blur-[2px] top-32 md:top-44 lg:top-8 xl:top-72 md:right-20 lg:-right-20  right-0 rounded-[20px]'
             initial="hidden"
             animate="visible"
             variants={variants}
             transition={{ duration: 0.5 }}
         >
-            <p className='text-[#5587B6]  text-[20px] md:text-[24px] leading-[35px] text-center '>
+            <p className='text-[#5587B6]  text-[20px] md:text-[24px] leading-[40px] text-center '>
                 <span className=''>
                     Wash up to
                     </span>
                     <br/>
-                <span className='text-[36px] md:text-[55px] font-bold'>90 <br/> times <br/> </span>
+                <span className='text-[36px] md:text-[55px] font-bold'>50 <br/> times <br/> </span>
             </p>
         </motion.div>
     )
