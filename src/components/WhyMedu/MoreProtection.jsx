@@ -5,7 +5,7 @@ function MoreProtection() {
   const [click, setClick] = useState("level1");
 
   return (
-    <div className=" mx-auto pt-[130px] lg:pt-[200px] xl:px-8">
+    <div className=" mx-auto pt-[130px] lg:pt-[200px]">
       <div className="text-center mb-8 flex flex-col items-center px-4">
         <h2 className="text-2xl md:text-[50px] font-bold text-[#1B3954] mb-[29px]">
           More protection. <span className="text-[#95BC67]">Less waste.</span>
@@ -49,7 +49,7 @@ function MoreProtection() {
       <div className="container mx-auto text-center text-[#1B3954] flex flex-col gap-[20px] h-full w-full ">
         <h3 className="text-2xl lg:text-[50px] font-semibold text-[#1B3954] lg:mb-6">Doing more <span className='text-[#5587B6]'>good</span>.</h3>
         <p className='text-[#1B3954] text-[20px]'>Medu offers a host of benefits:</p>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 px-4">
+        <div className="grid grid-cols-2 lg:grid-cols-4 place-items-center gap-4 px-4">
           <div className="bg-white text-center  rounded-[34px] shadow-md w-full h-[150px] lg:w-[218px] lg:h-[173px]  flex flex-col items-center justify-center">
             <p className="text-[55px] font-bold text-[#95BC67]">80%</p>
             <p className="text-gray-600 ">cost savings</p>
