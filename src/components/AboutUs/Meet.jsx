@@ -39,7 +39,7 @@ function Meet() {
           Meet us <span className='text-[#95BC67]'>in person</span>.
         </motion.p>
         <motion.p
-          className="mb-8 max-w-2xl text-[17px] md:text-[17px] xl:text-[50px] px-10 xl:px-0 text-white"
+          className="mb-8 max-w-2xl text-[17px] md:text-[17px] xl:text-[25px] px-10 xl:px-0 text-white"
           variants={textVariants}
         >
           You’ve gotten to know who we are and why we started Medu.<br/>Now meet us in person.<br/>Reach out to book a meeting.

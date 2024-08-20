@@ -46,22 +46,22 @@ function Team() {
   return (
     <div className="container mx-auto xl:px-8">
       <div className="text-center my-8 lg:mt-8 flex flex-col items-center">
-        <h1 className="text-[28px] md:text-[35px] xl:text-[40px] font-bold text-[#1B3954]">
+        <h1 className="md:max-w-lg xl:max-w-2xl text-[28px] md:text-[35px] xl:text-[40px] font-bold text-[#1B3954]">
          Medu was born and a movement <span className="text-[#95BC67]">was created</span>.
         </h1>
 
-        <h2 className="max-w-2xl text-[28px] md:text-[45px] xl:text-[50px] font-bold text-[#5587B6] lg:mb-[29px]">
+        <h2 className="md:max-w-lg lg:max-w-2xl xl:max-w-2xl text-[28px] md:text-[20px] xl:text-[30px] font-bold text-[#5587B6] lg:mb-[29px]">
         Meet Tamara and the rest of the
         Medu team.
         </h2>
         
       </div>
       <div className="w-full flex justify-center">
-      <div className="w-full flex flex-row md:grid md:grid-cols-3 gap-4 mb-12 overflow-x-scroll no-scrollbar p-4">
+      <div className="w-full flex flex-row xl:grid xl:grid-cols-3 gap-4 mb-12 overflow-x-scroll no-scrollbar p-4">
   {members.map((member, index) => (
     <div
       key={index}
-      className={`relative h-[520px] w-full lg:w-[424px] flex-shrink-0 flex flex-col justify-center text-white text-center p-4 rounded-[49px] cursor-pointer`}
+      className={`relative h-[520px] w-full md:w-[50%] lg:w-[424px] flex-shrink-0 flex flex-col justify-center text-white text-center p-4 rounded-[49px] cursor-pointer`}
       onClick={() => setClick(index)}
       onMouseOver={() => setHover(index)}
       onMouseOut={() => setHover(null)}

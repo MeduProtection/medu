@@ -19,7 +19,7 @@ function Meet() {
   };
 
   return (
-    <div
+    <div 
       ref={ref}
       className="relative flex flex-col items-center justify-center py-4 lg:py-20 px-4 bg-cover bg-center text-white"
       style={{ backgroundImage: "url('/assets/Discover/bg.jpg')" }}
@@ -33,13 +33,13 @@ function Meet() {
       >
         
         <motion.p
-          className="mb-8 max-w-4xl text-[7px] md:text-[17px] xl:text-[50px] px-10 xl:px-0"
+          className="mb-8 max-w-4xltext-[17px] xl:text-[25px] px-10 xl:px-0"
           variants={textVariants}
         >
          Contact us to take the <span className='text-[#95BC67]'>first step.</span>.
         </motion.p>
         <motion.p
-          className="mb-8 max-w-2xl text-[7px] md:text-[17px] xl:text-[20px] px-10 xl:px-0 text-white"
+          className="mb-8 max-w-2xl text-[17px] xl:text-[25px] px-10 xl:px-0 text-white"
           variants={textVariants}
         >
           Save money, time, and waste in a way never before possible. Reach out to book a meeting, learn more, and get started.
