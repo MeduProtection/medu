@@ -33,7 +33,7 @@ function Discover() {
       >
         
         <motion.p
-          className="mb-8 max-w-4xl text-[7px] md:text-[17px] xl:text-[50px] px-10 xl:px-0"
+          className="mb-4 lg:mb-8 max-w-4xl text-[17px] md:text-[17px] xl:text-[50px] px-10 xl:px-0"
           variants={textVariants}
         >
           Discover how our location can take your facility in new directions

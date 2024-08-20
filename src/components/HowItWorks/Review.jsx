@@ -22,7 +22,7 @@ function Review() {
     <div
       ref={ref}
       className="relative flex flex-col items-center justify-center py-4 lg:py-20 px-4 bg-cover bg-center text-white"
-      style={{ backgroundImage: "url('/assets/Discover/bg.jpg')" }}
+      style={{ backgroundImage: "url('/assets/HowItWorks/review.png')" }}
     >
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <motion.div
@@ -33,7 +33,7 @@ function Review() {
       >
         
         <motion.p
-          className="mb-8 max-w-4xl text-[7px] md:text-[17px] xl:text-[50px] px-10 xl:px-0"
+          className="mb-4 lg:mb-8 max-w-4xl text-[17px] md:text-[17px] xl:text-[50px] px-10 xl:px-0"
           variants={textVariants}
         >
           Review Medu’s Washing Instructions

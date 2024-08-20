@@ -57,7 +57,7 @@ function WorldOfGood() {
          
           
         </div>
-        <div className="w-full  px-4 flex justify-center mt-8 lg:mt-0 lg:justify-end items-center relative ">
+        <div className="w-full  px-4 flex justify-center my-8 lg:my-0 lg:justify-end items-center relative ">
          
           <motion.img
             src="/assets/WhyMedu/worldofgood.png"

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 function MoreProtection() {
-  const [hover, setHover] = useState("");
-  const [click, setClick] = useState("");
+  const [hover, setHover] = useState("level1");
+  const [click, setClick] = useState("level1");
 
   return (
     <div className=" mx-auto pt-[130px] lg:pt-[200px] xl:px-8">
