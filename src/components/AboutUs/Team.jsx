@@ -45,72 +45,67 @@ function Team() {
 
   return (
     <div className="container mx-auto xl:px-8">
-      <div className="text-center mb-8 flex flex-col items-center">
-        <h1 className="text-[40px] font-bold text-[#5587B6]">
-          Our care instructions
+      <div className="text-center my-8 lg:mt-8 flex flex-col items-center">
+        <h1 className="text-[28px] md:text-[35px] xl:text-[40px] font-bold text-[#1B3954]">
+         Medu was born and a movement <span className="text-[#95BC67]">was created</span>.
         </h1>
 
-        <h2 className="max-w-2xl text-[50px] md:text-[50px] font-bold text-[#1B3954] mb-[29px]">
-          Take care of the planet and{" "}
-          <span className="text-[#95BC67]">each other</span>
+        <h2 className="max-w-2xl text-[28px] md:text-[45px] xl:text-[50px] font-bold text-[#5587B6] lg:mb-[29px]">
+        Meet Tamara and the rest of the
+        Medu team.
         </h2>
-        <p className="text-[20px] my-4 max-w-4xl ">
-          Medu gowns are as easy to use as they are to love. They need no
-          special detergents or laundry equipment, and can be washed 50+ times
-          at 60°C (140° F).
-          <br />
-          <br />
-          To ensure accurate tracking of washings, Medu offers the Protect app.
-        </p>
-        <p className="max-w-lg text-[20px] font-bold text-[#5587B6] text-center">
-          Know the age and stage of your Medu gowns and coveralls in four easy
-          steps:
-        </p>
+        
       </div>
       <div className="w-full flex justify-center">
-        <div className="grid grid-cols-3 gap-4 mb-12">
-          {members.map((member, index) => (
-            <div
-              key={index}
-              className={`relative w-[424px] h-[520px] flex flex-col justify-center text-white text-center p-4 rounded-[49px] cursor-pointer`}
-              onClick={() => setClick(index)}
-              onMouseOver={() => setHover(index)}
-              onMouseOut={() => setHover(null)}
-            >
-              <div className="absolute w-full h-full top-0 left-0 z-10">
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="rounded-[49px] w-full h-full object-cover"
-                />
-              </div>
-              <div
-                className={`w-full h-full ${
-                  hover === index || click === index ? "bg-[#1B3954]" : ""
-                } opacity-70 absolute top-0 left-0 z-20 rounded-[49px]`}
-              />
-              <div className="relative z-30">
-                <h4 className="text-[32px] font-bold">
-                  {member.name}
-                  <br
-                    className={`${
-                      hover === index || click === index ? "hidden" : ""
-                    }`}
-                  />
-                </h4>
-                <p
-                  className={`${
-                    hover === index || click === index
-                      ? "text-[18px] mt-2"
-                      : "hidden"
-                  } transition-all duration-300`}
-                >
-                  {member.description}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
+      <div className="w-full flex flex-row md:grid md:grid-cols-3 gap-4 mb-12 overflow-x-scroll no-scrollbar p-4">
+  {members.map((member, index) => (
+    <div
+      key={index}
+      className={`relative h-[520px] w-full lg:w-[424px] flex-shrink-0 flex flex-col justify-center text-white text-center p-4 rounded-[49px] cursor-pointer`}
+      onClick={() => setClick(index)}
+      onMouseOver={() => setHover(index)}
+      onMouseOut={() => setHover(null)}
+    >
+      <div className="absolute w-full h-full top-0 left-0 z-10">
+        <img
+          src={member.image}
+          alt={member.name}
+          className="rounded-[49px] w-full h-full object-cover"
+        />
+      </div>
+      <div
+        className={`w-full h-full ${
+          hover === index || click === index ? "bg-[#1B3954] opacity-70" : ""
+        } absolute top-0 left-0 z-20 rounded-[49px]`}
+      />
+      <div className="w-[90%] absolute bottom-20 z-30">
+        <h4
+          className={` font-bold ${
+            hover !== index && click !== index
+              ? "text-[17px] lg:text-[27px] bg-[#0c113742] backdrop-blur-lg text-left  pl-8"
+              : "text-[20px] lg:text-[30px] text-center"
+          } rounded-[20px]  py-4`}
+        >
+          {member.name}
+          <br className={`${hover === index || click === index ? "hidden" : ""}`} />
+          <p className={`${
+            hover === index || click === index ? "hidden" : "text-[10px] lg:text-[18px]"
+          }`}>
+            {member.ocupation}
+          </p>
+        </h4>
+        <p
+          className={`${
+            hover === index || click === index ? "text-[18px] mt-2" : "hidden"
+          } transition-all duration-300`}
+        >
+          {member.description}
+        </p>
+      </div>
+    </div>
+  ))}
+</div>
+
       </div>
     </div>
   );

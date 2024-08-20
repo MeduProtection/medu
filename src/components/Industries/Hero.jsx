@@ -38,7 +38,7 @@ function Hero() {
       animate="visible"
     >
      
-      <div className="container mx-auto flex flex-col lg:flex-row items-center xl:px-8">
+      <div className="container mx-auto flex flex-col lg:flex-row items-center xl:px-8"> 
         <div className="w-full flex flex-col justify-center items-center lg:items-start text-center lg:text-start px-4">
           <motion.h1
             className="text-[28px] md:text-[45px] xl:text-[50px] font-bold leading-tight text-[#1B3954]  "
