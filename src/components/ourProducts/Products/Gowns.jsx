@@ -25,7 +25,7 @@ function Gowns() {
         </div>
         <div className='w-full h-full flex flex-col justify-center items-center '>
             <div className='h-[761px] w-[429px] bg-blue-500'/>
-            <div className='bg-[#1B3954] w-[251px]  h-[100px] flex justify-center items-center text-white rounded-[40px] mt-[30px] lg:mt-[66px]'><Image src="/assets/icons/ar.svg" width={46} height={163} alt='ar icon'/>AR view</div>
+            <div className='bg-[#1B3954] text-white  py-4 md:py-2 px-8 rounded-full  transition text-[14px] md:text-[22px] xl:text-[28px] flex  items-center gap-2 mt-[30px] lg:mt-[66px]'><Image src="/assets/icons/ar.svg" width={46} height={163} alt='ar icon'/>AR view</div> 
 
         </div>
     </div>

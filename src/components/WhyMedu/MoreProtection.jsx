@@ -10,7 +10,7 @@ function MoreProtection() {
         <h2 className="text-2xl md:text-[50px] font-bold text-[#1B3954] mb-[29px]">
           More protection. <span className="text-[#95BC67]">Less waste.</span>
         </h2>
-        <p className="text-[20px] lg:mt-4 max-w-sm md:max-w-md lg:max-w-4xl ">
+        <p className="text-[10px] md:text-[17px] xl:text-[21px] lg:mt-4 max-w-sm md:max-w-md lg:max-w-4xl ">
           Medu is making a difference because we are different. With the only reusable, sustainable surgical gowns and coveralls of their kind, we’re decimating waste, drastically reducing costs, and improving provider comfort.
         </p>
       </div>

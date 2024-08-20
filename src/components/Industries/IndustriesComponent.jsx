@@ -30,7 +30,7 @@ function Industries() {
         <h2 className="max-w-2xl text-[28px] md:text-[45px] xl:text-[50px] font-bold text-[#1B3954] mb-[10px]">
           Medu for other <span className="text-[#95BC67]">industries</span>.
         </h2>
-        <p className="text-[18px] lg:text-[20px] my-4 max-w-4xl px-4 lg:px-0">
+        <p className="text-[10px] md:text-[17px] xl:text-[21px] my-4 max-w-4xl px-4 lg:px-0">
           With our revolutionary fabric, Medu isn’t just perfect for medicine. We also offer protection for a variety of other industries that require protection from contaminants. These industries include food and beverage, chemical, pharmaceutical, industrial, and more.
         </p>
       </div>
@@ -56,13 +56,13 @@ function Industries() {
               } opacity-70 absolute top-0 left-0 z-20 rounded-[49px]`}
             />
             <div className="relative z-30">
-              <h4 className="text-[32px] font-bold">
+              <h4 className="text-[20px] font-bold">
                 {industry.title}
                 <br className={`${hover === index || click === index ? 'hidden' : ''}`} />
               </h4>
               <p
                 className={`${
-                  hover === index || click === index ? 'text-[18px] mt-2' : 'hidden'
+                  hover === index || click === index ? 'text-[15px] mt-2' : 'hidden'
                 } transition-all duration-300`}
               >
                 {industry.description}

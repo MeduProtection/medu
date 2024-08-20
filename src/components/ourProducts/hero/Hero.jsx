@@ -54,8 +54,8 @@ function Hero() {
             Save <span className='text-[#95BC67]'> more </span>
           </motion.h1>
           <motion.p
-            className="max-w-sm md:max-w-md  lg:max-w-full mb-8 md:mb-4 text-gray-700 text-[10px] md:text-[17px] xl:text-[21px]"
-            variants={textVariants}
+            className="max-w-[150px] md:max-w-md  lg:max-w-full mb-8 md:mb-4 text-gray-700 text-[10px] md:text-[17px] xl:text-[21px]"
+            variants={textVariants}  
           >
             With Medu medical gowns, you save up to <span className='text-[#1B3954] text-[32px] font-bold'>80%</span> over typical PPE coverings. You also save the planet from landfill-clogging medical waste and preserve valuable time that saves lives.
           </motion.p>
