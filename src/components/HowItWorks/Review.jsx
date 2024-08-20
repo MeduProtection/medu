@@ -21,7 +21,7 @@ function Review() {
   return (
     <div
       ref={ref}
-      className="relative flex flex-col items-center justify-center py-4 lg:py-20 px-4 bg-cover bg-center text-white"
+      className="relative flex flex-col items-center justify-center py-4 md:py-12 lg:py-20 px-4 bg-cover bg-center text-white"
       style={{ backgroundImage: "url('/assets/HowItWorks/review.png')" }}
     >
       <div className="absolute inset-0 bg-black opacity-50"></div>

@@ -31,10 +31,10 @@ function Instructions() {
       
         <h1 className=" text-[17px] md:text-[27px] xl:text-[34px] font-bold text-[#5587B6]">Our care instructions</h1>
    
-        <h2 className="max-w-sm lg:max-w-2xl text-[28px] md:text-[45px] xl:text-[50px] font-bold text-[#1B3954] mb-4 lg:mb-[29px]">
+        <h2 className="max-w-sm md:max-w-lg lg:max-w-2xl text-[28px] md:text-[45px] xl:text-[50px] font-bold text-[#1B3954] mb-4 lg:mb-[29px]">
         Take care of the planet and <span className="text-[#95BC67]">each other</span>
         </h2>
-        <p className="max-w-sm md:max-w-md text-[10px] md:text-[17px] xl:text-[21px] lg:my-4 lg:max-w-4xl ">
+        <p className="max-w-sm md:max-w-lg text-[10px] md:text-[17px] xl:text-[21px] lg:my-4 lg:max-w-4xl ">
         Medu gowns are as easy to use as they are to love. They need no special detergents or laundry equipment, and can be washed 50+ times at 60°C (140° F).<br/><br/>
         To ensure accurate tracking of washings, Medu offers the Protect app. 
         </p>
