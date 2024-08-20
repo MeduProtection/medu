@@ -31,8 +31,8 @@ function Hero() {
 }
 
   return (
-    <motion.header
-      className=" relative"
+    <motion.header 
+      className="pt-32 xl:pt-36 relative"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
@@ -49,7 +49,7 @@ function Hero() {
           <p className="text-[18px] fotn-semibold text-[#5587B6] my-2">Levels of Protection AN SI/AAMI PB70:2012</p>
          
           <motion.p
-            className="max-w-sm md:max-w-md  lg:max-w-full mb-8 md:mb-4 text-[#1B3954] text-[10px] md:text-[17px] xl:text-[21px]"
+            className="max-w-sm md:max-w-md  lg:max-w-full  md:mb-4 lg:mb-8 text-[#1B3954] text-[10px] md:text-[17px] xl:text-[21px]"
             variants={textVariants}
           >
          Medu medical gowns and coveralls were purpose-made for the medical industry. Developed to safeguard healthcare providers and patients from exposure to infectious agents, bodily fluids, chemicals, and other hazards present in healthcare settings, only Medu offers anti-cross-contamination Level 4 protection in a reusable, sustainable fabric.
@@ -60,7 +60,7 @@ function Hero() {
         <div className="w-full  px-4 flex justify-center mt-8 lg:mt-0 lg:justify-end items-center relative ">
          
           <motion.img
-            src="/assets/OurProducts/protection.png"
+            src="/assets/industries/hero.png"
             alt="Antiviral Gown"
             className="w-full md:w-[534px] lg:w-[1000px]  object-cover"
             variants={imageVariants}
