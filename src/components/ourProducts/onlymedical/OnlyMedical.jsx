@@ -22,7 +22,7 @@ function OnlyMedical() {
     <div
       ref={ref}
       className="relative flex flex-col items-center justify-center py-10 md:py-16 px-4 lg:px-16 xl:px-20 bg-cover bg-center text-white"
-      style={{ backgroundImage: "url('/assets/OurProducts/OnlyMedical.png')" }}
+      style={{ backgroundImage: "url('/assets/OurProducts/onlymedical.png')" }}
     >
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <motion.div
