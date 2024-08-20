@@ -19,7 +19,7 @@ function AppDemo() {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}
           transition={{ duration: 0.5, delay: 1 }}
-          className="absolute w-[118px] h-[84px] md:w-[231px] md:h-[165px] xl:w-[322px] xl:h-[230px] flex flex-col justify-center items-center text-[#1B3954] bg-[rgba(242,247,250,0.50)] shadow-md backdrop-blur-[2px] text-[7px] md:text-[14px] xl:text-[20px] font-bold md:p-[30px] lg:p-[40px] leading-[11px md:leading-[22px] xl:leading-[31px] -left-16 top-8 md:top-20 lg:-left-32 xl:-left-44 rounded-md lg:rounded-[37px]"
+          className="absolute w-[118px] h-[84px] md:w-[231px] md:h-[165px] xl:w-[322px] xl:h-[230px] flex flex-col justify-center items-center text-[#1B3954] bg-[rgba(242,247,250,0.50)] shadow-md backdrop-blur-[2px] text-[7px] md:text-[14px] xl:text-[20px] font-bold p-4 md:p-[30px] lg:p-[40px] leading-[11px md:leading-[22px] xl:leading-[31px] -left-16 top-8 md:top-20 lg:-left-32 xl:-left-44 rounded-md lg:rounded-[37px]"
         >
           Our app tracks the cleaning and life status of each Medu garment so you know the status and lifecycle stage.
         </motion.div>

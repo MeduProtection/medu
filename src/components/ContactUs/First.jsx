@@ -19,10 +19,10 @@ function Meet() {
   };
 
   return (
-    <div 
-      ref={ref}
-      className="relative flex flex-col items-center justify-center py-4 lg:py-20 px-4 bg-cover bg-center text-white"
-      style={{ backgroundImage: "url('/assets/Discover/bg.jpg')" }}
+    <div
+    className="relative flex flex-col items-center py-8 lg:py-12 px-4 lg:px-12 bg-[#5587B6] text-white"
+    style={{ backgroundImage: "url('/assets/Discover/bg.jpg')" }}
+
     >
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <motion.div

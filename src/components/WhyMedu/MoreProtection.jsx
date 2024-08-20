@@ -25,9 +25,9 @@ function MoreProtection() {
           <div
             key={index}
             className={`w-[280px] h-[329px] flex-shrink-0 flex flex-col justify-center text-white text-center p-4 rounded-[49px] cursor-pointer ${
-              level === 'level1' ? 'bg-[#1B3954]' :
-              level === 'level2' ? 'bg-[#5587B6]' :
-              level === 'level3' ? 'bg-[#5587B6]' :
+              level === 'level1' ? 'bg-[#1B3954] hover:bg-[#5587B6]' :
+              level === 'level2' ? 'bg-[#1B3954] hover:bg-[#5587B6]' :
+              level === 'level3' ? 'bg-[#1B3954] hover:bg-[#5587B6]' :
               'bg-[#95BC67]'
             }`}
             onClick={() => setClick(level)}
@@ -46,7 +46,7 @@ function MoreProtection() {
         ))}
       </div>
 
-      <div className="container mx-auto text-center text-[#1B3954] flex flex-col gap-[20px] h-full w-full ">
+      <div className="container mx-auto text-center text-[#1B3954] flex flex-col gap-[20px] h-full w-full xl:max-w-6xl ">
         <h3 className="text-2xl lg:text-[50px] font-semibold text-[#1B3954] lg:mb-6">Doing more <span className='text-[#5587B6]'>good</span>.</h3>
         <p className='text-[#1B3954] text-[20px]'>Medu offers a host of benefits:</p>
         <div className="grid grid-cols-2 lg:grid-cols-4 place-items-center gap-4 px-4">

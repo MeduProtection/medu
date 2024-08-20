@@ -50,7 +50,7 @@ function Team() {
          Medu was born and a movement <span className="text-[#95BC67]">was created</span>.
         </h1>
 
-        <h2 className="md:max-w-lg lg:max-w-2xl xl:max-w-2xl text-[28px] md:text-[20px] xl:text-[30px] font-bold text-[#5587B6] lg:mb-[29px]">
+        <h2 className="md:max-w-lg lg:max-w-2xl xl:max-w-2xl text-[15px] md:text-[20px] xl:text-[30px] font-bold text-[#5587B6] lg:mb-[29px]">
         Meet Tamara and the rest of the
         Medu team.
         </h2>
@@ -61,8 +61,8 @@ function Team() {
   {members.map((member, index) => (
     <div
       key={index}
-      className={`relative h-[520px] w-full md:w-[50%] lg:w-[424px] flex-shrink-0 flex flex-col justify-center text-white text-center p-4 rounded-[49px] cursor-pointer`}
-      onClick={() => setClick(index)}
+      className={`relative h-[520px] w-[90%] md:w-[50%] lg:w-[424px] flex-shrink-0 flex flex-col justify-center text-white text-center p-4 rounded-[49px] cursor-pointer`}
+      onClick={() => setClick(click === index ? null : index)}      
       onMouseOver={() => setHover(index)}
       onMouseOut={() => setHover(null)}
     >
