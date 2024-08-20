@@ -7,7 +7,7 @@ function Navbar() {
   const router = useRouter()
   return (
     <>
-      <nav className="hidden xl:block bg-white px-4 py-2 fixed z-20 w-full ">
+      <nav className="hidden xl:block bg-white px-4 py-2 fixed z-50 w-full ">
         <div className="container mx-auto flex flex-wrap items-center justify-between bg-[#1B3954] rounded-[30px] lg:rounded-[98px] py-8 lg:px-20">
           <a href="#" className="flex items-center">
             <img
@@ -88,7 +88,7 @@ function Navbar() {
           </div>
         </div>
       </nav>
-      <nav className={`flex flex-col xl:hidden fixed z-20 w-full 
+      <nav className={`flex flex-col xl:hidden fixed z-50 w-full 
       ${active ?
         "bg-[#1B3954] "
         :

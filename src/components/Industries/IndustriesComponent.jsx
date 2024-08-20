@@ -25,16 +25,16 @@ function Industries() {
   const [click, setClick] = useState(null);
 
   return (
-    <div className="w-full h-full flex flex-col items-center xl:px-8">
+    <div className="w-full h-full flex flex-col items-center pt-8 xl:px-8">
       <div className="text-center mb-8 flex flex-col items-center">
-        <h2 className="max-w-2xl text-[50px] md:text-[50px] font-bold text-[#1B3954] mb-[10px]">
+        <h2 className="max-w-2xl text-[28px] md:text-[45px] xl:text-[50px] font-bold text-[#1B3954] mb-[10px]">
           Medu for other <span className="text-[#95BC67]">industries</span>.
         </h2>
-        <p className="text-[20px] my-4 max-w-4xl">
+        <p className="text-[18px] lg:text-[20px] my-4 max-w-4xl px-4 lg:px-0">
           With our revolutionary fabric, Medu isn’t just perfect for medicine. We also offer protection for a variety of other industries that require protection from contaminants. These industries include food and beverage, chemical, pharmaceutical, industrial, and more.
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-4 mb-12">
+      <div className="grid  md:grid-cols-2 gap-4 mb-12">
         {industries.map((industry, index) => (
           <div
             key={index}

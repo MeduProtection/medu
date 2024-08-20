@@ -46,7 +46,7 @@ function Hero() {
           >
            Medu for <span className='text-[#95BC67]'>medical</span>.
           </motion.h1>
-          <p className="text-[18px] fotn-semibold text-[#5587B6] my-2">Levels of Protection AN SI/AAMI PB70:2012</p>
+          <p className="text-[18px] font-semibold text-[#5587B6] my-2">Levels of Protection AN SI/AAMI PB70:2012</p>
          
           <motion.p
             className="max-w-sm md:max-w-md  lg:max-w-full  md:mb-4 lg:mb-8 text-[#1B3954] text-[10px] md:text-[17px] xl:text-[21px]"
