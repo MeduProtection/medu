@@ -22,7 +22,7 @@ function Discover() {
     <div
       ref={ref}
       className="relative flex flex-col items-center justify-center py-4 lg:py-20 px-4 bg-cover bg-center text-white"
-      style={{ backgroundImage: "url('/assets/Discover/bg.jpg')" }}
+      style={{ backgroundImage: "url('/assets/WhyMedu/discover.png')" }}
     >
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <motion.div

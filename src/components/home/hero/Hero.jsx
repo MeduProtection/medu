@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import Testimonio from './Testimonio'
 import Savings from './Savings'
-import Bar from './Bar'
+import Bar from './Bar' 
 
 function Hero() {
   const containerVariants = {

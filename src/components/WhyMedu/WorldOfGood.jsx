@@ -38,7 +38,7 @@ function WorldOfGood() {
       animate="visible"
     >
      
-      <div className="container mx-auto flex flex-col lg:flex-row items-center xl:px-8">
+      <div className="container mx-auto flex flex-col lg:flex-row items-center xl:px-8 pt-[50px] lg:py-16">
         <div className="w-full flex flex-col justify-center items-center lg:items-start text-center lg:text-start px-4">
           <motion.h1
             className="text-[28px] md:text-[45px] xl:text-[50px] font-bold leading-tight text-white  mb-4"
@@ -60,21 +60,14 @@ function WorldOfGood() {
         <div className="w-full  px-4 flex justify-center mt-8 lg:mt-0 lg:justify-end items-center relative ">
          
           <motion.img
-            src="/assets/OurProducts/protection.png"
+            src="/assets/WhyMedu/worldofgood.png"
             alt="Antiviral Gown"
             className="w-full md:w-[534px] lg:w-[1000px]  object-cover"
             variants={imageVariants}
           />
         </div>
       </div>
-      <div className="flex justify-center mt-10 ">
-        <motion.p
-          className="text-[11px] text-center   md:text-[21px] text-[#1B3954] font-bold w-[60%] lg:w-full"
-          variants={textVariants}
-        >
-          Currently in trial with some of the most respected medical facilities in the U.S.
-        </motion.p>
-      </div>
+     
     </motion.header>
   )
 }

@@ -24,3 +24,12 @@ backdrop-filter: blur(30.852237701416016px);
 filter: drop-shadow(0px 3.99px 33.617px rgba(0, 0, 0, 0.14));
 backdrop-filter: blur(35.21283721923828px);
   }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
