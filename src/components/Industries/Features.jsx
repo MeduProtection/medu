@@ -21,7 +21,7 @@ function Features() {
           <motion.div
           animate={inView ? "visible" : "hidden"}
           variants={textVariants}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-36 text-center mb-8 mt-8">
+          className="grid grid-cols-1  lg:grid-cols-2 gap-8 lg:gap-36 text-center mb-8 mt-8">
             <div className='w-[284px] h-[284px] bg-[#1B3954] rounded-[34px] flex flex-col justify-center items-center'>
               <div className=" p-4 rounded-[5px] inline-block mb-2">
                 <img src="/assets/features/highest.svg" alt="Icon 1" className="h-[64px] w-[64px]" />
@@ -40,7 +40,7 @@ function Features() {
           <motion.div
           animate={inView ? "visible" : "hidden"}
           variants={textVariants}
-          className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 text-center'>
+          className='grid grid-cols-1 lg:grid-cols-3 gap-8 text-center'>
           <div className='w-[284px] h-[284px] bg-[#1B3954] rounded-[34px] flex flex-col justify-center items-center' >
               <div className=" p-4 rounded-[5px] inline-block mb-2">
                 <img src="/assets/features/desinfection.svg" alt="Icon 3" className="h-[64px] w-[64px]" />

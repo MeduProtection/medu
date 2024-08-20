@@ -69,7 +69,7 @@ function Infection() {
       </div>
       <div className='w-full flex justify-center items-center px-4'>
 
-      <p className=" max-w-sm lg:max-w-2xl text-[13px] lg:text-[20px] font-bold text-[#5587B6] text-center">With the ability for each medical/surgical gown to replace 450 gowns, Medu helps save more time, more lives, and more resources.</p>
+      <p className=" max-w-sm lg:max-w-2xl text-[13px] lg:text-[20px] font-bold text-[#5587B6] text-center lg:mt-4">With the ability for each medical/surgical gown to replace 450 gowns, Medu helps save more time, more lives, and more resources.</p>
       </div>
       <div className='w-full flex justify-center gap-[19px] px-4'>
 
