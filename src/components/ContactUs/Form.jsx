@@ -8,7 +8,7 @@ function Form() {
     
  
       <h2 className="max-w-4xl text-[28px] md:text-[45px] xl:text-[50px] font-bold text-[#1B3954] ">
-      Become a parter for <span className="text-[#95BC67]">change</span>.
+      Become a partner for <span className="text-[#95BC67]">change</span>.
       </h2>
       <p className="max-w-sm md:max-w-2xl  lg:max-w-4xl text-[10px] md:text-[17px] xl:text-[21px] my-4  ">
       Join Medu in reducing waste. Tell us about your company, your capabilities, and your goals. Then connect with us to learn how to become a distribution partner.

@@ -20,9 +20,8 @@ function Meet() {
 
   return (
     <div
-    className="relative flex flex-col items-center py-8 lg:py-12 px-4 lg:px-12 bg-[#5587B6] text-white"
-    style={{ backgroundImage: "url('/assets/Discover/bg.jpg')" }}
-
+      ref={ref}
+      className="relative flex flex-col items-center py-8 lg:py-12 px-4 lg:px-12 bg-[#5587B6] text-white"
     >
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <motion.div
@@ -31,23 +30,20 @@ function Meet() {
         animate={inView ? "visible" : "hidden"}
         variants={containerVariants}
       >
-        
         <motion.p
-          className="mb-8 max-w-4xltext-[17px] xl:text-[25px] px-10 xl:px-0"
+          className="mb-8 max-w-4xl text-[17px] xl:text-[25px] px-4 sm:px-8 lg:px-0"
           variants={textVariants}
         >
-         Contact us to take the <span className='text-[#95BC67]'>first step.</span>.
+          Contact us to take the <span className="text-[#95BC67]">first step.</span>
         </motion.p>
         <motion.p
-          className="mb-8 max-w-2xl text-[17px] xl:text-[25px] px-10 xl:px-0 text-white"
+          className="mb-8 max-w-2xl text-[17px] xl:text-[25px] px-4 sm:px-8 lg:px-0"
           variants={textVariants}
         >
           Save money, time, and waste in a way never before possible. Reach out to book a meeting, learn more, and get started.
-        </motion.p> 
-         
-        
+        </motion.p>
         <motion.button
-          className="bg-[#95BC67] text-white  py-4 md:py-2 px-8 rounded-full hover:bg-green-600 transition text-[14px] md:text-[22px] xl:text-[28px]"
+          className="bg-[#95BC67] text-white py-3 sm:py-2 px-8 rounded-full hover:bg-green-600 transition text-[14px] md:text-[22px] xl:text-[28px]"
           variants={textVariants}
         >
           Get Started
