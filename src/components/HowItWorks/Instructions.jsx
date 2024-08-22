@@ -38,7 +38,7 @@ function Instructions() {
         Medu gowns are as easy to use as they are to love. They need no special detergents or laundry equipment, and can be washed 50+ times at 60°C (140° F).<br/><br/>
         To ensure accurate tracking of washings, Medu offers the Protect app. 
         </p>
-        <p className="max-w-sm md:max-w-md lg:max-w-lg text-[10px] md:text-[17px] xl:text-[21px]font-bold text-[#5587B6] text-center">Know the age and stage of your Medu gowns and coveralls in four easy steps:</p>
+        <p className="max-w-sm md:max-w-md lg:max-w-lg text-[10px] md:text-[17px] xl:text-[21px] font-bold text-[#5587B6] text-center">Know the age and stage of your Medu gowns and coveralls in four easy steps:</p>
       </div>
       <div className='container mx-auto w-full flex flex-row xl:justify-center  overflow-x-scroll overflow-y-hidden no-scrollbar px-8 gap-4  '>
         {
