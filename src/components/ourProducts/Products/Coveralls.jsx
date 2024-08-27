@@ -1,7 +1,27 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+
+
 
 function Coveralls() {
+
+    const [height, setHeight] = useState("1500px");
+
+    useEffect(() => {
+      const updateHeight = () => {
+        if (window.innerWidth <= 768) { // Ajusta el ancho según el tamaño de pantalla deseado
+          setHeight("500px");
+        } else {
+          setHeight("1500px");
+        }
+      };
+  
+      window.addEventListener("resize", updateHeight);
+      updateHeight(); // Llama a la función una vez para establecer el valor inicial
+  
+      return () => window.removeEventListener("resize", updateHeight);
+    }, []);
+
   return (
     <div className='container mx-auto flex flex-col lg:flex-row-reverse items-center xl:px-8 mt-[82 px] mt-[50px]  mb-[127px]   '>
         <div className='w-full h-full flex flex-col justify-center items-center '>
@@ -24,8 +44,40 @@ function Coveralls() {
                 </div>
         </div>
         <div className='w-full h-full flex flex-col justify-center items-center '>
-            <div className='h-[761px] w-[429px] bg-blue-500'/>
-            <div className='bg-[#1B3954] text-white  py-4 md:py-2 px-8 rounded-full  transition text-[14px] md:text-[22px] xl:text-[28px] flex  items-center gap-2 mt-[30px] lg:mt-[66px]'><Image src="/assets/icons/ar.svg" width={46} height={163} alt='ar icon'/>AR view</div> 
+            <div className='h-full w-[429px] flex flex-col justify-start lg:justify-center  overflow-hidden relative'>
+      
+      <div className="  flex flex-row justify-center ">
+        
+        
+        <model-viewer
+        className=" relative "
+         style={{ width: "100vh", height }}
+
+          src={`/assets/OurProducts/CoverallW.glb`}
+          ar
+          ar-modes="webxr scene-viewer quick-look"
+          camera-controls
+          poster="poster.webp"
+          shadow-intensity="1.98"
+          exposure="0.86"
+          shadow-softness="0.97"
+          auto-rotate
+          camera-target="0m 1m 0m"
+          min-camera-orbit="auto 87deg auto"
+          max-camera-orbit="auto 101deg auto"
+        >
+           <button
+    className="absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-[#1B3954] text-white py-2 px-4 md:py-2 md:px-8 rounded-full transition text-[14px] md:text-[22px] xl:text-[28px] flex items-center gap-2 lg:hidden"
+    slot='ar-button'
+  >
+    <Image src="/assets/icons/ar.svg" width={24} height={24} alt="ar icon" />
+    AR view
+  </button>
+        </model-viewer>
+          
+      </div>
+    </div>
+            
 
         </div>
     </div>

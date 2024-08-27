@@ -4,6 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head >
+     
          {/* Google Tag Manager */}
          <script
             dangerouslySetInnerHTML={{
@@ -18,6 +19,7 @@ export default function Document() {
           {/* Start of HubSpot Embed Code */}
   <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/25062945.js"></script>
   {/* End of HubSpot Embed Code */}
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js" async></script>
 
         </Head>
       <body>
