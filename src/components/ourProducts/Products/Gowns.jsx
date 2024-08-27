@@ -10,7 +10,7 @@ function Gowns() {
         if (window.innerWidth <= 768) { // Ajusta el ancho según el tamaño de pantalla deseado
           setHeight("500px");
         } else {
-          setHeight("1500px");
+          setHeight("900px");
         }
       };
   
@@ -79,6 +79,7 @@ function Gowns() {
     </div>        
         
 
+     
         </div>
     </div>
   )

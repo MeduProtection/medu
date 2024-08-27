@@ -6,13 +6,14 @@ import React, { useEffect, useState } from 'react'
 function Coveralls() {
 
     const [height, setHeight] = useState("1500px");
+    const [color, setColor] = useState('blue');
 
     useEffect(() => {
       const updateHeight = () => {
         if (window.innerWidth <= 768) { // Ajusta el ancho según el tamaño de pantalla deseado
           setHeight("500px");
         } else {
-          setHeight("1500px");
+          setHeight("900px");
         }
       };
   
@@ -44,7 +45,7 @@ function Coveralls() {
                 </div>
         </div>
         <div className='w-full h-full flex flex-col justify-center items-center '>
-            <div className='h-full w-[429px] flex flex-col justify-start lg:justify-center  overflow-hidden relative'>
+            <div className='h-full w-[429px] flex flex-col justify-start lg:justify-center items-center   overflow-hidden relative'>
       
       <div className="  flex flex-row justify-center ">
         
@@ -53,7 +54,7 @@ function Coveralls() {
         className=" relative "
          style={{ width: "100vh", height }}
 
-          src={`/assets/OurProducts/CoverallW.glb`}
+          src={color == "white"? `/assets/OurProducts/CoverallB.glb`: "/assets/OurProducts/CoverallW.glb"}
           ar
           ar-modes="webxr scene-viewer quick-look"
           camera-controls
@@ -76,6 +77,12 @@ function Coveralls() {
         </model-viewer>
           
       </div>
+       {/* aqui */}
+       <div className='w-[334px] h-[87px] rounded-[34px] border-2 px-[30px] flex text-[24px] leading-[28px] items-center mt-8 mb-[16px] justify-center cursor-pointer uppercase '
+        onClick={() => setColor(color === 'blue' ? 'white' : 'blue')}       >
+
+                SEE IN {color} COLOR
+                </div>
     </div>
             
 
