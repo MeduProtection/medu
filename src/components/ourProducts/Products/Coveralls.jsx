@@ -67,7 +67,7 @@ function Coveralls() {
           max-camera-orbit="auto 101deg auto"
         >
            <button
-    className="absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-[#1B3954] text-white py-2 px-4 md:py-2 md:px-8 rounded-full transition text-[14px] md:text-[22px] xl:text-[28px] flex items-center gap-2 lg:hidden"
+    className="absolute bottom-0 left-1/2 transform -translate-x-1/2 bg-[#1B3954] text-white py-2 px-4 md:py-2 md:px-8 rounded-full transition text-[14px] md:text-[22px] xl:text-[28px] flex items-center gap-2 lg:hidden"
     slot='ar-button'
   >
     <Image src="/assets/icons/ar.svg" width={24} height={24} alt="ar icon" />

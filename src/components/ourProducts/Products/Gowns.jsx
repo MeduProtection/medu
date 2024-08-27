@@ -41,14 +41,14 @@ function Gowns() {
                 </div>
         </div>
         <div className='w-full h-full flex flex-col justify-center items-center '>
-        <div className='h-full w-[429px] flex flex-col justify-start lg:justify-center  overflow-hidden relative'>
+        <div className='h-full w-[429px] flex flex-col justify-start lg:justify-center   relative '>
       
       <div className="  flex flex-row justify-center   ">
         
         
       <model-viewer
-  className="center-block relative"
-  style={{ width: "100%", height: height }}
+  className="center-block relative "
+  style={{ width: "100%", height: height, overflow:"visible" }} 
   src={`/assets/OurProducts/Gown.glb`}
   ar
   ar-modes="webxr scene-viewer quick-look"
@@ -63,8 +63,8 @@ function Gowns() {
   max-camera-orbit="auto 101deg auto"
 >
   <button
-    className="absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-[#1B3954] text-white py-2 px-4 md:py-2 md:px-8 rounded-full transition text-[14px] md:text-[22px] xl:text-[28px] flex items-center gap-2 lg:hidden"
-    slot='ar-button'
+    className="absolute -bottom-0 left-1/2 transform -translate-x-1/2 bg-[#1B3954] text-white py-2 px-4 md:py-2 md:px-8 rounded-full transition text-[14px] md:text-[22px] xl:text-[28px] flex items-center gap-2 lg:hidden z-40"
+   slot='ar-button'
   >
     <Image src="/assets/icons/ar.svg" width={24} height={24} alt="ar icon" />
     AR view
