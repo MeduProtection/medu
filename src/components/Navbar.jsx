@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import MenuIcon from "./icons/MenuIcon";
 import {useRouter} from 'next/router'
+import Link from "next/link";
+import Image from "next/image";
 
 function Navbar() {
   const [active, setActive] = useState(false);
@@ -10,7 +12,9 @@ function Navbar() {
       <nav className="hidden xl:block bg-white px-4 py-2 fixed z-50 w-full ">
         <div className="container mx-auto flex flex-wrap items-center justify-between bg-[#1B3954] rounded-[30px] lg:rounded-[98px] py-8 lg:px-20">
           <a href="#" className="flex items-center">
-            <img
+            <Image
+            width={40}
+            height={40}
               src="/assets/navbar/logo.png"
               alt="Logo"
               className="mr-3 h-10"
@@ -26,7 +30,7 @@ function Navbar() {
           }          
 
             >
-              Get Started
+              Contact Us
             </button>
             <button
               data-collapse-toggle="mobile-menu-2"
@@ -42,49 +46,42 @@ function Navbar() {
             className="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
             id="mobile-menu-2"
           >
-            {/* <ul className="flex flex-col items-center mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+             <ul className="flex flex-col items-center mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
               <li>
-                <a
-                  href="#"
-                  className="block py-2 pr-4 pl-3 text-white text-[16px] rounded md:bg-transparent md:p-0"
+                <Link
+                  href="/OurProducts"
+                  className="block py-2 pr-4 pl-3 text-white hover:text-[#95BC67] text-[16px] rounded md:bg-transparent md:p-0"
                   aria-current="page"
                 >
                   Our Products
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
-                  className="block py-2 pr-4 pl-3 text-white text-[16px] rounded md:bg-transparent md:p-0"
+                <Link
+                  href="HowItWorks"
+                  className="block py-2 pr-4 pl-3 text-white hover:text-[#95BC67] text-[16px] rounded md:bg-transparent md:p-0"
                 >
                   How it works
-                </a>
+                </Link>
               </li>
+              
               <li>
-                <a
-                  href="#"
-                  className="block py-2 pr-4 pl-3 text-white text-[16px] rounded md:bg-transparent md:p-0"
+                <Link
+                  href="/Industries"
+                  className="block py-2 pr-4 pl-3 text-white hover:text-[#95BC67] text-[16px] rounded md:bg-transparent md:p-0"
                 >
                   Industries
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
-                  className="block py-2 pr-4 pl-3 text-white text-[16px] rounded md:bg-transparent md:p-0"
-                >
-                  Insights
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block py-2 pr-4 pl-3 text-white text-[16px] rounded md:bg-transparent md:p-0"
+                <Link
+                  href="/AboutUs"
+                  className="block py-2 pr-4 pl-3 text-white hover:text-[#95BC67] text-[16px] rounded md:bg-transparent md:p-0"
                 >
                   About Us
-                </a>
+                </Link>
               </li>
-            </ul> */}
+            </ul> 
           </div>
         </div>
       </nav>
@@ -101,13 +98,17 @@ function Navbar() {
         {
           !active?
 
-          <img
+          <Image
+            width={116}
+            height={116}
             src="/assets/navbar/logoSM.png"
             alt="logo"
             className="h-[116px] w-[116px] mr-3"
           />
           :
-          <img
+          <Image
+            width={116}
+            height={116}
             src="/assets/navbar/logo.png"
             alt="logo"
             className="h-[116px] w-[116px] object-contain mr-3"
@@ -123,13 +124,17 @@ function Navbar() {
           aria-expanded="false"
         >
           {!active ? (
-            <img
+            <Image
+              width={35}
+              height={21}
               src="/assets/navbar/hamburguerSM.svg"
               className="w-[35px] h-[21px] cursor-pointer"
               onClick={() => setActive(!active)}
             />
           ) : (
-            <img
+            <Image
+              width={35}
+              height={21}
               src="/assets/navbar/close.svg"
               className="w-[35px] h-[21px]"
               onClick={() => setActive(!active)}
@@ -142,13 +147,12 @@ function Navbar() {
           active && (
             <>
               <div className="mt-[70px]">
-                {/* <ul className="text-white text-center space-y-[25px] text-[23px]">
+                <ul className="text-white text-center space-y-[25px] text-[23px]">
                   <li>Our Products</li>
                   <li>How it Works</li>
                   <li>Industries</li>
-                  <li>Insights</li>
                   <li>About Us</li>
-                </ul> */}
+                </ul> 
               </div>
               <div className="w-full flex justify-center">
                 <div className="w-[40%] flex flex-col items-center gap-y-[36px] my-8">
@@ -160,17 +164,29 @@ function Navbar() {
                     router.push('/#Contact')
                   }      
                   >
-                    Get Started
+                    Contact Us
                   </button>
                 </div>
               </div>
               <div className="border-t border-[#82BE62] lg:border-[#5587B6] my-6 pt-4 flex flex-col-reverse xl:flex-row justify-between items-center text-center xl:text-start">
                 <p className="text-sm text-gray-400 mt-4 lg:mt-0">&copy; 2024 Medu Protection</p>
                 <div className="lg:hidden flex justify-center gap-[55px] my-2">
-                  <img src="/assets/footer/fb.svg" alt="Facebook" className="" />
-                  <img src="/assets/footer/ig.svg" alt="Facebook" className="" />
-                  <img src="/assets/footer/phone.svg" alt="Facebook" className="" />
-                  <img src="/assets/footer/email.svg" alt="Facebook" className="" />
+                  <Image
+                  width={20}
+                  height={20}
+                  src="/assets/footer/fb.svg" alt="Facebook" className="" />
+                  <Image
+                  width={20}
+                  height={20}
+                  src="/assets/footer/ig.svg" alt="Facebook" className="" />
+                  <Image
+                  width={20}
+                  height={20}
+                  src="/assets/footer/phone.svg" alt="Facebook" className="" />
+                  <Image
+                  width={20}
+                  height={20}
+                  src="/assets/footer/email.svg" alt="Facebook" className="" />
                 </div>
               </div>
             </>
