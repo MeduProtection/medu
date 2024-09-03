@@ -9,7 +9,7 @@ function Footer() {
                 <img className="h-8 w-auto md:w-[133px] md:h-[58px]" src="/assets/navbar/logo.png" alt="Medu Logo" />
                 
               </div>
-              <div className="flex flex-col xl:flex-row space-y-4 xl:space-y-0  xl:space-x-8 mt-4 xl:mt-0 items-center md:text-[27px]">
+              <div className="flex flex-col xl:flex-row space-y-4 xl:space-y-0  xl:space-x-8 mt-4 xl:mt-0 items-center md:text-[27px] xl:text-[16px]">
                 <a href="#" className="hover:text-gray-400">Our Products</a>
                 <a href="#" className="hover:text-gray-400">How it works</a>
                 <a href="#" className="hover:text-gray-400">Industries</a>
@@ -23,10 +23,10 @@ function Footer() {
             <div className="border-t border-[#82BE62] lg:border-[#5587B6] mt-6 pt-4 flex flex-col-reverse lg:flex-row justify-between items-center text-center lg:text-start">
               <p className="text-sm text-gray-400 mt-4 lg:mt-0">&copy; 2024 Medu Protection</p>
               
-              <div className="flex flex-col lg:flex-row space-y-4 md:space-y-[30px] lg:space-y-0 lg:space-x-4 mt-4 lg:mt-0">
-                <a href="#" className="text-sm md:text-[20px] text-gray-400 hover:text-gray-300">Terms</a>
-                <a href="#" className="text-sm md:text-[20px] text-gray-400 hover:text-gray-300">Privacy</a>
-                <a href="#" className="text-sm md:text-[20px] text-gray-400 hover:text-gray-300">Cookies</a>
+              <div className="flex flex-col lg:flex-row space-y-4 md:space-y-[30px] lg:space-y-0 lg:space-x-4 mt-4 lg:mt-0 ">
+                <a href="#" className="text-sm md:text-[20px] xl:text-[16px] text-gray-400 hover:text-gray-300">Terms</a>
+                <a href="#" className="text-sm md:text-[20px] xl:text-[16px] text-gray-400 hover:text-gray-300">Privacy</a>
+                <a href="#" className="text-sm md:text-[20px] xl:text-[16px] text-gray-400 hover:text-gray-300">Cookies</a>
               </div>
               <div className='lg:hidden flex justify-center gap-[55px] md:gap-[117px] my-2'>
                 <img src="/assets/footer/fb.svg" alt="Facebook" className="md:w-[32px] md:h-[52px]" />
