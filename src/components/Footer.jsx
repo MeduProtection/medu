@@ -14,12 +14,20 @@ function Footer() {
                 className="h-8 w-auto md:w-[133px] md:h-[58px]" src="/assets/navbar/logo.png" alt="Medu Logo" />
                 
               </div>
-              <div className="flex flex-col xl:flex-row space-y-4 xl:space-y-0  xl:space-x-8 mt-4 xl:mt-0 items-center md:text-[27px]">
-                <a href="#" className="hover:text-gray-400">Our Products</a>
-                <a href="#" className="hover:text-gray-400">How it works</a>
-                <a href="#" className="hover:text-gray-400">Industries</a>
-                <a href="#" className="hover:text-gray-400">Insights</a>
-                <a href="#" className="hover:text-gray-400">About Us</a>
+              <div className="flex flex-col xl:flex-row space-y-4 xl:space-y-0  xl:space-x-8 mt-4 xl:mt-0 items-center md:text-[27px] xl:text-[16px]">
+                
+                <Link href={"/OurProducts"}>
+                <span  className="hover:text-gray-400">Our Products</span>
+                </Link>
+                <Link href={"/HowItWorks"}>
+                <span  className="hover:text-gray-400">How it works</span>
+                </Link>
+                <Link href={"/Industries"}>
+                <span  className="hover:text-gray-400">Industries</span>
+                </Link>
+                <Link href={"/AboutUs"}>
+                <span  className="hover:text-gray-400">About Us</span>
+                </Link>
                 <button className="bg-white text-blue-900 py-2 px-4 rounded-full hover:bg-gray-100 transition md:text-[20px]">
                   I&apos;m a Distributor
                 </button>

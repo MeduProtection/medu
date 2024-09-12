@@ -125,6 +125,7 @@ function Navbar() {
         >
           {!active ? (
             <Image
+            alt="Hamburguer"
               width={35}
               height={21}
               src="/assets/navbar/hamburguerSM.svg"
@@ -133,6 +134,7 @@ function Navbar() {
             />
           ) : (
             <Image
+            alt="Close"
               width={35}
               height={21}
               src="/assets/navbar/close.svg"
