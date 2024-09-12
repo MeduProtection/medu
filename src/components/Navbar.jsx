@@ -13,11 +13,11 @@ function Navbar() {
         <div className="container mx-auto flex flex-wrap items-center justify-between bg-[#1B3954] rounded-[30px] lg:rounded-[98px] py-8 lg:px-20">
           <a href="#" className="flex items-center">
             <Image
-            width={40}
-            height={40}
+            width={130}
+            height={56}
               src="/assets/navbar/logo.png"
               alt="Logo"
-              className="mr-3 h-10"
+              className="mr-3 h-10 object-contain"
             />
           </a>
           <div className="flex md:order-2 gap-4">
