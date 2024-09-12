@@ -11,7 +11,7 @@ function Navbar() {
     <>
       <nav className="hidden xl:block bg-white px-4 py-2 fixed z-50 w-full ">
         <div className="container mx-auto flex flex-wrap items-center justify-between bg-[#1B3954] rounded-[30px] lg:rounded-[98px] py-8 lg:px-20">
-          <a href="#" className="flex items-center">
+          <Link href="/" className="flex items-center">
             <Image
             width={130}
             height={56}
@@ -19,7 +19,7 @@ function Navbar() {
               alt="Logo"
               className="mr-3 h-10 object-contain"
             />
-          </a>
+          </Link>
           <div className="flex md:order-2 gap-4">
            {/*  <button className="hidden lg:block text-[#1B3954] bg-white   font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0">
               I&apos;m a Distributor
