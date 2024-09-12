@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react'
 
 function Footer() {
@@ -10,11 +11,22 @@ function Footer() {
                 
               </div>
               <div className="flex flex-col xl:flex-row space-y-4 xl:space-y-0  xl:space-x-8 mt-4 xl:mt-0 items-center md:text-[27px]">
-                <a href="#" className="hover:text-gray-400">Our Products</a>
-                <a href="#" className="hover:text-gray-400">How it works</a>
-                <a href="#" className="hover:text-gray-400">Industries</a>
-                <a href="#" className="hover:text-gray-400">Insights</a>
-                <a href="#" className="hover:text-gray-400">About Us</a>
+                
+                <Link href={"/"}>
+                <span  className="hover:text-gray-400">Our Products</span>
+                </Link>
+                <Link href={"/"}>
+                <span  className="hover:text-gray-400">How it works</span>
+                </Link>
+                <Link href={"/"}>
+                <span  className="hover:text-gray-400">Industries</span>
+                </Link>
+                <Link href={"/"}>
+                <span  className="hover:text-gray-400">Insights</span>
+                </Link>
+                <Link href={"/"}>
+                <span  className="hover:text-gray-400">About Us</span>
+                </Link>
                 <button className="bg-white text-blue-900 py-2 px-4 rounded-full hover:bg-gray-100 transition md:text-[20px]">
                   I&apos;m a Distributor
                 </button>
@@ -24,9 +36,15 @@ function Footer() {
               <p className="text-sm text-gray-400 mt-4 lg:mt-0">&copy; 2024 Medu Protection</p>
               
               <div className="flex flex-col lg:flex-row space-y-4 md:space-y-[30px] lg:space-y-0 lg:space-x-4 mt-4 lg:mt-0">
-                <a href="#" className="text-sm md:text-[20px] text-gray-400 hover:text-gray-300">Terms</a>
-                <a href="#" className="text-sm md:text-[20px] text-gray-400 hover:text-gray-300">Privacy</a>
-                <a href="#" className="text-sm md:text-[20px] text-gray-400 hover:text-gray-300">Cookies</a>
+                <Link href={"/"}>
+                <span  className="text-sm md:text-[20px] text-gray-400 hover:text-gray-300">Terms</span>
+                </Link>
+                <Link href={"/"}>
+                <span  className="text-sm md:text-[20px] text-gray-400 hover:text-gray-300">Privacy</span>
+                </Link>
+                <Link href={"/"}>
+                <span  className="text-sm md:text-[20px] text-gray-400 hover:text-gray-300">Cookies</span>
+                </Link>
               </div>
               <div className='lg:hidden flex justify-center gap-[55px] md:gap-[117px] my-2'>
                 <img src="/assets/footer/fb.svg" alt="Facebook" className="md:w-[32px] md:h-[52px]" />

@@ -7,7 +7,7 @@ function ContactUs() {
   return (
     <div>
    <Form/>
-   <Start/>
+   {/* <Start/> */}
    <First/>
     </div>
   )

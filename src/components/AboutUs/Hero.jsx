@@ -53,14 +53,9 @@ function Hero() {
             className="max-w-sm md:max-w-md  lg:max-w-full mb-4 text-[#1B3954] text-[10px] md:text-[17px] xl:text-[21px]"
             variants={textVariants}
           >
-        Tamara Chayo has always had a mind for science and a heart for people. When the young biochemical engineer witnessed a lack of personal protective equipment during the pandemic, Chayo knew something had to change–and wanted to be the one who changed it.
+       At Medu, our team of dedicated professionals is at the forefront of innovation in personal protective equipment. Starting from humble beginnings in a school laboratory, our collective expertise has pioneered the development of a membrane that chemically encapsulates pathogens, significantly reducing the risk of cross-contamination. Today, Medu represents a movement of safety and innovation, driven by a team committed to making a difference in public health. Meet the Medu team, leaders in creating protective solutions that save lives.
           </motion.p>
-          <motion.p
-            className="max-w-sm md:max-w-md  lg:max-w-full mb-4 text-[#1B3954] text-[10px] md:text-[17px] xl:text-[21px]"
-            variants={textVariants}
-          >
-         She recognized that cross-contamination was at the heart of the risk, so she began working with fabrics to determine the possibility of pathogen encapsulation. She began in her home, then moved to her elementary school laboratory. Soon, she worked at the university alongside a team of experts to create a membrane that chemically encapsulates viruses and bacteria.  
-          </motion.p>
+          
          
           
         </div>
