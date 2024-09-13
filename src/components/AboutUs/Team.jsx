@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { useState } from "react";
 
 function Team() {
@@ -86,7 +87,9 @@ function Team() {
       onMouseOut={() => setHover(null)}
     >
       <div className="absolute w-full h-full top-0 left-0 z-10">
-        <img
+        <Image
+        width={700}
+        height={700}
           src={member.image}
           alt={member.name}
           className="rounded-[49px] w-full h-full object-cover"
