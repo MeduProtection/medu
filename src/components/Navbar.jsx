@@ -90,6 +90,7 @@ function Navbar() {
       >
         <div className="flex justify-around">
           {!active ? (
+            <Link href="/">
             <Image
               width={116}
               height={116}
@@ -97,7 +98,10 @@ function Navbar() {
               alt="logo"
               className="h-[116px] w-[116px] mr-3"
             />
+            </Link>
           ) : (
+
+            <Link href="/">
             <Image
               width={116}
               height={116}
@@ -105,6 +109,7 @@ function Navbar() {
               alt="logo"
               className="h-[116px] w-[116px] object-contain mr-3"
             />
+            </Link>
           )}
 
           <button
