@@ -77,7 +77,7 @@ function Team() {
         
       </div>
       <div className="w-full flex justify-center">
-      <div className="w-full flex flex-row xl:grid xl:grid-cols-3 gap-4 mb-12 overflow-x-scroll no-scrollbar p-4">
+      <div className="w-full flex flex-row lg:grid md:grid-cols-2 2xl:grid-cols-3 place-items-center gap-4 mb-12 overflow-x-scroll no-scrollbar p-4 ">
   {members.map((member, index) => (
     <div
       key={index}
