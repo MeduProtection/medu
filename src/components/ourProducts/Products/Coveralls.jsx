@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
+import { useSwipeable } from 'react-swipeable';
 
 
 
@@ -7,6 +8,8 @@ function Coveralls() {
 
     const [height, setHeight] = useState("1500px");
     const [color, setColor] = useState('blue');
+    const [carrouselImage, setCarrouselImage] = useState(0);
+
 
     useEffect(() => {
       const updateHeight = () => {
@@ -23,13 +26,21 @@ function Coveralls() {
       return () => window.removeEventListener("resize", updateHeight);
     }, []);
 
+    const handlers = useSwipeable({
+      onSwipedLeft: () => setCarrouselImage(prev => (prev + 1) % 13),
+      onSwipedRight: () => setCarrouselImage(prev => (prev - 1 + 13) % 13),
+    });
+
+
   return (
     <div className='container mx-auto flex flex-col lg:flex-row-reverse items-center xl:px-8 mt-[82 px] mt-[50px]  mb-[127px]   '>
         <div className='w-full h-full flex flex-col justify-center items-center '>
                 <h1 className='w-full  text-[#1B3954] text-[65px] lg:text-[85px] leading-[86px] mb-4 text-center lg:text-right lg:pr-[100px] xl:pr-[150px] 2xl:pr-[200px]'>
                     MEDU <br/> <span className='text-[#4E88B0]'>Coveralls</span>
                 </h1>
-                <Image src="/assets/OurProducts/Flap.png" width={336} height={334} className='w-[80%] md:w-[336px] '  alt="MEDU Gowns" />
+                <Image
+                {...handlers}
+                src={`/assets/OurProducts/Coverall/${carrouselImage}.jpg`} width={336} height={334} className='w-[80%] md:w-[336px] h-[334px] rounded-[30px] object-cover ' alt="MEDU Gowns" />
                 <div className='w-[334px] h-[87px] rounded-[34px] border-2 px-[30px] flex text-[24px] leading-[28px] items-center mt-8 mb-[16px]'>
                 AAMI PB70 Level 4 <br/>
                 PROTECTION

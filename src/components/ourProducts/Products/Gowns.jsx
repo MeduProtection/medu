@@ -1,9 +1,11 @@
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
+import { useSwipeable } from 'react-swipeable';
 
 
 function Gowns() {
     const [height, setHeight] = useState("1500px");
+    const [carrouselImage, setCarrouselImage] = useState(0);
 
     useEffect(() => {
       const updateHeight = () => {
@@ -19,13 +21,23 @@ function Gowns() {
   
       return () => window.removeEventListener("resize", updateHeight);
     }, []);
+
+    const handlers = useSwipeable({
+      onSwipedLeft: () => setCarrouselImage(prev => (prev + 1) % 8),
+      onSwipedRight: () => setCarrouselImage(prev => (prev - 1 + 8) % 8),
+    });
+
   return (
     <div className='container mx-auto flex flex-col lg:flex-row items-center xl:px-8 mt-[50px] lg:mt-[116px]   '>
         <div className='w-full h-full flex flex-col justify-center items-center '>
                 <h1 className='w-full text-[#1B3954] text-[65px] lg:text-[85px] leading-[70px] lg:leading-[86px] text-center lg:text-left lg:pl-[100px] xl:pl-[150px] 2xl:pl-[200px] mb-4 lg:mb-0'>
                     MEDU <br/> <span className='text-[#4E88B0]'>Gowns</span>
                 </h1>
-                <Image src="/assets/OurProducts/Flap.png" width={336} height={334} className='w-[80%] md:w-[336px] ' alt="MEDU Gowns" />
+
+
+                <Image
+                {...handlers}
+                src={`/assets/OurProducts/Gown/${carrouselImage}.jpg`} width={336} height={334} className='w-[80%] md:w-[336px] h-[334px] rounded-[30px] object-cover ' alt="MEDU Gowns" />
                 <div className='w-[334px] h-[87px] rounded-[34px] border-2 px-[30px] flex text-[24px] leading-[28px] items-center mt-8 mb-[16px]'>
                 AAMI PB70 Level 4. <br/>
                 PROTECTION
