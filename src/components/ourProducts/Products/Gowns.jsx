@@ -38,21 +38,21 @@ function Gowns() {
 
                 <div
                 {...handlers}
-                className='w-full h-full flex flex-row justify-center items-center relative '
+                className='w-[80%] md:w-[336px] h-[334px] flex flex-row justify-center items-center relative '
                 >
-                  <div className='absolute left-16 top-0 bottom-0 my-auto w-[50px] h-[50px] rounded-full bg-white/70 flex justify-center items-center cursor-pointer' onClick={() => setCarrouselImage(prev => (prev - 1 + 8) % 8)}>
+                  <div className='absolute left-8 top-0 bottom-0 my-auto w-[50px] h-[50px] rounded-full bg-white/70 flex justify-center items-center cursor-pointer' onClick={() => setCarrouselImage(prev => (prev - 1 + 8) % 8)}>
                   <FaArrowLeft className='w-[80%] md:w-[336px]' alt="left arrow" />
 
                   </div>
 
-                  <div className='absolute right-16 top-0 bottom-0 my-auto w-[50px] h-[50px] rounded-full bg-white/70 flex justify-center items-center cursor-pointer' onClick={() => setCarrouselImage(prev => (prev - 1 + 8) % 8)}>
+                  <div className='absolute right-8 top-0 bottom-0 my-auto w-[50px] h-[50px] rounded-full bg-white/70 flex justify-center items-center cursor-pointer' onClick={() => setCarrouselImage(prev => (prev - 1 + 8) % 8)}>
                   <FaArrowRight className='w-[80%] md:w-[336px]' alt="right arrow" />
                   </div>
                   
 
                 <Image
                 
-                src={`/assets/OurProducts/Gown/${carrouselImage}.jpg`} width={336} height={334} className='w-[80%] md:w-[336px] h-[334px] rounded-[30px] object-cover ' alt="MEDU Gowns" />
+                src={`/assets/OurProducts/Gown/${carrouselImage}.jpg`} width={336} height={334} className='w-full h-full rounded-[30px] object-cover ' alt="MEDU Gowns" />
                 </div>
 
 
