@@ -31,17 +31,17 @@ function Coveralls() {
                 </h1>
                 <Image src="/assets/OurProducts/Flap.png" width={336} height={334} className='w-[80%] md:w-[336px] '  alt="MEDU Gowns" />
                 <div className='w-[334px] h-[87px] rounded-[34px] border-2 px-[30px] flex text-[24px] leading-[28px] items-center mt-8 mb-[16px]'>
-                LEVEL 4 AAMI PB70 <br/>
+                AAMI PB70 Level 4 <br/>
                 PROTECTION
                 </div>
                 <div className='w-[334px] h-[286px] rounded-[34px] border-2 px-[30px] flex flex-col text-[24px] leading-[28px] justify-center gap-[30px]'>
-                    <p className='text-[18px] leading-[22px]'>Medu gowns offer optimal protection and come in a variety of colors and sizes.</p>
+                    <p className='text-[18px] leading-[22px] uppercase'>Designed for full-body protection, our coverall ensures safety and mobility in demanding environments.</p>
                     <div className='flex gap-[25px]'>
                         <div className='rounded-full w-[56px] h-[56px] colorShadow bg-white'/>
                         <div className='rounded-full w-[56px] h-[56px] colorShadow bg-[#5FD9CB]'/>
                         <div className='rounded-full w-[56px] h-[56px] colorShadow bg-[#4E88B0]'/>
                     </div>
-                    <p className='tracking-wide text-[24px]'>X/M/L</p>
+                    <p className='tracking-wide text-[24px]'>S/M/L/XL/XXL</p>
                 </div>
         </div>
         <div className='w-full h-full flex flex-col justify-center items-center '>

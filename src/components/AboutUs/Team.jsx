@@ -5,58 +5,59 @@ function Team() {
     {
       name: "Tamara Chayo Romo",
       ocupation: "CEO & Founder",
-      image: "/assets/team/1.png",
-      description: "Tamara is a chemical engineer who was selected as a Thiel Fellow, a Halcyon Fellow, and a Y & Y Fellow over three consecutive years. She was also awarded an Honorary Doctorate in Sustainability and Impact, testament to her commitment to the planet and its people.  Since starting MEDU, she has raised more than 4 million dollars from U.S. funds such as MaC Ventures and grants to continue MEDU's impact from 2020. In addition to transforming the fabric of medicine, Tamara seeks to support young people who are on the same path of entrepreneurship with mentoring and being an Angel Investor of other startups that, like her, seek to change the world.",
+      image: "/assets/team/TamaraChayo.png",
+      description: "Tamara, a Thiel Fellow and Halcyon Fellow, has raised over 4 million dollars for MEDU since 2020. Committed to sustainability, she mentors and supports young entrepreneurs while continuing to impact the medical fabric industry.",
     },
     {
       name: "Alberto Yarza",
       ocupation: "COO",
-      image: "/assets/team/1.png",
-      description: "Curious and positive by nature, Alberto has spent the past 12 years working to optimize operations in different sectors, including marketing, energy efficiency, lighting and retail. He has been an integral part of more than five foundations, helping them bring concepts and goals to fruition. He has lived in three different countries, and is passionate about food, water sports, and reading. ",
+      image: "/assets/team/AlbertoYarza.png",
+      description: "Alberto has spent over 12 years optimizing operations across various sectors, including marketing and retail. Passionate about food and water sports, he has lived in three countries and worked with multiple foundations.",
     },
     {
       name: "Roberto Ayala",
       ocupation: "Head of Operations",
-      image: "/assets/team/1.png",
-      description: "Roberto is a chemical engineer with experience working in big organizations, where he performed quality audits and quality manuals. He also led quality tests of titanium oxide products and induction courses for new salesmen. A graduate of Universidad La Salle, Roberto is currently studying for a Master's degree in Administration.",
+      image: "/assets/team/RobertoAyala.png",
+      description: "Roberto is a chemical engineer with experience in quality audits and manuals. A graduate of Universidad La Salle, he is currently pursuing a Master's degree in Administration while leading Medu's operations.",
     },
     {
       name: "Jorge Rosas",
       ocupation: "Head of Marketing",
-      image: "/assets/team/1.png",
-      description: "Jorge graduated from Universidad La Salle with a degree in business administration, majoring  in marketing. Passionate about building relationships and developing them, Jorge is a true believer in innovation and advancement and was Medu’s first employee. Jorge is committed to helping Medu help clients break through barriers worldwide. He is also a successful content creator the other half of his life, testament to his ability to connect and inspire.",
+      image: "/assets/team/JorgeRosas.png",
+      description: "Jorge, Medu's first employee, holds a degree in business administration. He is committed to helping Medu break barriers globally and is also a successful content creator, known for building strong relationships.",
     },
     {
       name: "David Zayas",
       ocupation: "VP of Sales",
-      image: "/assets/team/1.png",
-      description: "David holds an MBA from Instituto Tecnológico y de Estudios Superiores de Monterrey, a degree in Food Science Engineering, and certification in Leading People and Teams from the University of Michigan. At Medu, he drives business development and expansion efforts across North America, with a focus on healthcare and food and beverage. Before joining Medu, David spearheaded business development in Mexico and the U.S., covering industries like food and beverage, chemicals, and healthcare, crafted Proptech strategies and led teams in a variety of industry verticals. ",
+      image: "/assets/team/DavidZayas.png",
+      description: "David holds an MBA and specializes in business development across North America. With experience in healthcare, food, and Proptech, he leads Medu’s expansion efforts, focusing on sustainable solutions for multiple industries.",
     },
     {
       name: "Adriana Ávila",
       ocupation: "Product Manager",
-      image: "/assets/team/1.png",
-      description: "Adriana uses her experience in the application of NOMs issued by the STPS and degree in Environmental Sciences to implement safety and hygiene measures, accident prevention,  processes to ensure quality in manufacturing processes and final product.",
+      image: "/assets/team/AdrianaAvila.png",
+      description: "Adriana, an Environmental Sciences graduate, implements safety, hygiene, and quality processes to ensure manufacturing excellence at Medu. She specializes in the application of STPS-issued NOMs for workplace safety.",
     },
     {
       name: "Sophia Chayo",
       ocupation: "Human Resources",
-      image: "/assets/team/1.png",
-      description: "This award-winning team member was recognized as the most outstanding student of the Faculty of Humanities and Social Sciences at La Salle and by the General Secretariat of the University Student Council. Sophia keeps the Medu team running strong with her human  resources expertise.  ",
+      image: "/assets/team/ShophiaChayo.png",
+      description: "Sophia, recognized for her academic excellence, is an expert in human resources. She plays a key role in keeping the Medu team running smoothly and ensuring a strong, cohesive working environment.",
     },
     {
       name: "Adrian Rosas",
       ocupation: "Account Executive",
-      image: "/assets/team/1.png",
-      description: "Fashion Design student, Account Executive, DJ, Music producer and entrepreneur. At MEDU Protection, Adrián specializes in cold calling and sales, helping the company expand into the healthcare and food industries with sustainable solutions. His multidisciplinary approach blends design, technological innovation, and a deep connection to the music world.",
+      image: "/assets/team/AdrianRosas.png",
+      description: "Adrian, a Fashion Design student and DJ, specializes in cold calling and sales at MEDU. His multidisciplinary skills help Medu expand into the healthcare and food industries with sustainable solutions.",
     },
     {
       name: "Saman Mortazavi",
       ocupation: "Business Developer",
-      image: "/assets/team/1.png",
-      description: "Saman has vast experience in the startup & tech spectrum, helping companies scale up at a fast pace. He has worked in Unicorn companies such as Deel, Rappi and more, helping the commercial team in the go to market strategy and expansion plans. A foodie by nature, a sports enthusiast and a passionate jet setter.",
+      image: "/assets/team/Saman2.png",
+      description: "Saman, with experience in startups and Unicorn companies like Deel and Rappi, helps scale businesses quickly. He is passionate about food, sports, and traveling, contributing to Medu's go-to-market strategies.",
     },
   ];
+  
 
   const [hover, setHover] = useState(null);
   const [click, setClick] = useState(null);
