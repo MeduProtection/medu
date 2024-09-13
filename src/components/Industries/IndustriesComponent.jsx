@@ -9,17 +9,18 @@ function Industries() {
     },
     {
       title: 'Chemical Industry',
-      description: 'Chemical workers need protection from harmful substances. Medu offers the perfect solution, with a fabric that is designed to protect against contaminants.'
+      description: 'Chemical workers require protection from harmful substances. Medu’s fabric is specifically designed to protect against contaminants in chemical environments.'
     },
     {
       title: 'Pharmaceutical Industry',
-      description: 'The pharmaceutical industry requires protection from contaminants. Medu offers the perfect solution, with a fabric that is designed to protect against harmful substances.'
+      description: 'The pharmaceutical sector demands protection from contaminants. Medu’s fabric offers the necessary protection against hazardous substances, ensuring safety.'
     },
     {
       title: 'Industrial Use',
-      description: 'Other use cases for Medu gowns and overalls include a variety of industrial uses, such as automotive [additional examples]. Our protective clothing provides protection against exposure to chemical and environmental hazards, serves as a barrier between workers and hazardous materials or processes, ensures compliance with occupational safety regulations, and helps to control exposure and minimize the risk of accidents or injuries to promote a safer working environment. Medu’s sustainable clothing is also easy to launder, providing convenience, cost savings, and reduced environmental impact.'
+      description: 'Medu’s gowns are used in automotive and other industries, offering protection from chemical hazards and compliance with safety regulations, while being easy to launder.'
     },
   ];
+  
 
   const [hover, setHover] = useState(null);
   const [click, setClick] = useState(null);

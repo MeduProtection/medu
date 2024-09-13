@@ -9,8 +9,8 @@ function ContactForm() {
     companyPhone: '',
     companyEmail: '',
     industry: 'Medical',
-    brands: '',
-    goals: '',
+    subject: '',
+    message: '',
     agree: false,
   });
 
@@ -30,12 +30,24 @@ function ContactForm() {
       return;
     }
 
+    const templateParamsDatos = {
+      cliente_correo: companyEmail,
+      cliente_nombre: firstName,
+      cliente_apellido: lastName,
+      cliente_empresa: companyName,
+      cliente_telefono: companyPhone,
+      cliente_industria: industry,
+      cliente_asunto: subject,
+      cliente_mensaje: message
+    }
+
     emailjs
       .send(
-        'your_service_id',  // Reemplaza con tu service ID de emailjs
-        'your_template_id',  // Reemplaza con tu template ID de emailjs
-        formData,
-        'your_user_id'       // Reemplaza con tu user ID de emailjs
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        templateParamsDatos,
+        process.env.NEXT_PUBLIC_EMAILJS_USER_ID,
+        // Reemplaza con tu user ID de emailjs
       )
       .then(
         (result) => {
@@ -48,8 +60,8 @@ function ContactForm() {
             companyPhone: '',
             companyEmail: '',
             industry: 'Medical',
-            brands: '',
-            goals: '',
+            subject: '',
+            message: '',
             agree: false,
           });
         },
@@ -139,23 +151,24 @@ function ContactForm() {
             <option value="Technology">Technology</option>
             <option value="Education">Education</option>
             <option value="Finance">Finance</option>
+            <option value="Finance">Other</option>
           </select>
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700">Brands you carry</label>
+          <label className="block text-gray-700">Subject</label>
           <textarea
             name="brands"
-            value={formData.brands}
+            value={formData.subject}
             onChange={handleChange}
             placeholder="Text here"
             className="mt-1 block w-full p-2 border rounded-md h-24"
           ></textarea>
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700">Goals and experience</label>
+          <label className="block text-gray-700">Message</label>
           <textarea
             name="goals"
-            value={formData.goals}
+            value={formData.message}
             onChange={handleChange}
             placeholder="Text here"
             className="mt-1 block w-full p-2 border rounded-md h-24"

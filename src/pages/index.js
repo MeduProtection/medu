@@ -9,9 +9,10 @@ import Headlines from "@/components/home/headlines/Headlines";
 import MedicalMiracle from "@/components/home/medicalMiracle/MedicalMiracle";
 import Difference from "@/components/home/difference/Difference";
 import CallToAction from "@/components/home/callToAction/CallToAction";
-import Form from "@/components/home/form/Form";
-import Hero from "@/components/home/hero/Hero";
+/* import Form from "@/components/home/form/Form";
+ */import Hero from "@/components/home/hero/Hero";
 import Head from "next/head";
+import Form from "@/components/ContactUs/Form";
 
 const inter = Inter({ subsets: ["latin"] });
 
