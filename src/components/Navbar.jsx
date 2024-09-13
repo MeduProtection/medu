@@ -147,6 +147,11 @@ function Navbar() {
                 <li
                 onClick={() => setActive(!active)}
                 >
+                  <Link href={"/"}>Home</Link>
+                </li>
+                <li
+                onClick={() => setActive(!active)}
+                >
                   <Link href={"/OurProducts"}>Our Products</Link>
                 </li>
                 <li
@@ -191,7 +196,7 @@ function Navbar() {
                   height={20}
                   src="/assets/footer/fb.svg"
                   alt="Facebook"
-                  className=""
+                  className="h-[20px] w-[20px]"
                 />
                 <Image
                   width={20}
