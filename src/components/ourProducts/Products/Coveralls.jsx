@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { useSwipeable } from 'react-swipeable';
 
 
@@ -38,9 +39,23 @@ function Coveralls() {
                 <h1 className='w-full  text-[#1B3954] text-[65px] lg:text-[85px] leading-[86px] mb-4 text-center lg:text-right lg:pr-[100px] xl:pr-[150px] 2xl:pr-[200px]'>
                     MEDU <br/> <span className='text-[#4E88B0]'>Coveralls</span>
                 </h1>
-                <Image
+                <div
                 {...handlers}
+                className='w-full h-full flex flex-row justify-center items-center relative '
+                >
+                  <div className='absolute left-16 top-0 bottom-0 my-auto w-[50px] h-[50px] rounded-full bg-white/70 flex justify-center items-center cursor-pointer' onClick={() => setCarrouselImage(prev => (prev - 1 + 13) % 13)}>
+                  <FaArrowLeft className='w-[80%] md:w-[336px]' alt="left arrow" />
+
+                  </div>
+
+                  <div className='absolute right-16 top-0 bottom-0 my-auto w-[50px] h-[50px] rounded-full bg-white/70 flex justify-center items-center cursor-pointer' onClick={() => setCarrouselImage(prev => (prev - 1 + 13) % 13)}>
+                  <FaArrowRight className='w-[80%] md:w-[336px]' alt="right arrow" />
+                  </div>
+                  
+
+                <Image
                 src={`/assets/OurProducts/Coverall/${carrouselImage}.jpg`} width={336} height={334} className='w-[80%] md:w-[336px] h-[334px] rounded-[30px] object-cover ' alt="MEDU Gowns" />
+                </div>
                 <div className='w-[334px] h-[87px] rounded-[34px] border-2 px-[30px] flex text-[24px] leading-[28px] items-center mt-8 mb-[16px]'>
                 AAMI PB70 Level 4 <br/>
                 PROTECTION
