@@ -31,14 +31,14 @@ function ContactForm() {
     }
 
     const templateParamsDatos = {
-      cliente_correo: companyEmail,
-      cliente_nombre: firstName,
-      cliente_apellido: lastName,
-      cliente_empresa: companyName,
-      cliente_telefono: companyPhone,
-      cliente_industria: industry,
-      cliente_asunto: subject,
-      cliente_mensaje: message
+      cliente_correo: formData.companyEmail,
+      cliente_nombre: formData.firstName,
+      cliente_apellido: formData.lastName,
+      cliente_empresa: formData.companyName,
+      cliente_telefono: formData.companyPhone,
+      cliente_industria: formData.industry,
+      cliente_asunto: formData.subject,
+      cliente_mensaje: formData.message
     }
 
     emailjs
@@ -157,7 +157,7 @@ function ContactForm() {
         <div className="mb-4">
           <label className="block text-gray-700">Subject</label>
           <textarea
-            name="brands"
+            name="subject"
             value={formData.subject}
             onChange={handleChange}
             placeholder="Text here"
@@ -167,7 +167,7 @@ function ContactForm() {
         <div className="mb-4">
           <label className="block text-gray-700">Message</label>
           <textarea
-            name="goals"
+            name="message"
             value={formData.message}
             onChange={handleChange}
             placeholder="Text here"
