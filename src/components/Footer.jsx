@@ -48,10 +48,22 @@ function Footer() {
                 </Link>
               </div>
               <div className='lg:hidden flex justify-center items-center gap-[55px] md:gap-[117px] my-2'>
-                <Image width={32} height={52} src="/assets/footer/fb.svg" alt="Facebook" className="w-[30px] h-[30px] md:w-[32px] md:h-[35px] lg:h-[52px]" />
+              <Link href={"https://www.facebook.com/meduprotection"} target="_blank" rel="noopener noreferrer">
+              <Image width={32} height={52} src="/assets/footer/fb.svg" alt="Facebook" className="w-[30px] h-[30px] md:w-[32px] md:h-[35px] lg:h-[52px]" />
+              </Link>
+              <Link href={"https://www.instagram.com/meduprotection"} target="_blank" rel="noopener noreferrer">
                 <Image width={52} height={60} src="/assets/footer/ig.svg" alt="IG" className="w-[30px] h-[50px] md:w-[52px] md:h-[35px] lg:h-[60px]" />
+              </Link>
+              <Link
+        href="https://wa.me/1234567890?text=Hola%20me%20gustaría%20saber%20más%20sobre%20sus%20productos"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
                 <Image width={56} height={54} src="/assets/footer/phone.svg" alt="Phone" className="w-[30px] h-[50px] md:w-[56px] md:h-[35px] lg:h-[54px]" />
+              </Link>
+              <Link href="mailto:meduprotection@gmail.com">
                 <Image width={61} height={46} src="/assets/footer/email.svg" alt="Mail" className="w-[30px] h-[50px] md:w-[61px] md:h-[35px] lg:h-[46px]" />
+              </Link>
 
               </div>
             </div>

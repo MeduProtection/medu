@@ -191,6 +191,7 @@ function Navbar() {
                 &copy; 2024 Medu Protection
               </p>
               <div className="lg:hidden flex justify-center gap-[55px] my-2">
+                <Link href={"https://www.facebook.com/meduprotection"} target="_blank" rel="noopener noreferrer">
                 <Image
                   width={20}
                   height={20}
@@ -198,6 +199,8 @@ function Navbar() {
                   alt="Facebook"
                   className="h-[20px] w-[20px]"
                 />
+                </Link>
+                <Link href={"https://www.instagram.com/meduprotection"} target="_blank" rel="noopener noreferrer">
                 <Image
                   width={20}
                   height={20}
@@ -205,6 +208,12 @@ function Navbar() {
                   alt="Facebook"
                   className=""
                 />
+                </Link>
+                <Link
+        href="https://wa.me/1234567890?text=Hola%20me%20gustaría%20saber%20más%20sobre%20sus%20productos"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
                 <Image
                   width={20}
                   height={20}
@@ -212,6 +221,8 @@ function Navbar() {
                   alt="Facebook"
                   className=""
                 />
+                </Link>
+                <Link href="mailto:meduprotection@gmail.com">
                 <Image
                   width={20}
                   height={20}
@@ -219,6 +230,7 @@ function Navbar() {
                   alt="Facebook"
                   className=""
                 />
+                </Link>
               </div>
             </div>
           </>
