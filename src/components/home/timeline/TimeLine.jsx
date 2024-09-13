@@ -15,7 +15,7 @@ const Timeline = () => {
     {
       index: 0,
       titulo: 'Development and Standards',
-      descripcion1: 'The Spanish flu pandemic increases awareness of the need for protective clothing in medical environments. The first cotton surgical gowns appear, aimed at reducing disease transmission.',
+      descripcion1: 'The Spanish flu pandemic led to the adoption of cotton surgical gowns, aimed at reducing disease transmission in medical environments.',
       descripcion2: ''
     },
     {
@@ -27,22 +27,23 @@ const Timeline = () => {
     {
       index: 2,
       titulo: 'Efficiency and Sustainability',
-      descripcion1: '1970s: Stricter regulations are implemented for surgical gowns to prevent cross-contamination, with standards from AORN and NIOSH.',
-      descripcion2: '1980s: Advanced materials like polypropylene improve comfort, fluid resistance, and antimicrobial properties of disposable gowns.'
+      descripcion1: '1970s: Stricter regulations are implemented to prevent cross-contamination in operating rooms, based on AORN and NIOSH standards.',
+      descripcion2: '1980s: Materials like polypropylene improved gown comfort, fluid resistance, and antimicrobial properties.'
     },
     {
       index: 3,
       titulo: 'Pandemic Response and Future',
-      descripcion1: '1990s: Emphasis on improving breathability and comfort of surgical gowns, developing lighter materials, and reducing costs without compromising safety.',
-      descripcion2: '2000s: Growing interest in reusable and eco-friendly disposable gowns, improving washing and sterilization processes, and researching biodegradable materials.'
+      descripcion1: '1990s: Focus on improving breathability and comfort of surgical gowns, with lighter materials and reduced costs without compromising safety.',
+      descripcion2: '2000s: Interest in reusable and eco-friendly disposable gowns grows, leading to advances in washing, sterilization, and biodegradable materials.'
     },
     {
       index: 4,
       titulo: 'Early 20th Century: Introduction of Surgical Gowns',
-      descripcion1: '2021: The COVID-19 pandemic increases the demand for surgical gowns and other personal protective equipment (PPE). MEDU is born with sustainability as a key focus. Our gowns and coveralls are created with a proprietary process that yields the highest levels of protection and sterility, Medu brings protective coverings into the 21st Century with reusable Level 4 PPE gowns and coveralls that require no special laundering and prevent cross-contamination.',
+      descripcion1: '2021: COVID-19 increases demand for PPE. MEDU introduces reusable Level 4 PPE gowns and coveralls that are highly protective and eco-friendly.',
       descripcion2: ''
     }
-  ]
+  ];
+  
 
   const textVariants = {
     hidden: { opacity: 0, y: 50 },

@@ -34,7 +34,7 @@ function Hero() {
 
   return (
     <motion.header
-      className="py-32 xl:py-36 relative"
+      className="pt-32 xl:py-36 relative"
       variants={containerVariants}
       initial="hidden"
       animate="visible"

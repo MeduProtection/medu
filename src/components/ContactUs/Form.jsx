@@ -3,7 +3,7 @@ import ContactForm from './ContactForm'
 
 function Form() {
   return (
-    <div className="container mx-auto py-[130px] px-4 xl:px-8">
+    <div className="container mx-auto pt-[0px] px-4 xl:px-8">
     <div className="text-center lg:mb-8 flex flex-col items-center">
     
  
