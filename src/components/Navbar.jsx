@@ -166,12 +166,14 @@ function Navbar() {
                 {/*  <button className=" text-[#1B3954] bg-white   font-medium rounded-3xl text-sm px-5 py-2.5 text-center lg:mr-3 md:mr-0">
                     I&apos;m a Distributor
                   </button> */}
+                  <Link href={"/ContactUs"}>
                 <button
                   className="text-white  bg-[#95BC67] hover:bg-[#059669]  font-medium rounded-3xl text-sm px-5 py-2.5 text-center lg:mr-3 md:mr-0"
-                  onClick={() => router.push("/ContactUs")}
+                  onClick={() => setActive(!active)}
                 >
                   Contact Us
                 </button>
+                </Link>
               </div>
             </div>
             <div className="border-t border-[#82BE62] lg:border-[#5587B6] my-6 pt-4 flex flex-col-reverse xl:flex-row justify-between items-center text-center xl:text-start">
