@@ -48,10 +48,10 @@ function Footer() {
                 </Link>
               </div>
               <div className='lg:hidden flex justify-center items-center gap-[55px] md:gap-[117px] my-2'>
-                <Image width={32} height={52} src="/assets/footer/fb.svg" alt="Facebook" className="w-[30px] h-[30px] md:w-[32px] md:h-[52px]" />
-                <Image width={52} height={60} src="/assets/footer/ig.svg" alt="IG" className="w-[30px] h-[50px] md:w-[52px] md:h-[60px]" />
-                <Image width={56} height={54} src="/assets/footer/phone.svg" alt="Phone" className="w-[30px] h-[50px] md:w-[56px] md:h-[54px]" />
-                <Image width={61} height={46} src="/assets/footer/email.svg" alt="Mail" className="w-[30px] h-[50px] md:w-[61px] md:h-[46px]" />
+                <Image width={32} height={52} src="/assets/footer/fb.svg" alt="Facebook" className="w-[30px] h-[30px] md:w-[32px] md:h-[35px] lg:h-[52px]" />
+                <Image width={52} height={60} src="/assets/footer/ig.svg" alt="IG" className="w-[30px] h-[50px] md:w-[52px] md:h-[35px] lg:h-[60px]" />
+                <Image width={56} height={54} src="/assets/footer/phone.svg" alt="Phone" className="w-[30px] h-[50px] md:w-[56px] md:h-[35px] lg:h-[54px]" />
+                <Image width={61} height={46} src="/assets/footer/email.svg" alt="Mail" className="w-[30px] h-[50px] md:w-[61px] md:h-[35px] lg:h-[46px]" />
 
               </div>
             </div>

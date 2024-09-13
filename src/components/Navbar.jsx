@@ -26,7 +26,7 @@ function Navbar() {
             </button> */}
             <button
               className="text-white hidden lg:block bg-[#95BC67] hover:bg-[#059669]  font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
-              onClick={() => router.push("/#Contact")}
+              onClick={() => router.push("/ContactUs")}
             >
               Contact Us
             </button>
@@ -168,7 +168,7 @@ function Navbar() {
                   </button> */}
                 <button
                   className="text-white  bg-[#95BC67] hover:bg-[#059669]  font-medium rounded-3xl text-sm px-5 py-2.5 text-center lg:mr-3 md:mr-0"
-                  onClick={() => router.push("/#Contact")}
+                  onClick={() => router.push("/ContactUs")}
                 >
                   Contact Us
                 </button>

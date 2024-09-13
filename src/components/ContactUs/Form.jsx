@@ -1,9 +1,13 @@
 import React from 'react'
 import ContactForm from './ContactForm'
+import { useRouter } from 'next/router';
 
 function Form() {
+
+  const router = useRouter();
+
   return (
-    <div className="container mx-auto pt-[0px] px-4 xl:px-8">
+    <div className={`container mx-auto ${router.pathname === "/ContactUs" ? "pt-[150px] py-[40px]" : "pt-[0px]"}  px-4 xl:px-8`}>
     <div className="text-center lg:mb-8 flex flex-col items-center">
     
  
