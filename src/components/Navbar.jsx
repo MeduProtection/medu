@@ -1,34 +1,32 @@
 import React, { useState } from "react";
 import MenuIcon from "./icons/MenuIcon";
-import {useRouter} from 'next/router'
+import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
 
 function Navbar() {
   const [active, setActive] = useState(false);
-  const router = useRouter()
+  const router = useRouter();
   return (
     <>
       <nav className="hidden xl:block bg-white px-4 py-2 fixed z-50 w-full ">
         <div className="container mx-auto flex flex-wrap items-center justify-between bg-[#1B3954] rounded-[30px] lg:rounded-[98px] py-8 lg:px-20">
           <Link href="/" className="flex items-center">
             <Image
-            width={130}
-            height={56}
+              width={130}
+              height={56}
               src="/assets/navbar/logo.png"
               alt="Logo"
               className="mr-3 h-10 object-contain"
             />
           </Link>
           <div className="flex md:order-2 gap-4">
-           {/*  <button className="hidden lg:block text-[#1B3954] bg-white   font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0">
+            {/*  <button className="hidden lg:block text-[#1B3954] bg-white   font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0">
               I&apos;m a Distributor
             </button> */}
-            <button className="text-white hidden lg:block bg-[#95BC67] hover:bg-[#059669]  font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
-          onClick={() => 
-            router.push('/#Contact')
-          }          
-
+            <button
+              className="text-white hidden lg:block bg-[#95BC67] hover:bg-[#059669]  font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
+              onClick={() => router.push("/#Contact")}
             >
               Contact Us
             </button>
@@ -46,7 +44,7 @@ function Navbar() {
             className="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
             id="mobile-menu-2"
           >
-             <ul className="flex flex-col items-center mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+            <ul className="flex flex-col items-center mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
               <li>
                 <Link
                   href="/OurProducts"
@@ -64,7 +62,7 @@ function Navbar() {
                   How it works
                 </Link>
               </li>
-              
+
               <li>
                 <Link
                   href="/Industries"
@@ -81,119 +79,138 @@ function Navbar() {
                   About Us
                 </Link>
               </li>
-            </ul> 
+            </ul>
           </div>
         </div>
       </nav>
-      <nav className={`flex flex-col xl:hidden fixed z-50 w-full 
-      ${active ?
-        "bg-[#1B3954] "
-        :
-        "bg-white"
-      }
-      `}>
+      <nav
+        className={`flex flex-col xl:hidden fixed z-50 w-full 
+      ${active ? "bg-[#1B3954] " : "bg-white"}
+      `}
+      >
         <div className="flex justify-around">
-          
-
-        {
-          !active?
-
-          <Image
-            width={116}
-            height={116}
-            src="/assets/navbar/logoSM.png"
-            alt="logo"
-            className="h-[116px] w-[116px] mr-3"
-          />
-          :
-          <Image
-            width={116}
-            height={116}
-            src="/assets/navbar/logo.png"
-            alt="logo"
-            className="h-[116px] w-[116px] object-contain mr-3"
-          />
-
-        }
-
-        <button
-          data-collapse-toggle="mobile-menu-2"
-          type="button"
-          className="inline-flex items-center  text-sm  rounded-lg xl:hidden  "
-          aria-controls="mobile-menu-2"
-          aria-expanded="false"
-        >
           {!active ? (
             <Image
-            alt="Hamburguer"
-              width={35}
-              height={21}
-              src="/assets/navbar/hamburguerSM.svg"
-              className="w-[35px] h-[21px] cursor-pointer"
-              onClick={() => setActive(!active)}
+              width={116}
+              height={116}
+              src="/assets/navbar/logoSM.png"
+              alt="logo"
+              className="h-[116px] w-[116px] mr-3"
             />
           ) : (
             <Image
-            alt="Close"
-              width={35}
-              height={21}
-              src="/assets/navbar/close.svg"
-              className="w-[35px] h-[21px]"
-              onClick={() => setActive(!active)}
+              width={116}
+              height={116}
+              src="/assets/navbar/logo.png"
+              alt="logo"
+              className="h-[116px] w-[116px] object-contain mr-3"
             />
           )}
-        </button>
-        
+
+          <button
+            data-collapse-toggle="mobile-menu-2"
+            type="button"
+            className="inline-flex items-center  text-sm  rounded-lg xl:hidden  "
+            aria-controls="mobile-menu-2"
+            aria-expanded="false"
+          >
+            {!active ? (
+              <Image
+                alt="Hamburguer"
+                width={35}
+                height={21}
+                src="/assets/navbar/hamburguerSM.svg"
+                className="w-[35px] h-[21px] cursor-pointer"
+                onClick={() => setActive(!active)}
+              />
+            ) : (
+              <Image
+                alt="Close"
+                width={35}
+                height={21}
+                src="/assets/navbar/close.svg"
+                className="w-[35px] h-[21px]"
+                onClick={() => setActive(!active)}
+              />
+            )}
+          </button>
         </div>
-        {
-          active && (
-            <>
-              <div className="mt-[70px]">
-                <ul className="text-white text-center space-y-[25px] text-[23px]">
-                  <li>Our Products</li>
-                  <li>How it Works</li>
-                  <li>Industries</li>
-                  <li>About Us</li>
-                </ul> 
-              </div>
-              <div className="w-full flex justify-center">
-                <div className="w-[40%] flex flex-col items-center gap-y-[36px] my-8">
-                 {/*  <button className=" text-[#1B3954] bg-white   font-medium rounded-3xl text-sm px-5 py-2.5 text-center lg:mr-3 md:mr-0">
+        {active && (
+          <>
+            <div className="mt-[70px]">
+              <ul className="text-white text-center space-y-[25px] text-[23px]">
+                <li
+                onClick={() => setActive(!active)}
+                >
+                  <Link href={"/OurProducts"}>Our Products</Link>
+                </li>
+                <li
+                onClick={() => setActive(!active)}
+                >
+                  <Link href={"/HowItWorks"}>How it Works</Link>
+                </li>
+                <li
+                onClick={() => setActive(!active)}
+                >
+                  <Link href={"/Industries"}>Industries</Link>
+                </li>
+                <li
+                onClick={() => setActive(!active)}
+                >
+                  <Link href={"/AboutUs"}>About Us</Link>
+                </li>
+              </ul>
+            </div>
+            <div className="w-full flex justify-center">
+              <div className="w-[40%] flex flex-col items-center gap-y-[36px] my-8">
+                {/*  <button className=" text-[#1B3954] bg-white   font-medium rounded-3xl text-sm px-5 py-2.5 text-center lg:mr-3 md:mr-0">
                     I&apos;m a Distributor
                   </button> */}
-                  <button className="text-white  bg-[#95BC67] hover:bg-[#059669]  font-medium rounded-3xl text-sm px-5 py-2.5 text-center lg:mr-3 md:mr-0"
-                   onClick={() => 
-                    router.push('/#Contact')
-                  }      
-                  >
-                    Contact Us
-                  </button>
-                </div>
+                <button
+                  className="text-white  bg-[#95BC67] hover:bg-[#059669]  font-medium rounded-3xl text-sm px-5 py-2.5 text-center lg:mr-3 md:mr-0"
+                  onClick={() => router.push("/#Contact")}
+                >
+                  Contact Us
+                </button>
               </div>
-              <div className="border-t border-[#82BE62] lg:border-[#5587B6] my-6 pt-4 flex flex-col-reverse xl:flex-row justify-between items-center text-center xl:text-start">
-                <p className="text-sm text-gray-400 mt-4 lg:mt-0">&copy; 2024 Medu Protection</p>
-                <div className="lg:hidden flex justify-center gap-[55px] my-2">
-                  <Image
+            </div>
+            <div className="border-t border-[#82BE62] lg:border-[#5587B6] my-6 pt-4 flex flex-col-reverse xl:flex-row justify-between items-center text-center xl:text-start">
+              <p className="text-sm text-gray-400 mt-4 lg:mt-0">
+                &copy; 2024 Medu Protection
+              </p>
+              <div className="lg:hidden flex justify-center gap-[55px] my-2">
+                <Image
                   width={20}
                   height={20}
-                  src="/assets/footer/fb.svg" alt="Facebook" className="" />
-                  <Image
+                  src="/assets/footer/fb.svg"
+                  alt="Facebook"
+                  className=""
+                />
+                <Image
                   width={20}
                   height={20}
-                  src="/assets/footer/ig.svg" alt="Facebook" className="" />
-                  <Image
+                  src="/assets/footer/ig.svg"
+                  alt="Facebook"
+                  className=""
+                />
+                <Image
                   width={20}
                   height={20}
-                  src="/assets/footer/phone.svg" alt="Facebook" className="" />
-                  <Image
+                  src="/assets/footer/phone.svg"
+                  alt="Facebook"
+                  className=""
+                />
+                <Image
                   width={20}
                   height={20}
-                  src="/assets/footer/email.svg" alt="Facebook" className="" />
-                </div>
+                  src="/assets/footer/email.svg"
+                  alt="Facebook"
+                  className=""
+                />
               </div>
-            </>
-          )
-        }
+            </div>
+          </>
+        )}
       </nav>
     </>
   );
