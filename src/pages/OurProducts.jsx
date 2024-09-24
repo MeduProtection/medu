@@ -3,6 +3,7 @@ import OnlyMedical from '@/components/ourProducts/onlymedical/OnlyMedical'
 import Coveralls from '@/components/ourProducts/Products/Coveralls'
 import Gowns from '@/components/ourProducts/Products/Gowns'
 import Protection from '@/components/ourProducts/protection/Protection'
+import Surgical from '@/components/ourProducts/Products/Surgical'
 import Head from 'next/head'
 import React from 'react'
 
@@ -29,6 +30,7 @@ function OurProducts() {
       <Protection/>
       <Gowns/>
       <Coveralls/>
+      <Surgical/>
       
     </div>
     </>
