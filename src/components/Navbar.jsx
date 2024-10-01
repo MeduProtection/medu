@@ -179,6 +179,9 @@ function Navbar() {
                   <Link href={"/AboutUs"}>              {traduccion.navbar.links.about_us}
                   </Link>
                 </li>
+                <li>
+                  <span>EN</span> / <span>ES</span>
+                </li>
               </ul>
             </div>
             <div className="w-full flex justify-center">
