@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { motion } from 'framer-motion'
+import { AppContext } from '@/Context/AppContext';
 
 function Bar() {
     const variants = {
@@ -10,6 +11,7 @@ function Bar() {
             transition: { delay: 2.5 } 
         },
     }
+    const { traduccion } = useContext(AppContext);
 
     return (
         <motion.div
@@ -20,10 +22,10 @@ function Bar() {
             transition={{ duration: 0.5 }}
         >
             <h3 className='font-bold text-white text-[9px] md:text-[14px] lg:text-[12px] xl:text-[14px] text-left'>
-            Your monthly savings
+            {traduccion.home.heroCards[0].title}
             </h3>
             <p className='text-[6px] md:text-[9px] leading-[13px] text-white '>
-            Chart shows savings on your investment for last month
+            {traduccion.home.heroCards[0].description}
             </p>
             <img src='/assets/hero/bars.png' alt='bar' className='w-[120px] h-[70px] md:w-[200px] md:h-[100px] lg:w-[120px] lg:h-[70px] xl:w-[200px] xl:h-[120px] object-cover '/>
         </motion.div>

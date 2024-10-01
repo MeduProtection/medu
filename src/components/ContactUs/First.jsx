@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { AppContext } from '@/Context/AppContext';
 
 function Meet() {
+  const { traduccion } = useContext(AppContext);
   const [ref, inView] = useInView({
     triggerOnce: true, // La animación solo se activará una vez
     threshold: 0.1, // El elemento se considerará visible cuando esté al menos el 10% visible
@@ -34,19 +36,19 @@ function Meet() {
           className="mb-8 max-w-4xl text-[17px] xl:text-[25px] px-4 sm:px-8 lg:px-0"
           variants={textVariants}
         >
-          Contact us to take the <span className="text-[#95BC67]">first step.</span>
+          {traduccion.aboutUs.first.title[0]} <span className="text-[#95BC67]">{traduccion.aboutUs.first.title[1]}</span>
         </motion.p>
         <motion.p
           className="mb-8 max-w-2xl text-[17px] xl:text-[25px] px-4 sm:px-8 lg:px-0"
           variants={textVariants}
         >
-          Save money, time, and waste in a way never before possible. Reach out to book a meeting, learn more, and get started.
+          {traduccion.aboutUs.first.description}
         </motion.p>
         <motion.button
           className="bg-[#95BC67] text-white py-3 sm:py-2 px-8 rounded-full hover:bg-green-600 transition text-[14px] md:text-[22px] xl:text-[28px]"
           variants={textVariants}
         >
-          Get Started
+          {traduccion.aboutUs.first.button}
         </motion.button>
       </motion.div>
     </div>

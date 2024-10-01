@@ -1,6 +1,7 @@
-import React, { useRef, useState } from 'react';
+import React, { useContext, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from "react-intersection-observer";
+import { AppContext } from '@/Context/AppContext';
 
 function AppDemo() {
 
@@ -8,6 +9,8 @@ function AppDemo() {
   const [ref, inView] = useInView({
     triggerOnce: true, // Cambia a true para que la animación solo se ejecute una vez
   });
+
+  const { traduccion } = useContext(AppContext);
 
   return (
     <div
@@ -21,7 +24,7 @@ function AppDemo() {
           transition={{ duration: 0.5, delay: 1 }}
           className="absolute w-[118px] h-[84px] md:w-[231px] md:h-[165px] xl:w-[322px] xl:h-[230px] flex flex-col justify-center items-center text-[#1B3954] bg-[rgba(242,247,250,0.50)] shadow-md backdrop-blur-[2px] text-[7px] md:text-[14px] xl:text-[20px] font-bold p-4 md:p-[30px] lg:p-[40px] leading-[11px md:leading-[22px] xl:leading-[31px] -left-16 top-8 md:top-20 lg:-left-32 xl:-left-44 rounded-md lg:rounded-[37px]"
         >
-          Our app tracks the cleaning and life status of each Medu garment so you know the status and lifecycle stage.
+         {traduccion.home.appDemo.description}
         </motion.div>
 
         <motion.div
@@ -42,8 +45,8 @@ function AppDemo() {
                 src="/assets/icons/check.svg"
                 alt="Check"
               />
-              Check number of washes in real time
-            </motion.li>
+         {traduccion.home.appDemo.list[0]}
+         </motion.li>
             <motion.li
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -55,7 +58,7 @@ function AppDemo() {
                 src="/assets/icons/check.svg"
                 alt="Check"
               />
-              Manage Medu gowns and coveralls
+              {traduccion.home.appDemo.list[1]}
             </motion.li>
             <motion.li
               initial={{ opacity: 0, x: -20 }}
@@ -68,7 +71,7 @@ function AppDemo() {
                 src="/assets/icons/check.svg"
                 alt="Check"
               />
-              Rate quality
+             {traduccion.home.appDemo.list[3]}
             </motion.li>
           </ul>
         </motion.div>
@@ -89,7 +92,7 @@ function AppDemo() {
         className="mt-8"
       >
         <button className="bg-[#95BC67] py-2 lg:py-4 px-8 rounded-[40px] hover:bg-green-600 transition text-[14px] md:text-[22px] xl:text-[28px] text-white">
-          Get Started
+        {traduccion.home.appDemo.button}
         </button>
       </motion.div>
     </div>

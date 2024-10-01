@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { motion } from 'framer-motion'
+import { AppContext } from '@/Context/AppContext';
 
 
 function Hero() {
+
+  const { traduccion } = useContext(AppContext);
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1, transition: { duration: 1 } }
@@ -44,16 +48,16 @@ function Hero() {
             className="text-[28px] md:text-[45px] xl:text-[50px] font-bold leading-tight text-[#1B3954]  "
             variants={textVariants}
           >
-           Medu for <span className='text-[#95BC67]'>medical</span>.
+           {traduccion.industries.hero.title[0]} <span className='text-[#95BC67]'>{traduccion.industries.hero.title[1]}</span>{traduccion.industries.hero.title[2]}
           </motion.h1>
-          <p className="text-[18px] font-semibold text-[#5587B6] my-2">Every level of protection for every type of care. 
+          <p className="text-[18px] font-semibold text-[#5587B6] my-2">{traduccion.industries.hero.subtitle}
           </p>
          
           <motion.p
             className="max-w-sm md:max-w-md  lg:max-w-full  md:mb-4 lg:mb-8 text-[#1B3954] text-[10px] md:text-[17px] xl:text-[21px]"
             variants={textVariants}
           >
-         Medu medical gowns and coveralls were purpose-made for the medical industry. Developed to safeguard healthcare providers and patients from exposure to infectious agents, bodily fluids, chemicals, and other hazards present in healthcare settings, only Medu offers anti-cross-contamination Level 4 protection in a reusable, sustainable fabric.
+         {traduccion.industries.hero.description}
           </motion.p>
          
           

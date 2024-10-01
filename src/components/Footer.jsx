@@ -1,8 +1,10 @@
+import { AppContext } from '@/Context/AppContext';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react'
+import React, { useContext } from 'react'
 
 function Footer() {
+  const { traduccion } = useContext(AppContext);
     return (
         <footer className="bg-[#1B3954] text-white py-6">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -17,34 +19,34 @@ function Footer() {
               <div className="flex flex-col xl:flex-row space-y-4 xl:space-y-0  xl:space-x-8 mt-4 xl:mt-0 items-center md:text-[27px] xl:text-[16px]">
                 
                 <Link href={"/OurProducts"}>
-                <span  className="hover:text-gray-400">Our Products</span>
+                <span  className="hover:text-gray-400">{traduccion.footer.links.our_products}</span>
                 </Link>
                 <Link href={"/HowItWorks"}>
-                <span  className="hover:text-gray-400">How it works</span>
+                <span  className="hover:text-gray-400">{traduccion.footer.links.how_it_works}</span>
                 </Link>
                 <Link href={"/Industries"}>
-                <span  className="hover:text-gray-400">Industries</span>
+                <span  className="hover:text-gray-400">{traduccion.footer.links.industries}</span>
                 </Link>
                 <Link href={"/AboutUs"}>
-                <span  className="hover:text-gray-400">About Us</span>
+                <span  className="hover:text-gray-400">{traduccion.footer.links.about_us}</span>
                 </Link>
                 <button className="bg-white text-blue-900 py-2 px-4 rounded-full hover:bg-gray-100 transition md:text-[20px]">
-                  I&apos;m a Distributor
+                {traduccion.footer.links.distributor_button}
                 </button>
               </div>
             </div>
             <div className="border-t border-[#82BE62] lg:border-[#5587B6] mt-6 pt-4 flex flex-col-reverse lg:flex-row justify-between items-center text-center lg:text-start">
-              <p className="text-sm text-gray-400 mt-4 lg:mt-0">&copy; 2024 Medu Protection</p>
+              <p className="text-sm text-gray-400 mt-4 lg:mt-0">{traduccion.footer.copyright}</p>
               
               <div className="flex flex-col lg:flex-row space-y-4 md:space-y-[30px] lg:space-y-0 lg:space-x-4 mt-4 lg:mt-0 ">
                 <Link href={"/"}>
-                <span  className="text-sm md:text-[20px] xl:text-[16px] text-gray-400 hover:text-gray-300">Terms</span>
+                <span  className="text-sm md:text-[20px] xl:text-[16px] text-gray-400 hover:text-gray-300">{traduccion.footer.legal.terms}</span>
                 </Link>
                 <Link href={"/"}>
-                <span  className="text-sm md:text-[20px] xl:text-[16px] text-gray-400 hover:text-gray-300">Privacy</span>
+                <span  className="text-sm md:text-[20px] xl:text-[16px] text-gray-400 hover:text-gray-300">{traduccion.footer.legal.privacy}</span>
                 </Link>
                 <Link href={"/"}>
-                <span  className="text-sm md:text-[20px] xl:text-[16px] text-gray-400 hover:text-gray-300">Cookies</span>
+                <span  className="text-sm md:text-[20px] xl:text-[16px] text-gray-400 hover:text-gray-300">{traduccion.footer.legal.cookies}</span>
                 </Link>
               </div>
               <div className='lg:hidden flex justify-center items-center gap-[55px] md:gap-[117px] my-2'>

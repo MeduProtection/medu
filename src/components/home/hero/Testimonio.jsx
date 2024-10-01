@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { motion } from 'framer-motion'
+import { AppContext } from '@/Context/AppContext';
 
 function Testimonio() {
     const variants = {
@@ -11,6 +12,8 @@ function Testimonio() {
         },
     
     }
+
+    const { traduccion } = useContext(AppContext);
 
     return (
         <motion.div
@@ -24,9 +27,9 @@ function Testimonio() {
                 <img src='/assets/hero/doctor.svg' alt='doctor' className='w-[41px] h-[41px] md:w-[60px] md:h-[60px] object-cover '/>
             </div>
             <div className='w-2/3 flex flex-col pr-4 '>
-                <h3 className='text-white text-[9px] md:text-[14px] font-bold'>Alexander Collins</h3>
-                <p className='text-[5px] lg:text-[7px] text-[#1B3954]'>Plastic surgeon</p>
-                <p className='text-white text-[6px] md:text-[9px] leading-[9px] md:leading-[13px] mt-1'>MEDU gowns have transformed my surgeries, offering top-notch protection and saving costs.</p>
+                <h3 className='text-white text-[9px] md:text-[14px] font-bold'>{traduccion.home.heroCards[2].name}</h3>
+                <p className='text-[5px] lg:text-[7px] text-[#1B3954]'>{traduccion.home.heroCards[2].occupation}</p>
+                <p className='text-white text-[6px] md:text-[9px] leading-[9px] md:leading-[13px] mt-1'>{traduccion.home.heroCards[2].description}</p>
                 <div className='flex mt-1'>
                     <img src='/assets/icons/star.svg' alt='quote' className='w-[7px] h-[7px] lg:w-[10px] lg:h-[10px]'/>
                     <img src='/assets/icons/star.svg' alt='quote' className='w-[7px] h-[7px] lg:w-[10px] lg:h-[10px]'/>

@@ -10,6 +10,21 @@
         "Get Started Now",
         "Currently in trial with some of the most respected medical facilities in the U.S."
       ],
+      "heroCards":[
+        {
+          "title":"Your monthly savings",
+          "description":"Chart shows savings on your investment for last month"
+        },
+        {
+          "title":["up to", "cost Savings" ]
+        },
+        {
+          "name":"Alexander Collins",
+          "occupation":"Plastic surgeon",
+          "description":"MEDU gowns have transformed my surgeries, offering top-notch protection and saving costs."
+        }
+
+      ],
       "informacion": [
         {
           "index": 0,
@@ -373,7 +388,224 @@
       "description": "Easily manage your suits and rate their quality after each wash."
     }
   ]
-}
+},
+"review": {
+  "text": "Review Medu’s Washing Instructions",
+  "button": {
+    "label": "Download Instructions"
   }
+}
+  },
+  "industries":{
+"hero": {
+  "title": [
+
+    "Medu for ",
+    "medical",
+    "."
+  ],
+  "subtitle": "Every level of protection for every type of care.",
+  "description": "Medu medical gowns and coveralls were purpose-made for the medical industry. Developed to safeguard healthcare providers and patients from exposure to infectious agents, bodily fluids, chemicals, and other hazards present in healthcare settings, only Medu offers anti-cross-contamination Level 4 protection in a reusable, sustainable fabric."
+},
+"features": {
+  "title": "",
+  "items": [
+    {
+      "title": ["Highest level of user ","protection:"],
+      "description": "Level 4 AAMI PB70"
+    },
+    {
+      "title": ["Maximum resistance to ", "virus penetration:"],
+      "description": "Level 4 AAMI PB70"
+    },
+    {
+      "title": ["Highest level of user ", "protection:"],
+      "description": "Level 4 AAMI PB70"
+    },
+    {
+      "title": ["Highly ","breathable"],
+      "description": ""
+    },
+    {
+      "title": "Excellent water repellency",
+      "description": ["and resistance to liquid ","penetration"]
+    }
+  ]
+},
+"infection": {
+  "section1": {
+    "paragraph1": "Medu provides infection control across all caregiver-patient scenarios, including surgical suits and isolation units where sterile conditions are paramount. Because healthcare providers can wear each gown or coverall multiple times, Medu reduces the number of changes required, resulting in more time with patients–and greater potential to save lives.",
+    "paragraph2": "Medu’s comfortable, breathable, patent-pending material allows for up to 50 washings. Medical facilities and institutions don’t need to invest in specialized equipment, making Medu easy to incorporate into current systems. Learn how Medu gowns are tracked and laundered."
+  },
+  "section2": {
+    "statistic_text": "With the ability for each medical/surgical gown to replace 450 gowns, Medu helps save more time, more lives, and more resources."
+  },
+  "statistics": [
+    {
+      "percentage": "80%",
+      "description": "cost savings"
+    },
+    {
+      "percentage": "90%",
+      "description": ["waste ","reduction"]
+    },
+    {
+      "percentage": ["10 ","hours"],
+      "description": ["weekly time ","saving"]
+    }
+  ]
+},
+"industries": {
+  "section": {
+    "title": ["Medu for other ","industries","."],
+    "description": "With our revolutionary fabric, Medu isn’t just perfect for medicine. We also offer protection for a variety of other industries that require protection from contaminants. These industries include food and beverage, chemical, pharmaceutical, industrial, and more."
+  },
+  "cards": [
+    {
+      "title": "Food and Beverage",
+      "description": "Medu is perfect for the food and beverage industry. Our fabric is designed to protect against contaminants, making it the perfect choice for food and beverage workers."
+    },
+    {
+      "title": "Chemical Industry",
+      "description": "Chemical workers require protection from harmful substances. Medu’s fabric is specifically designed to protect against contaminants in chemical environments."
+    },
+    {
+      "title": "Pharmaceutical Industry",
+      "description": "The pharmaceutical sector demands protection from contaminants. Medu’s fabric offers the necessary protection against hazardous substances, ensuring safety."
+    },
+    {
+      "title": "Industrial Use",
+      "description": "Medu’s gowns are used in automotive and other industries, offering protection from chemical hazards and compliance with safety regulations, while being easy to launder."
+    }
+  ]
+},
+"ready": {
+  "title": "Ready to see how we’re changing the fabric of medicine?",
+  "description": "Trial it in your institution or facility.",
+  "button": "Get Started"
+}
+  },
+  "aboutUs":{
+  "hero": {
+  "title": ["The people behind the ","movement","."],
+  "description": "At Medu, our team of dedicated professionals is at the forefront of innovation in personal protective equipment. Starting from humble beginnings in a school laboratory, our collective expertise has pioneered the development of a membrane that chemically encapsulates pathogens, significantly reducing the risk of cross-contamination. Today, Medu represents a movement of safety and innovation, driven by a team committed to making a difference in public health. Meet the Medu team, leaders in creating protective solutions that save lives."
+},
+"team": {
+  "title": ["Medu was born and a movement ","was created","."],
+  "subtitle": "Meet Tamara and the rest of the Medu team.",
+  "members": [
+    {
+      "name": "Tamara Chayo Romo",
+      "ocupation": "CEO & Founder",
+      "image": "/assets/team/TamaraChayo.png",
+      "description": "Tamara, a Thiel Fellow and Halcyon Fellow, has raised over 4 million dollars for MEDU since 2020. Committed to sustainability, she mentors and supports young entrepreneurs while continuing to impact the medical fabric industry."
+    },
+    {
+      "name": "Alberto Yarza",
+      "ocupation": "COO",
+      "image": "/assets/team/AlbertoYarza.png",
+      "description": "Alberto has spent over 12 years optimizing operations across various sectors, including marketing and retail. Passionate about food and water sports, he has lived in three countries and worked with multiple foundations."
+    },
+    {
+      "name": "Roberto Ayala",
+      "ocupation": "Head of Operations",
+      "image": "/assets/team/RobertoAyala.png",
+      "description": "Roberto is a chemical engineer with experience in quality audits and manuals. A graduate of Universidad La Salle, he is currently pursuing a Master's degree in Administration while leading Medu's operations."
+    },
+    {
+      "name": "Jorge Rosas",
+      "ocupation": "Head of Marketing",
+      "image": "/assets/team/JorgeRosas.png",
+      "description": "Jorge, Medu's first employee, holds a degree in business administration. He is committed to helping Medu break barriers globally and is also a successful content creator, known for building strong relationships."
+    },
+    {
+      "name": "David Zayas",
+      "ocupation": "VP of Sales",
+      "image": "/assets/team/DavidZayas.png",
+      "description": "David holds an MBA and specializes in business development across North America. With experience in healthcare, food, and Proptech, he leads Medu’s expansion efforts, focusing on sustainable solutions for multiple industries."
+    },
+    {
+      "name": "Adriana Ávila",
+      "ocupation": "Product Manager",
+      "image": "/assets/team/AdrianaAvila.png",
+      "description": "Adriana, an Environmental Sciences graduate, implements safety, hygiene, and quality processes to ensure manufacturing excellence at Medu. She specializes in the application of STPS-issued NOMs for workplace safety."
+    },
+    {
+      "name": "Sophia Chayo",
+      "ocupation": "Human Resources",
+      "image": "/assets/team/ShophiaChayo.png",
+      "description": "Sophia, recognized for her academic excellence, is an expert in human resources. She plays a key role in keeping the Medu team running smoothly and ensuring a strong, cohesive working environment."
+    },
+    {
+      "name": "Adrian Rosas",
+      "ocupation": "Account Executive",
+      "image": "/assets/team/AdrianRosas.png",
+      "description": "Adrian, a Fashion Design student and DJ, specializes in cold calling and sales at MEDU. His multidisciplinary skills help Medu expand into the healthcare and food industries with sustainable solutions."
+    },
+    {
+      "name": "Saman Mortazavi",
+      "ocupation": "Business Developer",
+      "image": "/assets/team/Saman2.png",
+      "description": "Saman, with experience in startups and Unicorn companies like Deel and Rappi, helps scale businesses quickly. He is passionate about food, sports, and traveling, contributing to Medu's go-to-market strategies."
+    }
+  ]
+},
+"meet": {
+  "title": ["Meet us ","in person", "."],
+  "description": ["You’ve gotten to know who we are and why we started Medu. ","Now meet us in person.", " Reach out to book a meeting."], 
+  "button": "Schedule a Meeting"
+},
+"first": {
+  "title": ["Contact us to take the ","first step."],
+  "description": "Save money, time, and waste in a way never before possible. Reach out to book a meeting, learn more, and get started.",
+  "button": "Get Started"
+}
+  },
+  "footer": {
+  "links": {
+    "our_products": "Our Products",
+    "how_it_works": "How it works",
+    "industries": "Industries",
+    "about_us": "About Us",
+    "distributor_button": "I'm a Distributor"
+  },
+  "legal": {
+    "terms": "Terms",
+    "privacy": "Privacy",
+    "cookies": "Cookies"
+  },
+  "social_media": {
+    "facebook_alt": "Facebook",
+    "instagram_alt": "Instagram",
+    "phone_alt": "Phone",
+    "email_alt": "Email"
+  },
+  "copyright": " 2024 Medu Protection"
+},
+"navbar": {
+  "links": {
+    "home": "Home",
+    "our_products": "Our Products",
+    "how_it_works": "How it Works",
+    "industries": "Industries",
+    "about_us": "About Us",
+    "contact_us": "Contact Us"
+  },
+  "buttons": {
+    "distributor": "I'm a Distributor",
+    "contact_us": "Contact Us"
+  },
+  "footer": {
+    "copyright": "2024 Medu Protection"
+  },
+  "social_media": {
+    "facebook_alt": "Facebook",
+    "instagram_alt": "Instagram",
+    "phone_alt": "Phone",
+    "email_alt": "Email"
+  }
+}
+
+
   }
   

@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { motion } from 'framer-motion'
+import { AppContext } from '@/Context/AppContext';
 
 
 function Hero() {
+  const { traduccion } = useContext(AppContext);
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1, transition: { duration: 1 } }
@@ -44,8 +47,7 @@ function Hero() {
             className="text-[28px] md:text-[45px] xl:text-[50px] font-bold leading-tight text-[#1B3954] mb-4 "
             variants={textVariants}
           >
-           The people behind
-           the <span className='text-[#95BC67]'>movement</span>.
+           {traduccion.aboutUs.hero.title[0]} <span className='text-[#95BC67]'>{traduccion.aboutUs.hero.title[1]}</span>{traduccion.aboutUs.hero.title[2]}
           </motion.h1>
           
          
@@ -53,7 +55,7 @@ function Hero() {
             className="max-w-sm md:max-w-md  lg:max-w-full mb-4 text-[#1B3954] text-[10px] md:text-[17px] xl:text-[21px]"
             variants={textVariants}
           >
-       At Medu, our team of dedicated professionals is at the forefront of innovation in personal protective equipment. Starting from humble beginnings in a school laboratory, our collective expertise has pioneered the development of a membrane that chemically encapsulates pathogens, significantly reducing the risk of cross-contamination. Today, Medu represents a movement of safety and innovation, driven by a team committed to making a difference in public health. Meet the Medu team, leaders in creating protective solutions that save lives.
+      {traduccion.aboutUs.hero.description}
           </motion.p>
           
          

@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { AppContext } from '@/Context/AppContext';
 
 function Meet() {
+  const { traduccion } = useContext(AppContext);
   const [ref, inView] = useInView({
     triggerOnce: true, // La animación solo se activará una vez
     threshold: 0.1, // El elemento se considerará visible cuando esté al menos el 10% visible
@@ -36,13 +38,13 @@ function Meet() {
           className="mb-8 max-w-4xl text-[17px] md:text-[17px] xl:text-[50px] px-10 xl:px-0"
           variants={textVariants}
         >
-          Meet us <span className='text-[#95BC67]'>in person</span>.
+          {traduccion.aboutUs.meet.title[0]} <span className='text-[#95BC67]'>{traduccion.aboutUs.meet.title[1]}</span>{traduccion.aboutUs.meet.title[2]}
         </motion.p>
         <motion.p
           className="mb-8 max-w-2xl text-[17px] md:text-[17px] xl:text-[25px] px-10 xl:px-0 text-white"
           variants={textVariants}
         >
-          You’ve gotten to know who we are and why we started Medu.<br/>Now meet us in person.<br/>Reach out to book a meeting.
+          {traduccion.aboutUs.meet.description[0]}<br/>{traduccion.aboutUs.meet.description[1]}<br/>{traduccion.aboutUs.meet.description[2]}
         </motion.p> 
          
         
@@ -50,7 +52,7 @@ function Meet() {
           className="bg-[#95BC67] text-white  py-4 md:py-2 px-8 rounded-full hover:bg-green-600 transition text-[14px] md:text-[22px] xl:text-[28px]"
           variants={textVariants}
         >
-          Schedule a Meeting
+          {traduccion.aboutUs.meet.button}
         </motion.button>
       </motion.div>
     </div>

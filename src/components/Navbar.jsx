@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import MenuIcon from "./icons/MenuIcon";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
+import { AppContext } from "@/Context/AppContext";
 
 function Navbar() {
+  const { traduccion } = useContext(AppContext);
   const [active, setActive] = useState(false);
   const router = useRouter();
   return (
@@ -28,7 +30,7 @@ function Navbar() {
               className="text-white hidden lg:block bg-[#95BC67] hover:bg-[#059669]  font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
               onClick={() => router.push("/ContactUs")}
             >
-              Contact Us
+              {traduccion.navbar.links.contact_us}
             </button>
             <button
               data-collapse-toggle="mobile-menu-2"
@@ -51,7 +53,7 @@ function Navbar() {
                   className="block py-2 pr-4 pl-3 text-white hover:text-[#95BC67] text-[16px] rounded md:bg-transparent md:p-0"
                   aria-current="page"
                 >
-                  Our Products
+                                {traduccion.navbar.links.our_products}
                 </Link>
               </li>
               <li>
@@ -59,7 +61,8 @@ function Navbar() {
                   href="HowItWorks"
                   className="block py-2 pr-4 pl-3 text-white hover:text-[#95BC67] text-[16px] rounded md:bg-transparent md:p-0"
                 >
-                  How it works
+                                {traduccion.navbar.links.how_it_works}
+
                 </Link>
               </li>
 
@@ -68,7 +71,8 @@ function Navbar() {
                   href="/Industries"
                   className="block py-2 pr-4 pl-3 text-white hover:text-[#95BC67] text-[16px] rounded md:bg-transparent md:p-0"
                 >
-                  Industries
+                                {traduccion.navbar.links.industries}
+
                 </Link>
               </li>
               <li>
@@ -76,7 +80,8 @@ function Navbar() {
                   href="/AboutUs"
                   className="block py-2 pr-4 pl-3 text-white hover:text-[#95BC67] text-[16px] rounded md:bg-transparent md:p-0"
                 >
-                  About Us
+                                {traduccion.navbar.links.about_us}
+
                 </Link>
               </li>
             </ul>
@@ -147,27 +152,32 @@ function Navbar() {
                 <li
                 onClick={() => setActive(!active)}
                 >
-                  <Link href={"/"}>Home</Link>
+                  <Link href={"/"}>              {traduccion.navbar.links.home}
+                  </Link>
                 </li>
                 <li
                 onClick={() => setActive(!active)}
                 >
-                  <Link href={"/OurProducts"}>Our Products</Link>
+                  <Link href={"/OurProducts"}>              {traduccion.navbar.links.our_products}
+                  </Link>
                 </li>
                 <li
                 onClick={() => setActive(!active)}
                 >
-                  <Link href={"/HowItWorks"}>How it Works</Link>
+                  <Link href={"/HowItWorks"}>              {traduccion.navbar.links.how_it_works}
+                  </Link>
                 </li>
                 <li
                 onClick={() => setActive(!active)}
                 >
-                  <Link href={"/Industries"}>Industries</Link>
+                  <Link href={"/Industries"}>              {traduccion.navbar.links.industries}
+                  </Link>
                 </li>
                 <li
                 onClick={() => setActive(!active)}
                 >
-                  <Link href={"/AboutUs"}>About Us</Link>
+                  <Link href={"/AboutUs"}>              {traduccion.navbar.links.about_us}
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -181,14 +191,15 @@ function Navbar() {
                   className="text-white  bg-[#95BC67] hover:bg-[#059669]  font-medium rounded-3xl text-sm px-5 py-2.5 text-center lg:mr-3 md:mr-0"
                   onClick={() => setActive(!active)}
                 >
-                  Contact Us
+                                {traduccion.navbar.links.contact_us}
+
                 </button>
                 </Link>
               </div>
             </div>
             <div className="border-t border-[#82BE62] lg:border-[#5587B6] my-6 pt-4 flex flex-col-reverse xl:flex-row justify-between items-center text-center xl:text-start">
               <p className="text-sm text-gray-400 mt-4 lg:mt-0">
-                &copy; 2024 Medu Protection
+                {traduccion.navbar.footer.copyright}
               </p>
               <div className="lg:hidden flex justify-center gap-[55px] my-2">
                 <Link href={"https://www.facebook.com/meduprotection"} target="_blank" rel="noopener noreferrer">

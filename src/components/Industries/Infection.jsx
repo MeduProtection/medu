@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { motion } from 'framer-motion'
+import { AppContext } from '@/Context/AppContext'
 
 
 function Infection() {
@@ -30,6 +31,8 @@ function Infection() {
     }
 }
 
+const { traduccion } = useContext(AppContext);
+
   return (
     <motion.header
       className=" relative"
@@ -46,13 +49,13 @@ function Infection() {
             className="max-w-sm md:max-w-md  lg:max-w-full mb-8 md:mb-4 text-[#1B3954] text-[10px] md:text-[17px] xl:text-[21px] text-center lg:text-right"
             variants={textVariants}
           >
-        Medu provides infection control across all caregiver-patient scenarios, including surgical suits and isolation units where sterile conditions are paramount. Because healthcare providers can wear each gown or coverall multiple times, Medu reduces the number of changes required, resulting in more time with patients–and greater potential to save lives. 
+        {traduccion.industries.infection.section1.paragraph1}
           </motion.p>
           <motion.p
             className="max-w-sm md:max-w-md  lg:max-w-full mb-8 md:mb-4 text-[#1B3954] text-[10px] md:text-[17px] xl:text-[21px] text-center lg:text-right"
             variants={textVariants}
           >
-        Medu’s comfortable, breathable, patent-pending material allows for up to 50 washings. Medical facilities and institutions don’t need to invest in specialized equipment, making Medu easy to incorporate into current systems. Learn how Medu gowns are tracked and laundered. 
+       {traduccion.industries.infection.section1.paragraph2}
           </motion.p>
          
           
@@ -69,21 +72,21 @@ function Infection() {
       </div>
       <div className='w-full flex justify-center items-center px-4'>
 
-      <p className=" max-w-sm lg:max-w-2xl text-[13px] lg:text-[20px] font-bold text-[#5587B6] text-center lg:mt-4">With the ability for each medical/surgical gown to replace 450 gowns, Medu helps save more time, more lives, and more resources.</p>
+      <p className=" max-w-sm lg:max-w-2xl text-[13px] lg:text-[20px] font-bold text-[#5587B6] text-center lg:mt-4">{traduccion.industries.infection.section2.statistic_text}</p>
       </div>
       <div className='w-full flex justify-center gap-[19px] px-4'>
 
           <div className="bg-white text-center  rounded-[34px] shadow-md w-[218px] h-[110px] lg:h-[173px] flex flex-col items-center justify-center">
             <p className="text-[25px] lg:text-[55px] font-bold text-[#95BC67]">80%</p>
-            <p className="text-[8px] lg:text-[15px] text-gray-600 ">cost savings</p>
+            <p className="text-[8px] lg:text-[15px] text-gray-600 ">{traduccion.industries.infection.statistics[0].description}</p>
           </div>
           <div className="bg-white text-center w-[218px] h-[110px] lg:h-[173px] flex flex-col items-center justify-center  rounded-[34px] shadow-md ">
             <p className="text-[25px] lg:text-[55px] font-bold text-[#1B3954]">90%</p>
-            <p className="text-[8px] lg:text-[15px] text-gray-600 ">waste <br/>reduction</p>
+            <p className="text-[8px] lg:text-[15px] text-gray-600 ">{traduccion.industries.infection.statistics[1].description[0]} <br/>{traduccion.industries.infection.statistics[1].description[1]}</p>
           </div>
           <div className="bg-white text-center w-[218px] h-[110px] lg:h-[173px] flex flex-col items-center justify-center  rounded-[34px] shadow-md">
-            <p className="text-[25px] lg:text-[55px] font-bold text-[#5587B6] leading-[20px] lg:leading-[50px]">10<br/> hours</p>
-            <p className="text-[8px] lg:text-[15px] text-gray-600 mt-2">weekly time <br/> saving</p>
+            <p className="text-[25px] lg:text-[55px] font-bold text-[#5587B6] leading-[20px] lg:leading-[50px]">10<br/> {traduccion.industries.infection.statistics[2].percentage[1]}</p>
+            <p className="text-[8px] lg:text-[15px] text-gray-600 mt-2">{traduccion.industries.infection.statistics[2].description[0]} <br/> {traduccion.industries.infection.statistics[2].description[1]} </p>
           </div>
           </div>
     

@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useInView } from "react-intersection-observer";
 import { motion } from 'framer-motion'
+import { AppContext } from '@/Context/AppContext';
 
 
 function Features() {
-
+  const { traduccion } = useContext(AppContext);
   const [ref, inView] = useInView({
     triggerOnce: true, // Cambia a true para que la animación solo se ejecute una vez
   });
@@ -26,15 +27,15 @@ function Features() {
               <div className=" p-4 rounded-[5px] inline-block mb-2">
                 <img src="/assets/features/highest.svg" alt="Icon 1" className="h-[64px] w-[64px]" />
               </div>
-              <h3 className="font-semibold text-[13px] lg:text-[20px]">Highest level of user <br/> protection:</h3>
-              <p className='text-[13px] lg:text-[20px]' >Level 4 AAMI PB70</p>
+              <h3 className="font-semibold text-[13px] lg:text-[20px]">{traduccion.industries.features.items[0].title[0]} <br/> {traduccion.industries.features.items[0].title[1]}</h3>
+              <p className='text-[13px] lg:text-[20px]' >{traduccion.industries.features.items[0].description}</p>
             </div>
             <div className='w-[284px] h-[284px] bg-[#1B3954] rounded-[34px] flex flex-col justify-center items-center'>
               <div className=" p-4 rounded-[5px] inline-block mb-2">
                 <img src="/assets/features/features.svg" alt="Icon 2" className="h-[64px] w-[64px]" />
               </div>
-              <h3 className="font-semibold text-[13px] lg:text-[20px]">Maximum resistance to <br/> virus penetration:</h3>
-              <p className='text-[13px] lg:text-[20px]' >Level 4 AAMI PB70</p>
+              <h3 className="font-semibold text-[13px] lg:text-[20px]">{traduccion.industries.features.items[1].title[0]}<br/> {traduccion.industries.features.items[1].title[1]}</h3>
+              <p className='text-[13px] lg:text-[20px]' >{traduccion.industries.features.items[1].description}</p>
             </div>
           </motion.div>
           <motion.div
@@ -45,22 +46,22 @@ function Features() {
               <div className=" p-4 rounded-[5px] inline-block mb-2">
                 <img src="/assets/features/desinfection.svg" alt="Icon 3" className="h-[64px] w-[64px]" />
               </div>
-              <h3 className="font-semibold text-[13px] lg:text-[20px]">Highest level of user <br/> protection: </h3>
-              <p className='text-[13px] lg:text-[20px]' >Level 4 AAMI PB70</p>
+              <h3 className="font-semibold text-[13px] lg:text-[20px]">{traduccion.industries.features.items[2].title[0]} <br/> {traduccion.industries.features.items[2].title[1]} </h3>
+              <p className='text-[13px] lg:text-[20px]' >{traduccion.industries.features.items[2].description}</p>
             </div>
             <div className='w-[284px] h-[284px] bg-[#1B3954] rounded-[34px] flex flex-col justify-center items-center'>
               <div className=" p-4 rounded-[5px] inline-block mb-2">
                 <img src="/assets/features/breathable.svg" alt="Icon 4" className="h-[64px] w-[64px]" />
               </div>
-              <h3 className="font-semibold text-[13px] lg:text-[20px]">Highly<br/> breathable</h3>
+              <h3 className="font-semibold text-[13px] lg:text-[20px]">{traduccion.industries.features.items[3].title[0]}<br/> {traduccion.industries.features.items[3].title[1]}</h3>
               <p></p>
             </div>
             <div className='w-[284px] h-[284px] bg-[#1B3954] rounded-[34px] flex flex-col justify-center items-center'>
               <div className=" p-4 rounded-[5px] inline-block mb-2">
                 <img src="/assets/features/water.svg" alt="Icon 5" className="h-[64px] w-[64px]" />
               </div>
-              <h3 className="font-semibold text-[13px] lg:text-[20px]">Excellent water repellency</h3>
-              <p className='text-[13px] lg:text-[20px]' >and resistance to liquid <br/> penetration</p>
+              <h3 className="font-semibold text-[13px] lg:text-[20px]">{traduccion.industries.features.items[4].title}</h3>
+              <p className='text-[13px] lg:text-[20px]' >{traduccion.industries.features.items[4].description[0]} <br/> {traduccion.industries.features.items[4].description[1]}</p>
             </div>
           </motion.div>
           </div>
