@@ -1,48 +1,22 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useInView } from "react-intersection-observer";
 import { motion } from 'framer-motion'
 
 
 // components/Timeline.js
 import { useState } from 'react';
+import { AppContext } from '@/Context/AppContext';
 
 const Timeline = () => {
+
+  const { traduccion } = useContext(AppContext);
+
+
   const [activeIndex, setActiveIndex] = useState(0);
   
   const [fechaActiva, setFechaActiva] = useState(4)
 
-  const informacion = [
-    {
-      index: 0,
-      titulo: 'Development and Standards',
-      descripcion1: 'The Spanish flu pandemic led to the adoption of cotton surgical gowns, aimed at reducing disease transmission in medical environments.',
-      descripcion2: ''
-    },
-    {
-      index: 1,
-      titulo: 'Regulations and Safety Improvement',
-      descripcion1: '1930s: Cotton surgical gowns become standard in operating rooms. Although not sterile, they represented a significant advance in infection protection.',
-      descripcion2: '1940s: Sterilization of surgical gowns becomes common practice, improving the prevention of postoperative infections.'
-    },
-    {
-      index: 2,
-      titulo: 'Efficiency and Sustainability',
-      descripcion1: '1970s: Stricter regulations are implemented to prevent cross-contamination in operating rooms, based on AORN and NIOSH standards.',
-      descripcion2: '1980s: Materials like polypropylene improved gown comfort, fluid resistance, and antimicrobial properties.'
-    },
-    {
-      index: 3,
-      titulo: 'Pandemic Response and Future',
-      descripcion1: '1990s: Focus on improving breathability and comfort of surgical gowns, with lighter materials and reduced costs without compromising safety.',
-      descripcion2: '2000s: Interest in reusable and eco-friendly disposable gowns grows, leading to advances in washing, sterilization, and biodegradable materials.'
-    },
-    {
-      index: 4,
-      titulo: 'Early 20th Century: Introduction of Surgical Gowns',
-      descripcion1: '2021: COVID-19 increases demand for PPE. MEDU introduces reusable Level 4 PPE gowns and coveralls that are highly protective and eco-friendly.',
-      descripcion2: ''
-    }
-  ];
+
   
 
   const textVariants = {
@@ -70,13 +44,21 @@ const Timeline = () => {
        animate={inView ? "visible" : "hidden"}
        variants={textVariants}
       className="text-[22px] md:text-[37px] lg:text-[50px] font-bold mb-4 text-center text-[#1B3954] w-[80%] md:w-[70%] lg:w-full lg:leading-[48px]">
-        Changing the fabric of medicine <br className='hidden lg:block'/> <span className="text-[#5587B6]">for good.</span>
+        {
+          traduccion.home.timeline.heading[0]
+        } <br className='hidden lg:block'/> <span className="text-[#5587B6]">
+          {
+          traduccion.home.timeline.heading[1]
+        }
+        </span>
       </motion.h2>
       <motion.p 
       animate={inView ? "visible" : "hidden"}
       variants={textVariants}
       className="text-center mb-8 text-[10px] md:text-[17px] lg:text-[22px]">
-        The medical gowns used today were designed in the 1940s.
+        {
+          traduccion.home.timeline.subheading
+        }
       </motion.p>
       <div className="flex  justify-between mt-10 space-y-4 lg:space-y-0 lg:space-x-8 relative w-full lg:h-[350px]">
         <motion.img
@@ -94,8 +76,9 @@ const Timeline = () => {
 {/*   <div className='bg-white rounded-full w-[170px] h-[170px] absolute -z-10 top-0 left-0'/>
  */}    1918s
 </div>
-          <p className='hidden lg:block max-w-[200px] text-[#1B3954] text-[22px]'>Introduction of
-Surgical Gowns</p>
+          <p className='hidden lg:block max-w-[200px] text-[#1B3954] text-[22px]'>{
+            traduccion.home.timeline.years[0].label
+            }</p>
         </motion.div>
         <motion.div
         animate={inView ? "visible" : "hidden"}
@@ -106,8 +89,9 @@ Surgical Gowns</p>
           className={`cursor-pointer w-[47px] h-[47px] md:w-[104px] md:h-[104px] xl:w-[161px] xl:h-[161px] flex flex-col items-center justify-center text-[9px] md:text-[20px] lg:text-[30px] text-white p-4 rounded-full mb-2 -translate-y-6 translate-x-4 lg:translate-x-0 lg:translate-y-0 ${fechaActiva == 1 ? 'bg-[#95BC67]' : 'bg-[#4E88B0] hover:bg-[#95BC67]'}`}>
             1930s
           </div>
-          <p className='hidden lg:block max-w-[200px] text-[#1B3954] text-[22px]'>Development
-and Standards</p>
+          <p className='hidden lg:block max-w-[200px] text-[#1B3954] text-[22px]'>{
+            traduccion.home.timeline.years[1].label
+            }</p>
         </motion.div>
         <motion.div 
         animate={inView ? "visible" : "hidden"}
@@ -118,8 +102,9 @@ and Standards</p>
           className={`cursor-pointer w-[47px] h-[47px] md:w-[104px] md:h-[104px] xl:w-[161px] xl:h-[161px] flex flex-col items-center justify-center text-[9px] md:text-[20px] lg:text-[30px] text-white p-4 rounded-full mb-2 ${fechaActiva == 2 ? 'bg-[#95BC67]' : 'bg-[#4E88B0] hover:bg-[#95BC67]'}`}>
             1970s
           </div>
-          <p className='hidden lg:block max-w-[200px] text-[#1B3954] text-[22px]'>Regulations and
-Safety Environment</p>
+          <p className='hidden lg:block max-w-[200px] text-[#1B3954] text-[22px]'>{
+            traduccion.home.timeline.years[2].label
+            }</p>
         </motion.div>
         <motion.div
         animate={inView ? "visible" : "hidden"}
@@ -130,8 +115,9 @@ Safety Environment</p>
           className={`cursor-pointer w-[47px] h-[47px] md:w-[104px] md:h-[104px] xl:w-[161px] xl:h-[161px] flex flex-col items-center justify-center text-[9px] md:text-[20px] lg:text-[30px] text-white p-4 rounded-full mb-2 ${fechaActiva == 3 ? 'bg-[#95BC67]' : 'bg-[#4E88B0] hover:bg-[#95BC67]'}`}>
             1990s
           </div>
-          <p className='hidden lg:block max-w-[200px] text-[#1B3954] text-[22px]'>Efficiency and
-Sustainability</p>
+          <p className='hidden lg:block max-w-[200px] text-[#1B3954] text-[22px]'>{
+            traduccion.home.timeline.years[3].label
+            }</p>
         </motion.div>
         <motion.div animate={inView ? "visible" : "hidden"}
          variants={textYear} className="flex flex-col items-center text-center translate-y-0 -translate-x-4 xl:translate-y-8 xl:translate-x-0 ">
@@ -140,19 +126,20 @@ Sustainability</p>
           className={`cursor-pointer w-[47px] h-[47px] md:w-[104px] md:h-[104px] xl:w-[161px] xl:h-[161px] flex flex-col items-center justify-center text-[9px] md:text-[20px] lg:text-[30px] text-white p-4 rounded-full mb-2 ${fechaActiva == 4 ? 'bg-[#95BC67]' : 'bg-[#4E88B0] hover:bg-[#95BC67]'}`}>
             2020s
           </div>
-          <p className='hidden lg:block max-w-[200px] text-[#1B3954] text-[22px]'>Pandemic 
-Response and Future</p>
+          <p className='hidden lg:block max-w-[200px] text-[#1B3954] text-[22px]'>{
+            traduccion.home.timeline.years[4].label
+            }</p>
         </motion.div>
       </div>
       <div className='flex flex-col lg:flex-row w-full items-center  lg:items-start lg:mt-10 '>
 
       <div className="mt-8 lg:w-1/2  max-w-4xl py-8 h-[150px] md:h-[300px]">
-        <h3 className="text-[14px] md:text-xl text-center lg:text-start xl:items-center font-semibold mb-2 px-10 lg:pr-10 text-[#5587B6]">{informacion[fechaActiva].titulo }</h3>
+        <h3 className="text-[14px] md:text-xl text-center lg:text-start xl:items-center font-semibold mb-2 px-10 lg:pr-10 text-[#5587B6]">{traduccion.home.informacion[fechaActiva].titulo }</h3>
         <p className='text-[10px] text-center lg:text-start md:text-[20px] px-10 lg:pr-10'>
-        {informacion[fechaActiva].descripcion1 }
+        {traduccion.home.informacion[fechaActiva].descripcion1 }
         </p>
         <p className=' text-[10px] text-center lg:text-start md:text-[20px] px-10 lg:pr-10'>
-        {informacion[fechaActiva].descripcion2 }
+        {traduccion.home.informacion[fechaActiva].descripcion2 }
         </p>
       </div>
       <div className="flex justify-center mt-8 relative h-[250px] md:h-[450px] xl:h-[550px]">

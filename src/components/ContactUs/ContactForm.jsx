@@ -1,7 +1,11 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { AppContext } from '@/Context/AppContext';
 
 function ContactForm() {
+
+  const { traduccion } = useContext(AppContext);
+
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -26,7 +30,7 @@ function ContactForm() {
     e.preventDefault();
 
     if (!formData.agree) {
-      alert('Please agree to the privacy policy.');
+      alert(traduccion.home.contactForm.fields.messages.agreeRequired);
       return;
     }
 
@@ -52,7 +56,7 @@ function ContactForm() {
       .then(
         (result) => {
           console.log(result.text);
-          alert('Message Sent!');
+          alert(traduccion.home.contactForm.fields.messages.success);
           setFormData({
             firstName: '',
             lastName: '',
@@ -67,7 +71,7 @@ function ContactForm() {
         },
         (error) => {
           console.log(error.text);
-          alert('Failed to send the message, please try again.');
+          alert(traduccion.home.contactForm.fields.messages.failure);
         }
       );
   };
@@ -77,25 +81,25 @@ function ContactForm() {
       <form onSubmit={handleSubmit}>
         <div className="grid grid-cols-2 gap-4 mb-4">
           <div>
-            <label className="block text-gray-700">Name</label>
+            <label className="block text-gray-700">{traduccion.home.contactForm.fields.firstName.label}</label>
             <input
               type="text"
               name="firstName"
               value={formData.firstName}
               onChange={handleChange}
-              placeholder="Name"
+              placeholder={traduccion.home.contactForm.fields.firstName.placeholder}
               className="mt-1 block w-full p-2 border rounded-md"
               required
             />
           </div>
           <div>
-            <label className="block text-gray-700">Last Name</label>
+            <label className="block text-gray-700">{traduccion.home.contactForm.fields.lastName.label}</label>
             <input
               type="text"
               name="lastName"
               value={formData.lastName}
               onChange={handleChange}
-              placeholder="Last Name"
+              placeholder={traduccion.home.contactForm.fields.lastName.placeholder}
               className="mt-1 block w-full p-2 border rounded-md"
               required
             />
@@ -103,74 +107,74 @@ function ContactForm() {
         </div>
         <div className="grid grid-cols-2 gap-4 mb-4">
           <div>
-            <label className="block text-gray-700">Company Name</label>
+            <label className="block text-gray-700">{traduccion.home.contactForm.fields.companyName.label}</label>
             <input
               type="text"
               name="companyName"
               value={formData.companyName}
               onChange={handleChange}
-              placeholder="Company Name"
+              placeholder={traduccion.home.contactForm.fields.companyName.placeholder}
               className="mt-1 block w-full p-2 border rounded-md"
               required
             />
           </div>
           <div>
-            <label className="block text-gray-700">Company Phone</label>
+            <label className="block text-gray-700">{traduccion.home.contactForm.fields.companyPhone.label}</label>
             <input
               type="text"
               name="companyPhone"
               value={formData.companyPhone}
               onChange={handleChange}
-              placeholder="Company Phone"
+              placeholder={traduccion.home.contactForm.fields.companyPhone.placeholder}
               className="mt-1 block w-full p-2 border rounded-md"
               required
             />
           </div>
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700">Company E-mail</label>
+          <label className="block text-gray-700">{traduccion.home.contactForm.fields.companyName.placeholder}</label>
           <input
             type="email"
             name="companyEmail"
             value={formData.companyEmail}
             onChange={handleChange}
-            placeholder="Company E-mail"
+            placeholder={traduccion.home.contactForm.fields.companyEmail.placeholder}
             className="mt-1 block w-full p-2 border rounded-md"
             required
           />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700">Industry</label>
+          <label className="block text-gray-700">{traduccion.home.contactForm.fields.industry.label}</label>
           <select
             name="industry"
             value={formData.industry}
             onChange={handleChange}
             className="mt-1 block w-full p-2 border rounded-md"
           >
-            <option value="Medical">Medical</option>
-            <option value="Technology">Technology</option>
-            <option value="Education">Education</option>
-            <option value="Finance">Finance</option>
-            <option value="Finance">Other</option>
+            <option value="Medical">{traduccion.home.contactForm.fields.industry.options[0]}</option>
+            <option value="Technology">{traduccion.home.contactForm.fields.industry.options[1]}</option>
+            <option value="Education">{traduccion.home.contactForm.fields.industry.options[2]}</option>
+            <option value="Finance">{traduccion.home.contactForm.fields.industry.options[3]}</option>
+            <option value="Finance">{traduccion.home.contactForm.fields.industry.options[4]}</option>
           </select>
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700">Subject</label>
+          <label className="block text-gray-700">{traduccion.home.contactForm.fields.subject.label}</label>
           <textarea
             name="subject"
             value={formData.subject}
             onChange={handleChange}
-            placeholder="Text here"
+            placeholder={traduccion.home.contactForm.fields.subject.placeholder}
             className="mt-1 block w-full p-2 border rounded-md h-24"
           ></textarea>
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700">Message</label>
+          <label className="block text-gray-700">{traduccion.home.contactForm.fields.message.label}</label>
           <textarea
             name="message"
             value={formData.message}
             onChange={handleChange}
-            placeholder="Text here"
+            placeholder={traduccion.home.contactForm.fields.message.placeholder}
             className="mt-1 block w-full p-2 border rounded-md h-24"
           ></textarea>
         </div>
@@ -184,14 +188,14 @@ function ContactForm() {
             required
           />
           <label className="ml-2 block text-gray-700">
-            I agree to our friendly <a href="/privacy-policy" className="text-[#95BC67] underline">privacy policy</a>.
+          {traduccion.home.contactForm.fields.agree.label[0]} <a href="/privacy-policy" className="text-[#95BC67] underline">{traduccion.home.contactForm.fields.agree.label[1]} </a>.
           </label>
         </div>
         <button
           type="submit"
           className="w-[151px] py-3 bg-[#95BC67] text-white rounded-[34px] text-lg font-semibold hover:bg-green-700"
         >
-          Get Started
+           {traduccion.home.contactForm.button}
         </button>
       </form>
     </div>

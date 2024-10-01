@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { motion } from 'framer-motion'
 import InfoCost from './InfoCost'
 import InfoWeekly from './InfoWeekly'
 import InfoWaste from './InfoWaste'
 import InfoWash from './InfoWash'
+import { AppContext } from '@/Context/AppContext'
 
 function Hero() {
+  const { traduccion } = useContext(AppContext);
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1, transition: { duration: 1 } }
@@ -51,19 +53,19 @@ function Hero() {
             className="text-[28px] md:text-[45px] xl:text-[55px] font-bold leading-tight text-[#1B3954]  mb-4"
             variants={textVariants}
           >
-            Save <span className='text-[#95BC67]'> more </span>
+            {traduccion.ourProducts.hero.heading[0]}<span className='text-[#95BC67]'> {traduccion.ourProducts.hero.heading[1]} </span>
           </motion.h1>
           <motion.p
             className="max-w-[275px] md:max-w-md  lg:max-w-full mb-4 text-gray-700 text-[10px] md:text-[17px] xl:text-[21px]"
             variants={textVariants}  
           >
-            With Medu medical gowns, you save up to <span className='text-[#1B3954] text-[32px] font-bold'>80%</span> over typical PPE coverings. You also save the planet from landfill-clogging medical waste and preserve valuable time that saves lives.
+            {traduccion.ourProducts.hero.description[0]} <span className='text-[#1B3954] text-[32px] font-bold'>{traduccion.ourProducts.hero.description[1]}</span> {traduccion.ourProducts.hero.description[2]}
           </motion.p>
           <motion.p
             className="max-w-sm lg:max-w-full mb-8 font-bold text-[#5587B6] text-[10px] md:text-[17px] xl:text-[21px]"
             variants={textVariants}
           >
-            1 Medu gown replaces 450+ disposable gowns
+            {traduccion.ourProducts.hero.stat}
           </motion.p>
           
         </div>

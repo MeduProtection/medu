@@ -1,9 +1,11 @@
-import React, { useRef, useState } from 'react';
+import React, { useContext, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from "react-intersection-observer";
+import { AppContext } from '@/Context/AppContext';
 
 
 function HowItWorks() {
+  const { traduccion } = useContext(AppContext);
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -38,7 +40,7 @@ function HowItWorks() {
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ delay: 0.2, duration: 0.5 }}
           >
-            How it <span className="text-[#5587B6]">works</span>.
+            {traduccion.home.howItWorks.heading[0]} <span className="text-[#5587B6]">{traduccion.home.howItWorks.heading[1]}</span>{traduccion.home.howItWorks.heading[2]}
           </motion.h2>
           <motion.p
             className="text-[#5587B6] mb-4 font-bold text-[14px] text-center lg:text-start md:text-[23px] max-w-lg"
@@ -46,7 +48,7 @@ function HowItWorks() {
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ delay: 0.4, duration: 0.5 }}
           >
-            Reducing the cost of protective gowns by up to 80% while ensuring health and safety may sound too good to be true. But it isn’t.
+            {traduccion.home.howItWorks.subheading}
           </motion.p>
           <motion.p
             className="mb-8 text-[10px] md:text-[17px] xl:text-[21px] max-w-lg text-center lg:text-start"
@@ -54,7 +56,7 @@ function HowItWorks() {
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ delay: 0.6, duration: 0.5 }}
           >
-            Our patent-pending, anti-viral, anti-bacterial fabric can be washed up to 50 times with conventional hospital system detergents and equipment without losing protective properties and prevents cross-contamination, enabling caregivers to dramatically reduce gown changes.
+            {traduccion.home.howItWorks.description}
           </motion.p>
         </div>
         <div className="lg:w-1/2 flex justify-center lg:justify-end items-center mt-8 xl:mt-12">

@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { AppContext } from '@/Context/AppContext';
 
 function Difference() {
+  const { traduccion } = useContext(AppContext);
   const [ref, inView] = useInView({
     triggerOnce: true, // La animación solo se activará una vez
     threshold: 0.1, // El elemento se considerará visible cuando esté al menos el 10% visible
@@ -35,19 +37,19 @@ function Difference() {
           className="text-[16px] md:text-[37px] xl:text-[50px] font-bold mb-4"
           variants={textVariants}
         >
-          The difference that <span className="text-[#95BC67]">makes a difference.</span>
+         {traduccion.home.difference.heading[0]} <span className="text-[#95BC67]">{traduccion.home.difference.heading[1]}</span>
         </motion.h2>
         <motion.p
           className="mb-8 max-w-2xl text-[7px] md:text-[17px] xl:text-[20px] px-10 xl:px-0"
           variants={textVariants}
         >
-          Medu is not just the first of its kind. It’s the first of its kind offering a host of benefits to optimize savings of all kinds. See how Medu stacks up.
+          {traduccion.home.difference.description}
         </motion.p>
         <motion.button
           className="bg-[#95BC67] text-white  py-4 md:py-2 px-8 rounded-full hover:bg-green-600 transition text-[14px] md:text-[22px] xl:text-[28px]"
           variants={textVariants}
         >
-          Why MEDU
+          {traduccion.home.difference.button}
         </motion.button>
       </motion.div>
     </div>

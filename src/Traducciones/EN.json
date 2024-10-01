@@ -1,0 +1,379 @@
+{
+    "home": {
+      "hero": [
+        "Save $150k per day",
+        " with the world's ",
+        " first Level 4 antiviral ",
+        "reusable gown",
+        " You save lives. Now you can save the planet, along with tens of millions of dollars every month with the only washable, sustainable medical gown of its kind.",
+        " See how our revolutionary technology is transforming healthcare.",
+        "Get Started Now",
+        "Currently in trial with some of the most respected medical facilities in the U.S."
+      ],
+      "informacion": [
+        {
+          "index": 0,
+          "titulo": "Development and Standards",
+          "descripcion1": "The Spanish flu pandemic led to the adoption of cotton surgical gowns, aimed at reducing disease transmission in medical environments.",
+          "descripcion2": ""
+        },
+        {
+          "index": 1,
+          "titulo": "Regulations and Safety Improvement",
+          "descripcion1": "1930s: Cotton surgical gowns become standard in operating rooms. Although not sterile, they represented a significant advance in infection protection.",
+          "descripcion2": "1940s: Sterilization of surgical gowns becomes common practice, improving the prevention of postoperative infections."
+        },
+        {
+          "index": 2,
+          "titulo": "Efficiency and Sustainability",
+          "descripcion1": "1970s: Stricter regulations are implemented to prevent cross-contamination in operating rooms, based on AORN and NIOSH standards.",
+          "descripcion2": "1980s: Materials like polypropylene improved gown comfort, fluid resistance, and antimicrobial properties."
+        },
+        {
+          "index": 3,
+          "titulo": "Pandemic Response and Future",
+          "descripcion1": "1990s: Focus on improving breathability and comfort of surgical gowns, with lighter materials and reduced costs without compromising safety.",
+          "descripcion2": "2000s: Interest in reusable and eco-friendly disposable gowns grows, leading to advances in washing, sterilization, and biodegradable materials."
+        },
+        {
+          "index": 4,
+          "titulo": "Early 20th Century: Introduction of Surgical Gowns",
+          "descripcion1": "2021: COVID-19 increases demand for PPE. MEDU introduces reusable Level 4 PPE gowns and coveralls that are highly protective and eco-friendly.",
+          "descripcion2": ""
+        }
+      ],
+      "timeline": {
+        "heading": [
+"Changing the fabric of medicine ",
+"for good."
+        ],
+        "subheading": "The medical gowns used today were designed in the 1940s.",
+        "years": [
+          {
+            "year": "1918s",
+            "label": "Introduction of Surgical Gowns",
+            "description": "The Spanish flu pandemic led to the adoption of cotton surgical gowns, aimed at reducing disease transmission."
+          },
+          {
+            "year": "1930s",
+            "label": "Development and Standards",
+            "description": "Cotton surgical gowns become standard in operating rooms, improving infection protection."
+          },
+          {
+            "year": "1970s",
+            "label": "Regulations and Safety Environment",
+            "description": "Stricter regulations implemented for preventing cross-contamination in operating rooms."
+          },
+          {
+            "year": "1990s",
+            "label": "Efficiency and Sustainability",
+            "description": "Focus on improving breathability, comfort, and reducing costs of surgical gowns."
+          },
+          {
+            "year": "2020s",
+            "label": "Pandemic Response and Future",
+            "description": "COVID-19 led to the development of reusable PPE gowns with high protection levels and eco-friendly materials."
+          }
+        ]
+      },
+
+    "features": {
+        "heading": [
+
+            "What has changed in the past ",
+            "80 years?"
+        ],
+        "subheading": "Nearly everything—except the desire to preserve the health and safety of patients and caregivers.",
+        "description": "Created with a proprietary process that yields the highest levels of protection and sterility, Medu brings protective coverings into the 21st Century with reusable Level 4 gowns and coveralls that require no special laundering and prevent cross-contamination.",
+        "items": [
+          {
+            "icon": "/assets/features/highest.svg",
+            "title": [
+"Highest level of user ",
+"protection:"
+            ],
+            "description": "Level 4 AAMI PB70"
+          },
+          {
+            "icon": "/assets/features/features.svg",
+            "title": ["Maximum resistance to ",
+        "virus penetration:"
+        ],
+            "description": "Level 4 AAMI PB70"
+          },
+          {
+            "icon": "/assets/features/desinfection.svg",
+            "title": "Easy disinfection:",
+            "description": ["between washes with integrating existing ",
+            "laundry systems"]
+          },
+          {
+            "icon": "/assets/features/breathable.svg",
+            "title": "Highly breathable",
+            "description": ""
+          },
+          {
+            "icon": "/assets/features/water.svg",
+            "title": "Excellent water repellency",
+            "description": ["and resistance to liquid ",
+            "penetration"
+            ]
+          }
+        ],
+        "button": "Discover Our Technology"
+      },
+      "wasteEctomy": {
+      "heading": [
+        
+          "Give your hospital ",
+          "a ",
+          "waste-ectomy."
+      ],
+      "description": "Medical waste is a 5,000,000-ton, 935 billion-dollar problem, compromising public health and creating significant financial strain on healthcare systems. Medu’s innovative medical gowns and coveralls offer an unparalleled ability to increase savings, while dramatically reducing landfill waste. After all, the planet deserves a long, healthy life, too.",
+      "savings": [
+        {
+          "text": "up to ",
+          "value": "80%",
+          "description": "cost savings",
+          "color": "#95BC67"
+        },
+        {
+          "text": "up to ",
+          "value": "90%",
+          "description": "waste reduction",
+          "color": "#4E88B0"
+        },
+        {
+          "text": "up to ",
+          "value": "10 hrs",
+          "description": "hrs weekly time savings",
+          "color": "#1B3954"
+        }
+      ],
+      "image": "/assets/waste/bata.png"
+    },
+    "form": {
+      "heading": ["Become a partner for ",
+    "change","."
+    ],
+      "description": "Join Medu in reducing waste. Tell us about your company, your capabilities, and your goals. Then connect with us to learn how to become a distribution partner."
+    },
+    "contactForm": {
+        "fields": {
+          "firstName": {
+            "label": "Name",
+            "placeholder": "Name"
+          },
+          "lastName": {
+            "label": "Last Name",
+            "placeholder": "Last Name"
+          },
+          "companyName": {
+            "label": "Company Name",
+            "placeholder": "Company Name"
+          },
+          "companyPhone": {
+            "label": "Company Phone",
+            "placeholder": "Company Phone"
+          },
+          "companyEmail": {
+            "label": "Company E-mail",
+            "placeholder": "Company E-mail"
+          },
+          "industry": {
+            "label": "Industry",
+            "options": [
+              "Medical",
+              "Technology",
+              "Education",
+              "Finance",
+              "Other"
+            ]
+          },
+          "subject": {
+            "label": "Subject",
+            "placeholder": "Text here"
+          },
+          "message": {
+            "label": "Message",
+            "placeholder": "Text here"
+          },
+          "agree": {
+            "label": [
+
+                "I agree to our friendly ",
+                "privacy policy"
+            ]
+          }
+        },
+        "button": "Get Started",
+        "messages": {
+          "agreeRequired": "Please agree to the privacy policy.",
+          "success": "Message Sent!",
+          "failure": "Failed to send the message, please try again."
+        }
+      },
+      "howItWorks": {
+      "heading": [
+        
+          "How it ",
+          "works",
+          "."
+      ],
+      "subheading": "Reducing the cost of protective gowns by up to 80% while ensuring health and safety may sound too good to be true. But it isn’t.",
+      "description": "Our patent-pending, anti-viral, anti-bacterial fabric can be washed up to 50 times with conventional hospital system detergents and equipment without losing protective properties and prevents cross-contamination, enabling caregivers to dramatically reduce gown changes.",
+      "video": {
+        "src": "/assets/video/video.mp4",
+        "poster": "/assets/works/poster.png"
+      }
+    },
+    "appDemo": {
+      "description": "Our app tracks the cleaning and life status of each Medu garment so you know the status and lifecycle stage.",
+      "list": [
+        "Check number of washes in real time",
+        "Manage Medu gowns and coveralls",
+        "Rate quality"
+      ],
+      "button": "See How Medu Works",
+      "image": "/assets/demo/demo.png",
+      "icons": {
+        "check": "/assets/icons/check.svg"
+      }
+    },
+    "headlines": {
+      "heading": "Making headlines.",
+      "subheading": "Creating change.",
+      "description": "Medu is making news, and it's easy to see why. As the first and only medical products of its kind, we've received attention and accolades the world over.",
+      "seen": "As seen in",
+      "quote": {
+    "text": "'MEDU is changing the world one gown at a time'",
+    "author": "— Hillary Clinton"
+  },
+  "readMore": "Read our press coverage, case studies, blog, and more.",
+  "button": "Gain Insights"
+    },
+    "medicalMiracle": {
+  "heading": [ "Inventing a modern",
+  "medical miracle"
+    ],
+  "description": "Medu was born out of curiosity, passion, and necessity. During the COVID-19 pandemic, Medu Founder and CEO Tamara Chayo watched people in her community in Mexico City struggle to find adequate protection against pathogens. The biochemical engineer worked around the clock to address this urgent need and invented an innovative new fabric–and a social movement.",
+  "readMore": "Read more about Medu’s origin and team.",
+  "button": "Learn About Us"
+},
+"difference": {
+  "heading": ["The difference that ",
+  "makes a difference."],
+  "description": "Medu is not just the first of its kind. It’s the first of its kind offering a host of benefits to optimize savings of all kinds. See how Medu stacks up.",
+  "button": "Why MEDU"
+},
+"callToAction": {
+  "heading": "Change your gowns. Transform the world.",
+  "description": "Save money, time, and waste in a way never before possible. Reach out to book a meeting, learn more, and get started.",
+  "button": "Get Started"
+}
+  },
+  "ourProducts":{
+    "hero": {
+  "heading": ["Save ","more"],
+  "description": ["With Medu medical gowns, you save up to ",
+"80%",
+"over typical PPE coverings. You also save the planet from landfill-clogging medical waste and preserve valuable time that saves lives."
+
+],
+  "stat": "1 Medu gown replaces 450+ disposable gowns"
+},
+"onlyMedical": {
+  "description1": "As the only medical gown that offers Level 4 protection with the ability to protect against cross-contamination, Medu gowns can be worn across multi patient visits, giving caregivers back time they would have spent changing.",
+  "description2": "And less time changing clothes means more time changing–and saving–lives.",
+  "description3": "See for yourself.",
+  "button": "Get Started"
+},
+"protection": {
+  "heading": ["Protection ","without compromise"],
+  "description1": "Medu’s revolutionary fabric offers optimal protection and unparalleled comfort.",
+  "description2": "Developed by a biochemical engineer and in trial with some of the most prestigious medical facilities in the United States, Medu uses a patent-pending membrane that traps and kills viruses and bacteria, then washes them away with laundering that requires no special detergents or equipment.",
+  "button": "See How Medu Works"
+},
+"gowns": {
+  "heading": {
+    "title": ["MEDU ", "Gowns"]
+    
+  },
+  "description": {
+    "level": "AAMI PB70 Level 4.",
+    "sublevel": "PROTECTION",
+    "protection": "Optimized for protection and comfort, our surgical gown combines durability and flexibility, ideal for healthcare settings.",
+    "sizes": "S/M/L/XL"
+  },
+  "buttons": {
+    "arView": "AR view"
+  }
+},
+"coveralls": {
+  "heading": {
+    "title": ["MEDU","Coveralls"],
+    "protection": "AAMI PB70 Level 4",
+    "protectionSubtitle": "PROTECTION"
+  },
+  "description": {
+    "text": "Designed for full-body protection, our coverall ensures safety and mobility in demanding environments.",
+    "sizes": "S/M/L/XL/XXL"
+  },
+  "buttons": {
+    "arView": "AR view",
+    "seeInColor": [
+
+      "SEE IN",
+      "COLOR"
+    ]
+  }
+},
+"surgical": {
+  "heading": {
+    "title": ["MEDU ",
+    "Surgical",
+    "Packages"
+    ]
+  },
+  "description": {
+    "text": "Our comprehensive surgical packs provide sterilized garments for efficient and safe procedures. Ask about the different surgical packages."
+  }
+}
+  },
+  "howItWorks":{
+    "instructions": {
+  "titles": {
+    "mainTitle": "Our care instructions",
+    "subTitle": [
+
+      "Take care of the planet and ",
+      "each other"
+    ]
+  },
+  "descriptions": {
+    "intro": ["Medu gowns are as easy to use as they are to love. They need no special detergents or laundry equipment, and can be washed 50+ times at 60°C (140° F).", "To ensure accurate tracking of washings, Medu offers the Protect app."
+    ],
+    "stepsIntro": "Know the age and stage of your Medu gowns and coveralls in four easy steps:"
+  },
+  "steps": [
+    {
+      "title": "Step 1",
+      "description": "Download the Medu Protect app and register your e-mail to create an account."
+    },
+    {
+      "title": "Step 2",
+      "description": "Scan your suits in a practical way, bring your device close to the suit to register the wash."
+    },
+    {
+      "title": "Step 3",
+      "description": "View the life status of your suits, check the number of scanned washes in real time."
+    },
+    {
+      "title": "Step 4",
+      "description": "Easily manage your suits and rate their quality after each wash."
+    }
+  ]
+}
+  }
+  }
+  

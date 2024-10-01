@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { AppContext } from '@/Context/AppContext';
 
 function CallToAction() {
+
+  const { traduccion } = useContext(AppContext);
+
   const [ref, inView] = useInView({
     triggerOnce: true, // La animación solo se activará una vez
     threshold: 0.2, // La animación se activará cuando el elemento esté al 20% dentro del viewport
@@ -35,19 +39,19 @@ function CallToAction() {
         className="text-[16px] md:text-[37px] xl:text-[50px] font-bold mb-4 text-center"
         variants={textVariants}
       >
-        Change your gowns. Transform the world.
+        {traduccion.home.callToAction.heading}
       </motion.h2>
       <motion.p
         className="text-center mb-4 lg:mb-8 max-w-2xl text-[10px] md:text-[17px] xl:text-[22px] px-10 xl:px-0"
         variants={textVariants}
       >
-        Save money, time, and waste in a way never before possible. Reach out to book a meeting, learn more, and get started.
+        {traduccion.home.callToAction.description}
       </motion.p>
       <motion.button
         className="bg-[#1B3954] text-white py-2 px-6 rounded-full hover:bg-blue-900 transition text-[14px] md:text-[22px] xl:text-[28px]"
         variants={buttonVariants}
       >
-        Get Started
+        {traduccion.home.callToAction.button}
       </motion.button>
     </motion.div>
   );

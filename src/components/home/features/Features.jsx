@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useInView } from "react-intersection-observer";
 import { motion } from 'framer-motion'
+import { AppContext } from '@/Context/AppContext';
 
 
 function Features() {
+
+  const { traduccion } = useContext(AppContext);
 
   const [ref, inView] = useInView({
     triggerOnce: true, // Cambia a true para que la animación solo se ejecute una vez
@@ -19,20 +22,20 @@ function Features() {
           animate={inView ? "visible" : "hidden"}
           variants={textVariants}
           className=" text-[18px] md:text-[21px] font-bold mb-4 text-center text-[#95BC67]  ">
-            What has changed in the past <br className='lg:hidden'/> 80 years?
+            {traduccion.home.features.heading[0]} <br className='lg:hidden'/> {traduccion.home.features.heading[1]}
           </motion.h2>
           <motion.p 
           animate={inView ? "visible" : "hidden"}
           variants={textVariants}
           className="text-center mb-4 max-w-md lg:max-w-4xl text-[10px] md:text-[17px] lg:text-[20px] px-10">
-            Nearly everything—except the desire to preserve the health and safety of patients and caregivers.
+            {traduccion.home.features.subheading}
             
           </motion.p>
           <motion.p 
           animate={inView ? "visible" : "hidden"}
           variants={textVariants}
           className="text-center mb-8 max-w-lg  lg:max-w-4xl text-[10px] md:text-[17px] lg:text-[20px] px-10">
-          Created with a proprietary process that yields the highest levels of protection and sterility, Medu brings protective coverings into the 21st Century with reusable Level 4 gowns and coveralls that require no special laundering and prevent cross-contamination.
+          {traduccion.home.features.description}
             
           </motion.p>
           <div className='w-full flex flex-col items-center'>
@@ -45,15 +48,15 @@ function Features() {
               <div className="bg-[#4E88B0] p-4 rounded-[5px] inline-block mb-2">
                 <img src="/assets/features/highest.svg" alt="Icon 1" className="h-8 w-8" />
               </div>
-              <h3 className="font-semibold text-[9px] md:text-[13px] lg:text-[20px]">Highest level of user <br/> protection:</h3>
-              <p className='text-[9px] md:text-[13px] lg:text-[20px]' >Level 4 AAMI PB70</p>
+              <h3 className="font-semibold text-[9px] md:text-[13px] lg:text-[20px]">  {traduccion?.home?.features.items[0]?.title[0]} <br/> {traduccion?.home?.features.items[0]?.title[1]}</h3>
+              <p className='text-[9px] md:text-[13px] lg:text-[20px]' >{traduccion?.home?.features.items[0]?.description}</p>
             </div>
             <div>
               <div className="bg-[#4E88B0] p-4 rounded-[5px] inline-block mb-2">
                 <img src="/assets/features/features.svg" alt="Icon 2" className="h-8 w-8" />
               </div>
-              <h3 className="font-semibold text-[9px] md:text-[13px] lg:text-[20px]">Maximum resistance to <br/> virus penetration:</h3>
-              <p className='text-[9px] md:text-[13px] lg:text-[20px]' >Level 4 AAMI PB70</p>
+              <h3 className="font-semibold text-[9px] md:text-[13px] lg:text-[20px]">{traduccion?.home?.features.items[1]?.title[0]} <br/> {traduccion?.home?.features.items[1]?.title[1]}</h3>
+              <p className='text-[9px] md:text-[13px] lg:text-[20px]' >{traduccion?.home?.features.items[1]?.description}</p>
             </div>
           </motion.div>
           <motion.div
@@ -64,28 +67,28 @@ function Features() {
               <div className="bg-[#4E88B0] p-4 rounded-[5px] inline-block mb-2">
                 <img src="/assets/features/desinfection.svg" alt="Icon 3" className="h-8 w-8" />
               </div>
-              <h3 className="font-semibold text-[9px] md:text-[13px] lg:text-[20px]">Easy disinfection:</h3>
-              <p className='text-[9px] md:text-[13px] lg:text-[20px]' >between washes with integrating existing <br/> laundry systems</p>
+              <h3 className="font-semibold text-[9px] md:text-[13px] lg:text-[20px]">{traduccion?.home?.features.items[2]?.title}</h3>
+              <p className='text-[9px] md:text-[13px] lg:text-[20px]' >{traduccion?.home?.features.items[2]?.description[0]} <br/> {traduccion?.home?.features.items[2]?.description[1]}</p>
             </div>
             <div>
               <div className="bg-[#4E88B0] p-4 rounded-[5px] inline-block mb-2">
                 <img src="/assets/features/breathable.svg" alt="Icon 4" className="h-8 w-8" />
               </div>
-              <h3 className="font-semibold text-[9px] md:text-[13px] lg:text-[20px]">Highly breathable</h3>
+              <h3 className="font-semibold text-[9px] md:text-[13px] lg:text-[20px]">{traduccion?.home?.features.items[3]?.title}</h3>
               <p></p>
             </div>
             <div>
               <div className="bg-[#4E88B0] p-4 rounded-[5px] inline-block mb-2">
                 <img src="/assets/features/water.svg" alt="Icon 5" className="h-8 w-8" />
               </div>
-              <h3 className="font-semibold text-[9px] md:text-[13px] lg:text-[20px]">Excellent water repellency</h3>
-              <p className='text-[9px] md:text-[13px] lg:text-[20px]' >and resistance to liquid <br/> penetration</p>
+              <h3 className="font-semibold text-[9px] md:text-[13px] lg:text-[20px]">{traduccion?.home?.features.items[4]?.title}</h3>
+              <p className='text-[9px] md:text-[13px] lg:text-[20px]' >{traduccion?.home?.features.items[4]?.description[0]} <br/> {traduccion?.home?.features.items[4]?.description[1]}</p>
             </div>
           </motion.div>
           </div>
           <div className="mt-8">
             <button className="bg-[#95BC67]  py-4 px-8 rounded-3xl hover:bg-green-600 transition text-[14px] md:text-[22px] lg:text-[28px]">
-              Discover Our Technology
+            {traduccion?.home?.features.button}
             </button>
           </div>
         </div>

@@ -1,11 +1,13 @@
 import Image from 'next/image'
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { useSwipeable } from 'react-swipeable';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import { AppContext } from '@/Context/AppContext';
 
 
 
 function Surgical() {
+  const { traduccion } = useContext(AppContext);
     const [height, setHeight] = useState("1500px");
     const [carrouselImage, setCarrouselImage] = useState(0);
 
@@ -33,8 +35,8 @@ function Surgical() {
     <div className='container mx-auto flex flex-col  items-center xl:px-8 mt-[50px] lg:mt-[116px]   '>
         <div className='w-full h-full flex flex-col justify-center items-center '>
                 <h1 className='w-full text-[#1B3954] text-[65px] lg:text-[85px] leading-[70px] lg:leading-[86px] text-center mb-4 lg:mb-0'>
-                    MEDU <br/> <span className='text-[#4E88B0]'>Surgical
-                      <br/> Packages</span>
+                   {traduccion.ourProducts.surgical.heading.title[0]} <br/> <span className='text-[#4E88B0]'>{traduccion.ourProducts.surgical.heading.title[1]}
+                      <br/> {traduccion.ourProducts.surgical.heading.title[2]}</span>
                 </h1>
 
                 <div
@@ -57,7 +59,7 @@ function Surgical() {
                 </div>
 
                 <div className='w-[334px] h-[286px] rounded-[34px] border-2 px-[30px] flex flex-col text-[24px] leading-[28px] justify-center gap-[30px] my-[35px]'>
-                    <p className='text-[18px] leading-[22px] uppercase'>Our comprehensive surgical packs provide sterilized garments for efficient and safe procedures. Ask about the different surgical packages.</p>
+                    <p className='text-[18px] leading-[22px] uppercase'>{traduccion.ourProducts.surgical.description.text}</p>
                     <div className='flex gap-[25px]'>
                         <div className='rounded-full w-[56px] h-[56px] colorShadow bg-[#4E88B0]'/>
                     </div>

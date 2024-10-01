@@ -1,11 +1,14 @@
+import { AppContext } from '@/Context/AppContext';
 import Image from 'next/image'
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { useSwipeable } from 'react-swipeable';
 
 
 
 function Coveralls() {
+
+  const { traduccion } = useContext(AppContext);
 
     const [height, setHeight] = useState("1500px");
     const [color, setColor] = useState('blue');
@@ -37,7 +40,7 @@ function Coveralls() {
     <div className='container mx-auto flex flex-col lg:flex-row-reverse items-center xl:px-8 mt-[82 px] mt-[50px]  mb-[127px]   '>
         <div className='w-full h-full flex flex-col justify-center items-center '>
                 <h1 className='w-full  text-[#1B3954] text-[65px] lg:text-[85px] leading-[86px] mb-4 text-center lg:text-right lg:pr-[100px] xl:pr-[150px] 2xl:pr-[200px]'>
-                    MEDU <br/> <span className='text-[#4E88B0]'>Coveralls</span>
+                    {traduccion.ourProducts.coveralls.heading.title[0]} <br/> <span className='text-[#4E88B0]'>{traduccion.ourProducts.coveralls.heading.title[1]}</span>
                 </h1>
                 <div
                 {...handlers}
@@ -57,17 +60,17 @@ function Coveralls() {
                 src={`/assets/OurProducts/Coverall/${carrouselImage}.jpg`} width={336} height={334} className='w-full h-full rounded-[30px] object-cover ' alt="MEDU Gowns" />
                 </div>
                 <div className='w-[334px] h-[87px] rounded-[34px] border-2 px-[30px] flex text-[24px] leading-[28px] items-center mt-8 mb-[16px]'>
-                AAMI PB70 Level 4 <br/>
-                PROTECTION
+                {traduccion.ourProducts.coveralls.heading.protection} <br/>
+                {traduccion.ourProducts.coveralls.heading.protectionSubtitle}
                 </div>
                 <div className='w-[334px] h-[286px] rounded-[34px] border-2 px-[30px] flex flex-col text-[24px] leading-[28px] justify-center gap-[30px]'>
-                    <p className='text-[18px] leading-[22px] uppercase'>Designed for full-body protection, our coverall ensures safety and mobility in demanding environments.</p>
+                    <p className='text-[18px] leading-[22px] uppercase'>{traduccion.ourProducts.coveralls.description.text}</p>
                     <div className='flex gap-[25px]'>
                         <div className='rounded-full w-[56px] h-[56px] colorShadow bg-white'/>
                         <div className='rounded-full w-[56px] h-[56px] colorShadow bg-[#5FD9CB]'/>
                         <div className='rounded-full w-[56px] h-[56px] colorShadow bg-[#4E88B0]'/>
                     </div>
-                    <p className='tracking-wide text-[24px]'>S/M/L/XL/XXL</p>
+                    <p className='tracking-wide text-[24px]'>{traduccion.ourProducts.coveralls.description.sizes}</p>
                 </div>
         </div>
         <div className='w-full h-full flex flex-col justify-center items-center '>
@@ -98,7 +101,7 @@ function Coveralls() {
     slot='ar-button'
   >
     <Image src="/assets/icons/ar.svg" width={24} height={24} alt="ar icon" />
-    AR view
+    {traduccion.ourProducts.coveralls.buttons.arView}
   </button>
         </model-viewer>
           
@@ -107,7 +110,7 @@ function Coveralls() {
        <div className='w-[334px] h-[87px] rounded-[34px] border-2 px-[30px] flex text-[24px] leading-[28px] items-center mt-8 mb-[16px] justify-center cursor-pointer uppercase '
         onClick={() => setColor(color === 'blue' ? 'white' : 'blue')}       >
 
-                SEE IN {color} COLOR
+{traduccion.ourProducts.coveralls.buttons.seeInColor[0]} {color} {traduccion.ourProducts.coveralls.buttons.seeInColor[1]} 
                 </div>
     </div>
             

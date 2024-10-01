@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { AppContext } from '@/Context/AppContext';
 
 function Headlines() {
   const containerVariants = {
@@ -17,6 +18,8 @@ function Headlines() {
     triggerOnce: true, // Cambia a true para que la animación solo se ejecute una vez
   });
 
+  const { traduccion } = useContext(AppContext);
+
   return (
     <motion.div
 ref={ref}
@@ -29,20 +32,20 @@ ref={ref}
         className="text-[22px] lg:text-[50px] font-bold mb-4 text-center text-[#1B3954] leading-[25px] lg:leading-[52px]"
         variants={itemVariants}
       >
-        Making headlines. <br className="xl:hidden" />
-        <span className="text-[#5587B6]">Creating change.</span>
+        {traduccion.home.headlines.heading} <br className="xl:hidden" />
+        <span className="text-[#5587B6]">{traduccion.home.headlines.subheading}</span>
       </motion.h2>
       <motion.p
         className="text-center mb-8 md:max-w-xl lg:max-w-2xl text-[10px] md:text-[17px] lg:text-[20px] px-10"
         variants={itemVariants}
       >
-        Medu is making news, and it&apos;s easy to see why. As the first and only medical products of its kind, we&apos;ve received attention and accolades the world over.
+        {traduccion.home.headlines.description}
       </motion.p>
       <motion.h3
         className="text-lg font-semibold mb-4 text-center text-[#5587B6]"
         variants={itemVariants}
       >
-        As seen in:
+       {traduccion.home.headlines.seen}
       </motion.h3>
       <motion.div
         className="flex flex-wrap justify-center items-center space-x-4 gap-x-[30px] lg:gap-x-[56px]"
@@ -95,21 +98,21 @@ ref={ref}
         variants={itemVariants}
       >
         <p className="text-center text-[12px] md:text-[26px] lg:text-[36px] font-semibold italic">
-          &apos;&apos;MEDU is changing the world one gown at a time&apos;&apos;
+          &apos;&apos; {traduccion.home.headlines.quote.text}&apos;&apos;
         </p>
-        <p className="text-center mt-2 text-[8px] md:text-[16px] lg:text-[22px]">— Hillary Clinton</p>
+        <p className="text-center mt-2 text-[8px] md:text-[16px] lg:text-[22px]">{traduccion.home.headlines.quote.author}</p>
       </motion.div>
       <motion.p
         className="text-center mb-8 text-[10px] md:text-[18px] lg:text-[20px] text-[#1B3954] font-bold"
         variants={itemVariants}
       >
-        Read our press coverage, case studies, blog, and more.
+        {traduccion.home.headlines.readMore}
       </motion.p>
       <motion.button
         className="bg-[#95BC67] text-white py-2 lg:py-4 px-8 rounded-full hover:bg-green-600 transition text-[14px] md:text-[22px] xl:text-[22px]"
         variants={itemVariants}
       >
-        Gain Insights
+        {traduccion.home.headlines.button}
       </motion.button>
     </motion.div>
   );

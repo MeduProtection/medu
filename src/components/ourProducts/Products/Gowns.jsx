@@ -1,11 +1,14 @@
 import Image from 'next/image'
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { useSwipeable } from 'react-swipeable';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import { AppContext } from '@/Context/AppContext';
 
 
 
 function Gowns() {
+  const { traduccion } = useContext(AppContext);
+
     const [height, setHeight] = useState("1500px");
     const [carrouselImage, setCarrouselImage] = useState(0);
 
@@ -33,7 +36,7 @@ function Gowns() {
     <div className='container mx-auto flex flex-col lg:flex-row items-center xl:px-8 mt-[50px] lg:mt-[116px]   '>
         <div className='w-full h-full flex flex-col justify-center items-center '>
                 <h1 className='w-full text-[#1B3954] text-[65px] lg:text-[85px] leading-[70px] lg:leading-[86px] text-center lg:text-left lg:pl-[100px] xl:pl-[150px] 2xl:pl-[200px] mb-4 lg:mb-0'>
-                    MEDU <br/> <span className='text-[#4E88B0]'>Gowns</span>
+                    {traduccion.ourProducts.gowns.heading.title[0]}<br/> <span className='text-[#4E88B0]'>{traduccion.ourProducts.gowns.heading.title[1]}</span>
                 </h1>
 
                 <div
@@ -57,17 +60,17 @@ function Gowns() {
 
 
                 <div className='w-[334px] h-[87px] rounded-[34px] border-2 px-[30px] flex text-[24px] leading-[28px] items-center mt-8 mb-[16px]'>
-                AAMI PB70 Level 4. <br/>
-                PROTECTION
+                {traduccion.ourProducts.gowns.description.level} <br/>
+                {traduccion.ourProducts.gowns.description.sublevel}
                 </div>
                 <div className='w-[334px] h-[286px] rounded-[34px] border-2 px-[30px] flex flex-col text-[24px] leading-[28px] justify-center gap-[30px]'>
-                    <p className='text-[18px] leading-[22px] uppercase'>Optimized for protection and comfort, our surgical gown combines durability and flexibility, ideal for healthcare settings.</p>
+                    <p className='text-[18px] leading-[22px] uppercase'>{traduccion.ourProducts.gowns.description.protection}</p>
                     <div className='flex gap-[25px]'>
                         <div className='rounded-full w-[56px] h-[56px] colorShadow bg-white'/>
                         <div className='rounded-full w-[56px] h-[56px] colorShadow bg-[#5FD9CB]'/>
                         <div className='rounded-full w-[56px] h-[56px] colorShadow bg-[#4E88B0]'/>
                     </div>
-                    <p className='tracking-wide text-[24px]'>S/M/L/XL</p>
+                    <p className='tracking-wide text-[24px]'>{traduccion.ourProducts.gowns.description.sizes}</p>
                 </div>
         </div>
         <div className='w-full h-full flex flex-col justify-center items-center '>
@@ -97,7 +100,7 @@ function Gowns() {
    slot='ar-button'
   >
     <Image src="/assets/icons/ar.svg" width={24} height={24} alt="ar icon" />
-    AR view
+    {traduccion.ourProducts.gowns.buttons.arView}
   </button>
 </model-viewer>
 

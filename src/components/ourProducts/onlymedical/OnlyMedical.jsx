@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { AppContext } from '@/Context/AppContext';
 
 function OnlyMedical() {
+
+  const { traduccion } = useContext(AppContext);
+
   const [ref, inView] = useInView({
     triggerOnce: true, // La animación solo se activará una vez
     threshold: 0.1, // El elemento se considerará visible cuando esté al menos el 10% visible
@@ -35,25 +39,25 @@ function OnlyMedical() {
           className="mb-6 max-w-4xl text-[12px] sm:text-[16px] md:text-[18px] xl:text-[20px] px-4 md:px-8 xl:px-0"
           variants={textVariants}
         >
-          As the only medical gown that offers Level 4 protection with the ability to protect against cross-contamination, Medu gowns can be worn across multi patient visits, giving caregivers back time they would have spent changing.
+          {traduccion?.ourProducts?.onlyMedical?.description1}
         </motion.p>
         <motion.p
           className="mb-6 max-w-4xl text-[12px] sm:text-[16px] md:text-[18px] xl:text-[20px] px-4 md:px-8 xl:px-0 font-bold text-[#4E88B0]"
           variants={textVariants}
         >
-          And less time changing clothes means more time changing–and saving–lives.
+          {traduccion?.ourProducts?.onlyMedical?.description2}
         </motion.p>
         <motion.p
           className="mb-6 max-w-2xl text-[12px] sm:text-[16px] md:text-[18px] xl:text-[20px] px-4 md:px-8 xl:px-0 text-[#95BC67]"
           variants={textVariants}
         >
-          See for yourself.
+          {traduccion?.ourProducts?.onlyMedical?.description3}
         </motion.p>
         <motion.button
           className="bg-[#95BC67] text-white py-3 md:py-2 px-6 md:px-8 rounded-full hover:bg-green-600 transition text-[12px] sm:text-[16px] md:text-[20px] xl:text-[24px]"
           variants={textVariants}
         >
-          Get Started
+          {traduccion?.ourProducts?.onlyMedical?.button}
         </motion.button>
       </motion.div>
     </div>
