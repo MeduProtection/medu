@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { motion } from 'framer-motion'
+import { AppContext } from '@/Context/AppContext';
 
 function Waste() {
+    const { traduccion } = useContext(AppContext);
+
     const variants = {
         hidden: { x: 300, opacity: 0 },
         visible: { 
@@ -21,7 +24,7 @@ function Waste() {
             transition={{ duration: 0.5 }}
         >
             <p className='text-[#1B3954]  text-[20px] md:text-[24px]  text-center '>
-                <span className='text-[36px] md:text-[55px] lg:text-[40px] xl:text-[55px] font-bold'>90% </span><br/> waste <br/> reduction
+                <span className='text-[36px] md:text-[55px] lg:text-[40px] xl:text-[55px] font-bold'>90% </span><br/>{traduccion.ourProducts.cards.waste.description[0]} <br/> {traduccion.ourProducts.cards.waste.description[1]}
             </p>
         </motion.div>
     )

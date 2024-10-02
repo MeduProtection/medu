@@ -291,6 +291,20 @@
         ],
         "stat": "1 traje Medu reemplaza 450+ trajes desechables"
       },
+      "cards": {
+  "cost": {
+    "description": "De ahorro"
+  },
+  "wash": {
+    "description": ["Lavar hasta", "veces"]
+  },
+  "waste": {
+    "description": ["reducción de", "desechos"]
+  },
+  "weekly": {
+    "description": ["horas", "semanales", "ahorradas"]
+  }
+},
       "onlyMedical": {
         "description1": "Como el único traje médico que ofrece protección de Nivel 4 con la capacidad de proteger contra la contaminación cruzada, los trajes Medu pueden usarse en múltiples visitas a pacientes, devolviendo a los cuidadores el tiempo que habrían pasado cambiándose.",
         "description2": "Y menos tiempo cambiándose significa más tiempo salvando vidas.",

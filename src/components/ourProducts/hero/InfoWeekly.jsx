@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { motion } from 'framer-motion'
+import { AppContext } from '@/Context/AppContext';
 
 
 function InfoWeekly() {
+
+    const { traduccion } = useContext(AppContext);
+
     const variants = {
         hidden: { x: 300, opacity: 0 },
         visible: { 
@@ -23,13 +27,13 @@ function InfoWeekly() {
        10
         </h3>
         <h3 className='font-black text-[#1B3954] text-[40px] md:text-[55px] lg:text-[30px] xl:text-[55px] text-left'>
-       hours
+       {traduccion.ourProducts.cards.weekly.description[0]}
         </h3>
         <p className='text-[18px] md:text-[24px] leading-[20px] mt-2 text-[#1B3954] '>
-        weekly time
+        {traduccion.ourProducts.cards.weekly.description[1]}
         </p>
         <p className='text-[18px] md:text-[24px]  text-[#1B3954] '>
-        savings
+        {traduccion.ourProducts.cards.weekly.description[2]}
         </p>
 
        

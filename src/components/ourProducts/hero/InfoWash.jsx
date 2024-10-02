@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { motion } from 'framer-motion'
+import { AppContext } from '@/Context/AppContext';
 
 function OnlyMedical() {
+    const { traduccion } = useContext(AppContext);
+
     const variants = {
         hidden: { x: 300, opacity: 0 },
         visible: { 
@@ -22,10 +25,10 @@ function OnlyMedical() {
         >
             <p className='text-[#5587B6]  text-[20px] md:text-[24px] text-center '>
                 <span className=''>
-                    Wash up to
+                {traduccion.ourProducts.cards.wash.description[0]}
                     </span>
                     <br/>
-                <span className='text-[36px] md:text-[55px] lg:text-[40px] font-bold'>50 <br/> times <br/> </span>
+                <span className='text-[36px] md:text-[55px] lg:text-[40px] font-bold'>50 <br/> {traduccion.ourProducts.cards.wash.description[1]} <br/> </span>
             </p>
         </motion.div>
     )

@@ -297,6 +297,20 @@
 ],
   "stat": "1 Medu gown replaces 450+ disposable gowns"
 },
+"cards":{
+  "cost":{
+    "description":"Cost savings"
+  },
+  "wash":{
+    "description":["Wash up to", "times"]
+  },
+  "waste":{
+    "description":["waste", "reduction"]
+  },
+  "weekly":{
+    "description":["hours", "weekly time", "savings"]
+  }
+},
 "onlyMedical": {
   "description1": "As the only medical gown that offers Level 4 protection with the ability to protect against cross-contamination, Medu gowns can be worn across multi patient visits, giving caregivers back time they would have spent changing.",
   "description2": "And less time changing clothes means more time changing–and saving–lives.",

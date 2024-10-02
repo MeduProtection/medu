@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { motion } from 'framer-motion'
+import { AppContext } from '@/Context/AppContext';
 
 
 function InfoCost() {
+    const { traduccion } = useContext(AppContext);
+
+
     const variants = {
         hidden: { x: 300, opacity: 0 },
         visible: { 
@@ -23,7 +27,7 @@ function InfoCost() {
        80%
         </h3>
         <p className='text-[21px] md:text-[24px]  text-[#1B3954] '>
-        Cost savings
+        {traduccion.ourProducts.cards.cost.description}
         </p>
        
     </motion.div>

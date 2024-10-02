@@ -35,7 +35,7 @@ function Gowns() {
   return (
     <div className='container mx-auto flex flex-col lg:flex-row items-center xl:px-8 mt-[50px] lg:mt-[116px]   '>
         <div className='w-full h-full flex flex-col justify-center items-center '>
-                <h1 className='w-full text-[#1B3954] text-[65px] lg:text-[85px] leading-[70px] lg:leading-[86px] text-center lg:text-left lg:pl-[100px] xl:pl-[150px] 2xl:pl-[200px] mb-4 lg:mb-0'>
+                <h1 className='w-full text-[#1B3954] text-[65px] lg:text-[85px] leading-[70px] lg:leading-[86px] text-center lg:text-left lg:pl-[100px] xl:pl-[150px] 2xl:pl-[200px] mb-4 '>
                     {traduccion.ourProducts.gowns.heading.title[0]}<br/> <span className='text-[#4E88B0]'>{traduccion.ourProducts.gowns.heading.title[1]}</span>
                 </h1>
 
@@ -63,7 +63,7 @@ function Gowns() {
                 {traduccion.ourProducts.gowns.description.level} <br/>
                 {traduccion.ourProducts.gowns.description.sublevel}
                 </div>
-                <div className='w-[334px] h-[286px] rounded-[34px] border-2 px-[30px] flex flex-col text-[24px] leading-[28px] justify-center gap-[30px]'>
+                <div className='w-[334px] h-[325px] rounded-[34px] border-2 px-[30px] flex flex-col text-[24px] leading-[28px] justify-center gap-[30px]'>
                     <p className='text-[18px] leading-[22px] uppercase'>{traduccion.ourProducts.gowns.description.protection}</p>
                     <div className='flex gap-[25px]'>
                         <div className='rounded-full w-[56px] h-[56px] colorShadow bg-white'/>
