@@ -201,7 +201,25 @@ function Navbar() {
                   </Link>
                 </li>
                 <li>
-                  <span className={`${idioma.nombre == "EN" && "text-[#95BC67]"} cursor-pointer hover:text-[#95BC67] `}>EN</span> / <span className={`${idioma.nombre == "ES" && "text-[#95BC67]"} cursor-pointer hover:text-[#95BC67] `}>ES</span>
+                  <span 
+                   onClick={
+                    () => {
+                      setIdioma({
+                        nombre: 'EN',
+                        code: 'US',
+                      });
+                    }
+                  }
+                  className={`${idioma.nombre == "EN" && "text-[#95BC67]"} cursor-pointer hover:text-[#95BC67] `}>EN</span> / <span 
+                  onClick={
+                    () => {
+                      setIdioma({
+                        nombre: 'ES',
+                        code: 'MX',
+                      });
+                    }
+                  }
+                  className={`${idioma.nombre == "ES" && "text-[#95BC67]"} cursor-pointer hover:text-[#95BC67] `}>ES</span>
                 </li>
               </ul>
             </div>
