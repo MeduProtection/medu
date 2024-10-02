@@ -1,13 +1,599 @@
 {
-    "home":{
-        "hero":{
-           "header":[
-            "Save $150k per day",
-            " with the world's ",
-            " first Level 4 antiviral ",
-            "reusable gown"
-
-           ]
+    "home": {
+      "hero": [
+        "Ahorra $150k por día",
+        " con el primer ",
+        " traje antiviral reutilizable ",
+        "de Nivel 4 del mundo",
+        " Salvas vidas. Ahora puedes salvar el planeta, junto con decenas de millones de dólares cada mes con el único traje médico lavable y sostenible de su tipo.",
+        " Mira cómo nuestra tecnología revolucionaria está transformando la atención médica.",
+        "Empieza ahora",
+        "Actualmente en prueba con algunas de las instalaciones médicas más respetadas de los EE. UU."
+      ],
+      "heroCards": [
+        {
+          "title": "Tus ahorros mensuales",
+          "description": "El gráfico muestra los ahorros en tu inversión del último mes"
+        },
+        {
+          "title": ["hasta", "ahorros de costos"]
+        },
+        {
+          "name": "Alexander Collins",
+          "occupation": "Cirujano plástico",
+          "description": "Los trajes de MEDU han transformado mis cirugías, ofreciendo protección de primer nivel y reduciendo costos."
         }
+      ],
+      "informacion": [
+        {
+          "index": 0,
+          "titulo": "Desarrollo y estándares",
+          "descripcion1": "La pandemia de gripe española llevó a la adopción de trajes quirúrgicos de algodón, con el objetivo de reducir la transmisión de enfermedades en entornos médicos.",
+          "descripcion2": ""
+        },
+        {
+          "index": 1,
+          "titulo": "Regulaciones y mejora de la seguridad",
+          "descripcion1": "1930s: Los trajes quirúrgicos de algodón se convierten en estándar en las salas de operaciones. Aunque no eran estériles, representaron un avance significativo en la protección contra infecciones.",
+          "descripcion2": "1940s: La esterilización de los trajes quirúrgicos se vuelve una práctica común, mejorando la prevención de infecciones postoperatorias."
+        },
+        {
+          "index": 2,
+          "titulo": "Eficiencia y sostenibilidad",
+          "descripcion1": "1970s: Se implementan regulaciones más estrictas para prevenir la contaminación cruzada en las salas de operaciones, basadas en los estándares de AORN y NIOSH.",
+          "descripcion2": "1980s: Materiales como el polipropileno mejoraron la comodidad, resistencia a líquidos y propiedades antimicrobianas de los trajes."
+        },
+        {
+          "index": 3,
+          "titulo": "Respuesta a pandemias y futuro",
+          "descripcion1": "1990s: Se pone énfasis en mejorar la transpirabilidad y la comodidad de los trajes quirúrgicos, con materiales más ligeros y costos reducidos sin comprometer la seguridad.",
+          "descripcion2": "2000s: Crece el interés por los trajes reutilizables y desechables ecológicos, lo que lleva a avances en el lavado, esterilización y materiales biodegradables."
+        },
+        {
+          "index": 4,
+          "titulo": "Principios del siglo XX: Introducción de trajes quirúrgicos",
+          "descripcion1": "2021: El COVID-19 incrementa la demanda de PPE. MEDU introduce trajes de PPE reutilizables de Nivel 4 y monos altamente protectores y ecológicos.",
+          "descripcion2": ""
+        }
+      ],
+      "timeline": {
+        "heading": [
+          "Cambiando la tela de la medicina ",
+          "para siempre."
+        ],
+        "subheading": "Los trajes médicos que se usan hoy fueron diseñados en la década de 1940.",
+        "years": [
+          {
+            "year": "1918s",
+            "label": "Introducción de los trajes quirúrgicos",
+            "description": "La pandemia de gripe española llevó a la adopción de trajes quirúrgicos de algodón, con el objetivo de reducir la transmisión de enfermedades."
+          },
+          {
+            "year": "1930s",
+            "label": "Desarrollo y estándares",
+            "description": "Los trajes quirúrgicos de algodón se convierten en estándar en las salas de operaciones, mejorando la protección contra infecciones."
+          },
+          {
+            "year": "1970s",
+            "label": "Regulaciones y entorno de seguridad",
+            "description": "Se implementan regulaciones más estrictas para prevenir la contaminación cruzada en las salas de operaciones."
+          },
+          {
+            "year": "1990s",
+            "label": "Eficiencia y sostenibilidad",
+            "description": "Enfoque en mejorar la transpirabilidad, comodidad y reducción de costos de los trajes quirúrgicos."
+          },
+          {
+            "year": "2020s",
+            "label": "Respuesta a la pandemia y futuro",
+            "description": "El COVID-19 llevó al desarrollo de trajes de PPE reutilizables con altos niveles de protección y materiales ecológicos."
+          }
+        ]
+      },
+      "features": {
+        "heading": [
+          "¿Qué ha cambiado en los últimos ",
+          "80 años?"
+        ],
+        "subheading": "Casi todo, excepto el deseo de preservar la salud y la seguridad de los pacientes y cuidadores.",
+        "description": "Creado con un proceso patentado que proporciona los niveles más altos de protección y esterilidad, Medu lleva las coberturas protectoras al siglo XXI con trajes y monos reutilizables de Nivel 4 que no requieren lavado especial y previenen la contaminación cruzada.",
+        "items": [
+          {
+            "icon": "/assets/features/highest.svg",
+            "title": [
+              "Mayor nivel de ",
+              "protección para el usuario:"
+            ],
+            "description": "Nivel 4 AAMI PB70"
+          },
+          {
+            "icon": "/assets/features/features.svg",
+            "title": ["Máxima resistencia a la ",
+              "penetración de virus:"
+            ],
+            "description": "Nivel 4 AAMI PB70"
+          },
+          {
+            "icon": "/assets/features/desinfection.svg",
+            "title": "Desinfección fácil:",
+            "description": ["entre lavados, integrando sistemas de ",
+              "lavandería existentes"
+            ]
+          },
+          {
+            "icon": "/assets/features/breathable.svg",
+            "title": "Alta transpirabilidad",
+            "description": ""
+          },
+          {
+            "icon": "/assets/features/water.svg",
+            "title": "Excelente repelencia al agua",
+            "description": ["y resistencia a la ",
+              "penetración de líquidos"
+            ]
+          }
+        ],
+        "button": "Descubre Nuestra Tecnología"
+      },
+      "wasteEctomy": {
+        "heading": [
+          "Dale a tu hospital una ",
+          "waste-ectomía."
+        ],
+        "description": "El desperdicio médico es un problema de 5,000,000 toneladas y 935 mil millones de dólares, comprometiendo la salud pública y creando una carga financiera significativa en los sistemas de salud. Los innovadores trajes y monos médicos de Medu ofrecen una capacidad inigualable para aumentar los ahorros mientras reducen drásticamente los desechos en los vertederos. Después de todo, el planeta también merece una larga vida saludable.",
+        "savings": [
+          {
+            "text": "hasta ",
+            "value": "80%",
+            "description": "ahorro de costos",
+            "color": "#95BC67"
+          },
+          {
+            "text": "hasta ",
+            "value": "90%",
+            "description": "reducción de desechos",
+            "color": "#4E88B0"
+          },
+          {
+            "text": "hasta ",
+            "value": "10 hrs",
+            "description": "ahorro semanal de horas",
+            "color": "#1B3954"
+          }
+        ],
+        "image": "/assets/waste/bata.png"
+      },
+      "form": {
+        "heading": ["Conviértete en un socio para el ",
+          "cambio", "."
+        ],
+        "description": "Únete a Medu en la reducción de desechos. Cuéntanos sobre tu empresa, tus capacidades y tus objetivos. Luego, conéctate con nosotros para aprender cómo convertirte en un socio distribuidor."
+      },
+      "contactForm": {
+        "fields": {
+          "firstName": {
+            "label": "Nombre",
+            "placeholder": "Nombre"
+          },
+          "lastName": {
+            "label": "Apellido",
+            "placeholder": "Apellido"
+          },
+          "companyName": {
+            "label": "Nombre de la Empresa",
+            "placeholder": "Nombre de la Empresa"
+          },
+          "companyPhone": {
+            "label": "Teléfono de la Empresa",
+            "placeholder": "Teléfono de la Empresa"
+          },
+          "companyEmail": {
+            "label": "Correo de la Empresa",
+            "placeholder": "Correo de la Empresa"
+          },
+          "industry": {
+            "label": "Industria",
+            "options": [
+              "Médico",
+              "Tecnología",
+              "Educación",
+              "Finanzas",
+              "Otro"
+            ]
+          },
+          "subject": {
+            "label": "Asunto",
+            "placeholder": "Escribe aquí"
+          },
+          "message": {
+            "label": "Mensaje",
+            "placeholder": "Escribe aquí"
+          },
+          "agree": {
+            "label": [
+              "Acepto la ",
+              "política de privacidad"
+            ]
+          }
+        },
+        "button": "Comenzar",
+        "messages": {
+          "agreeRequired": "Por favor, acepta la política de privacidad.",
+          "success": "¡Mensaje enviado!",
+          "failure": "No se pudo enviar el mensaje, por favor inténtalo de nuevo."
+        }
+      },
+      "howItWorks": {
+        "heading": [
+          "Cómo ",
+          "funciona",
+          "."
+        ],
+        "subheading": "Reducir el costo de los trajes protectores hasta en un 80 % mientras se garantiza la salud y la seguridad puede sonar demasiado bueno para ser verdad. Pero no lo es.",
+        "description": "Nuestro tejido patentado, antiviral y antibacteriano puede lavarse hasta 50 veces con los detergentes y equipos del sistema hospitalario convencional sin perder propiedades protectoras y previene la contaminación cruzada, lo que permite a los cuidadores reducir drásticamente los cambios de trajes.",
+        "video": {
+          "src": "/assets/video/video.mp4",
+          "poster": "/assets/works/poster.png"
+        }
+      },
+      "appDemo": {
+        "description": "Nuestra aplicación rastrea el estado de limpieza y vida útil de cada prenda Medu para que sepas el estado y la etapa del ciclo de vida.",
+        "list": [
+          "Revisa el número de lavados en tiempo real",
+          "Gestiona trajes y monos de Medu",
+          "Califica la calidad"
+        ],
+        "button": "Descubre Cómo Funciona Medu",
+        "image": "/assets/demo/demo.png",
+        "icons": {
+          "check": "/assets/icons/check.svg"
+        }
+      },
+      "headlines": {
+        "heading": "Generando titulares.",
+        "subheading": "Creando cambios.",
+        "description": "Medu está haciendo noticias, y es fácil ver por qué. Como los primeros y únicos productos médicos de su tipo, hemos recibido atención y elogios en todo el mundo.",
+        "seen": "Visto en",
+        "quote": {
+          "text": "'MEDU está cambiando el mundo un traje a la vez'",
+          "author": "— Hillary Clinton"
+        },
+        "readMore": "Lee nuestra cobertura de prensa, estudios de casos, blog y más.",
+        "button": "Obtén más información"
+      },
+      "medicalMiracle": {
+        "heading": ["Inventando un milagro",
+          "médico moderno"
+        ],
+        "description": "Medu nació de la curiosidad, la pasión y la necesidad. Durante la pandemia de COVID-19, la fundadora y CEO de Medu, Tamara Chayo, vio a personas de su comunidad en la Ciudad de México luchar por encontrar protección adecuada contra patógenos. La ingeniera bioquímica trabajó día y noche para abordar esta necesidad urgente e inventó una nueva tela innovadora, creando un movimiento social.",
+        "readMore": "Lee más sobre el origen y el equipo de Medu.",
+        "button": "Aprende Sobre Nosotros"
+      },
+      "difference": {
+        "heading": ["La diferencia que ",
+          "marca la diferencia."
+        ],
+        "description": "Medu no solo es el primero de su tipo. Es el primero de su tipo que ofrece una serie de beneficios para optimizar los ahorros de todo tipo. Descubre cómo Medu se compara con otras soluciones.",
+        "button": "¿Por qué MEDU?"
+      },
+      "callToAction": {
+        "heading": "Cambia tus trajes. Transforma el mundo.",
+        "description": "Ahorra dinero, tiempo y desperdicio de una manera nunca antes posible. Contáctanos para agendar una reunión, obtener más información y empezar.",
+        "button": "Empezar"
+      }
+    },
+    "ourProducts": {
+      "hero": {
+        "heading": ["Ahorra ", "más"],
+        "description": ["Con los trajes médicos de Medu, ahorras hasta un ",
+          "80%",
+          " en comparación con las coberturas típicas de PPE. También ayudas a salvar el planeta de los desechos médicos que saturan los vertederos y preservas un tiempo valioso que salva vidas."
+        ],
+        "stat": "1 traje Medu reemplaza 450+ trajes desechables"
+      },
+      "onlyMedical": {
+        "description1": "Como el único traje médico que ofrece protección de Nivel 4 con la capacidad de proteger contra la contaminación cruzada, los trajes Medu pueden usarse en múltiples visitas a pacientes, devolviendo a los cuidadores el tiempo que habrían pasado cambiándose.",
+        "description2": "Y menos tiempo cambiándose significa más tiempo salvando vidas.",
+        "description3": "Compruébalo tú mismo.",
+        "button": "Empezar"
+      },
+      "protection": {
+        "heading": ["Protección ", "sin compromisos"],
+        "description1": "El revolucionario tejido de Medu ofrece protección óptima y comodidad sin igual.",
+        "description2": "Desarrollado por una ingeniera bioquímica y en prueba con algunas de las instalaciones médicas más prestigiosas de los Estados Unidos, Medu utiliza una membrana patentada que atrapa y mata virus y bacterias, y luego los elimina mediante el lavado sin necesidad de detergentes o equipos especiales.",
+        "button": "Descubre Cómo Funciona Medu"
+      },
+      "gowns": {
+        "heading": {
+          "title": ["MEDU ", "Trajes"]
+        },
+        "description": {
+          "level": "Nivel 4 AAMI PB70.",
+          "sublevel": "PROTECCIÓN",
+          "protection": "Optimizado para la protección y la comodidad, nuestro traje quirúrgico combina durabilidad y flexibilidad, ideal para entornos de atención médica.",
+          "sizes": "S/M/L/XL"
+        },
+        "buttons": {
+          "arView": "Vista AR"
+        }
+      },
+      "coveralls": {
+        "heading": {
+          "title": ["MEDU", "Monos"],
+          "protection": "Nivel 4 AAMI PB70",
+          "protectionSubtitle": "PROTECCIÓN"
+        },
+        "description": {
+          "text": "Diseñado para protección de cuerpo completo, nuestro mono asegura seguridad y movilidad en entornos exigentes.",
+          "sizes": "S/M/L/XL/XXL"
+        },
+        "buttons": {
+          "arView": "Vista AR",
+          "seeInColor": [
+            "VER EN",
+            "COLOR"
+          ]
+        }
+      },
+      "surgical": {
+        "heading": {
+          "title": ["MEDU ",
+            "Paquetes",
+            " Quirúrgicos"
+          ]
+        },
+        "description": {
+          "text": "Nuestros paquetes quirúrgicos completos proporcionan prendas esterilizadas para procedimientos eficientes y seguros. Consulta sobre los diferentes paquetes quirúrgicos."
+        }
+      }
+    },
+    "howItWorks": {
+      "instructions": {
+        "titles": {
+          "mainTitle": "Nuestras instrucciones de cuidado",
+          "subTitle": [
+            "Cuida el planeta y ",
+            "a los demás"
+          ]
+        },
+        "descriptions": {
+          "intro": ["Los trajes de Medu son tan fáciles de usar como de amar. No necesitan detergentes especiales ni equipos de lavandería, y pueden lavarse más de 50 veces a 60°C (140°F).", "Para garantizar un seguimiento preciso de los lavados, Medu ofrece la aplicación Protect."
+          ],
+          "stepsIntro": "Conoce la edad y el estado de tus trajes y monos Medu en cuatro sencillos pasos:"
+        },
+        "steps": [
+          {
+            "title": "Paso 1",
+            "description": "Descarga la aplicación Medu Protect y registra tu correo electrónico para crear una cuenta."
+          },
+          {
+            "title": "Paso 2",
+            "description": "Escanea tus trajes de manera práctica, acerca tu dispositivo al traje para registrar el lavado."
+          },
+          {
+            "title": "Paso 3",
+            "description": "Consulta el estado de vida de tus trajes, verifica el número de lavados escaneados en tiempo real."
+          },
+          {
+            "title": "Paso 4",
+            "description": "Gestiona fácilmente tus trajes y califica su calidad después de cada lavado."
+          }
+        ]
+      },
+      "review": {
+        "text": "Revisa las instrucciones de lavado de Medu",
+        "button": {
+          "label": "Descargar instrucciones"
+        }
+      }
+    },
+    "industries": {
+      "hero": {
+        "title": [
+          "Medu para ",
+          "la medicina",
+          "."
+        ],
+        "subtitle": "Cada nivel de protección para cada tipo de atención.",
+        "description": "Los trajes médicos y monos de Medu fueron diseñados específicamente para la industria médica. Desarrollados para proteger a los profesionales de la salud y a los pacientes de la exposición a agentes infecciosos, fluidos corporales, productos químicos y otros peligros presentes en entornos de atención médica, solo Medu ofrece protección de Nivel 4 contra la contaminación cruzada en una tela reutilizable y sostenible."
+      },
+      "features": {
+        "title": "",
+        "items": [
+          {
+            "title": ["Mayor nivel de ", "protección para el usuario:"],
+            "description": "Nivel 4 AAMI PB70"
+          },
+          {
+            "title": ["Máxima resistencia a la ", "penetración de virus:"],
+            "description": "Nivel 4 AAMI PB70"
+          },
+          {
+            "title": ["Mayor nivel de ", "protección para el usuario:"],
+            "description": "Nivel 4 AAMI PB70"
+          },
+          {
+            "title": ["Alta ", "transpirabilidad"],
+            "description": ""
+          },
+          {
+            "title": "Excelente repelencia al agua",
+            "description": ["y resistencia a la ", "penetración de líquidos"]
+          }
+        ]
+      },
+      "infection": {
+        "section1": {
+          "paragraph1": "Medu proporciona control de infecciones en todos los escenarios de atención entre cuidadores y pacientes, incluidos los trajes quirúrgicos y las unidades de aislamiento donde las condiciones estériles son fundamentales. Debido a que los profesionales de la salud pueden usar cada traje o mono varias veces, Medu reduce el número de cambios requeridos, lo que resulta en más tiempo con los pacientes y un mayor potencial para salvar vidas.",
+          "paragraph2": "El material cómodo y transpirable de Medu, pendiente de patente, permite hasta 50 lavados. Las instalaciones y las instituciones médicas no necesitan invertir en equipos especializados, lo que hace que Medu sea fácil de incorporar en los sistemas actuales. Aprende cómo se rastrean y lavan los trajes de Medu."
+        },
+        "section2": {
+          "statistic_text": "Con la capacidad de cada traje médico/quirúrgico para reemplazar 450 trajes, Medu ayuda a ahorrar más tiempo, más vidas y más recursos."
+        },
+        "statistics": [
+          {
+            "percentage": "80%",
+            "description": "ahorro de costos"
+          },
+          {
+            "percentage": "90%",
+            "description": ["reducción de ", "desechos"]
+          },
+          {
+            "percentage": ["10 ", "horas"],
+            "description": ["ahorro semanal de ", "tiempo"]
+          }
+        ]
+      },
+      "industries": {
+        "section": {
+          "title": ["Medu para otras ", "industrias", "."],
+          "description": "Con nuestro tejido revolucionario, Medu no solo es perfecto para la medicina. También ofrecemos protección para una variedad de otras industrias que requieren protección contra contaminantes. Estas industrias incluyen alimentos y bebidas, productos químicos, farmacéuticos, industriales y más."
+        },
+        "cards": [
+          {
+            "title": "Alimentos y Bebidas",
+            "description": "Medu es perfecto para la industria de alimentos y bebidas. Nuestro tejido está diseñado para proteger contra contaminantes, lo que lo convierte en la opción ideal para los trabajadores de alimentos y bebidas."
+          },
+          {
+            "title": "Industria Química",
+            "description": "Los trabajadores de la industria química requieren protección contra sustancias nocivas. El tejido de Medu está diseñado específicamente para proteger contra contaminantes en entornos químicos."
+          },
+          {
+            "title": "Industria Farmacéutica",
+            "description": "El sector farmacéutico exige protección contra contaminantes. El tejido de Medu ofrece la protección necesaria contra sustancias peligrosas, garantizando la seguridad."
+          },
+          {
+            "title": "Uso Industrial",
+            "description": "Los trajes de Medu se utilizan en la industria automotriz y otras industrias, ofreciendo protección contra peligros químicos y cumplimiento de las normativas de seguridad, además de ser fáciles de lavar."
+          }
+        ]
+      },
+      "ready": {
+        "title": "¿Listo para ver cómo estamos cambiando la tela de la medicina?",
+        "description": "Pruébalo en tu institución o instalación.",
+        "button": "Empezar"
+      }
+    },
+    "aboutUs": {
+      "hero": {
+        "title": ["Las personas detrás del ", "movimiento", "."],
+        "description": "En Medu, nuestro equipo de profesionales dedicados está a la vanguardia de la innovación en equipos de protección personal. Desde sus humildes comienzos en un laboratorio escolar, nuestra experiencia colectiva ha impulsado el desarrollo de una membrana que encapsula químicamente los patógenos, reduciendo significativamente el riesgo de contaminación cruzada. Hoy, Medu representa un movimiento de seguridad e innovación, impulsado por un equipo comprometido con marcar la diferencia en la salud pública. Conoce al equipo de Medu, líderes en la creación de soluciones protectoras que salvan vidas."
+      },
+      "team": {
+        "title": ["Medu nació y un movimiento ", "se creó", "."],
+        "subtitle": "Conoce a Tamara y al resto del equipo de Medu.",
+        "members": [
+          {
+            "name": "Tamara Chayo Romo",
+            "ocupation": "CEO & Fundadora",
+            "image": "/assets/team/TamaraChayo.png",
+            "description": "Tamara, becaria de Thiel y Halcyon, ha recaudado más de 4 millones de dólares para MEDU desde 2020. Comprometida con la sostenibilidad, asesora y apoya a jóvenes emprendedores mientras continúa impactando en la industria de las telas médicas."
+          },
+          {
+            "name": "Alberto Yarza",
+            "ocupation": "COO",
+            "image": "/assets/team/AlbertoYarza.png",
+            "description": "Alberto ha pasado más de 12 años optimizando operaciones en varios sectores, incluidos el marketing y el comercio minorista. Apasionado por la comida y los deportes acuáticos, ha vivido en tres países y trabajado con varias fundaciones."
+          },
+          {
+            "name": "Roberto Ayala",
+            "ocupation": "Jefe de Operaciones",
+            "image": "/assets/team/RobertoAyala.png",
+            "description": "Roberto es ingeniero químico con experiencia en auditorías y manuales de calidad. Graduado de la Universidad La Salle, actualmente cursa una Maestría en Administración mientras lidera las operaciones de Medu."
+          },
+          {
+            "name": "Jorge Rosas",
+            "ocupation": "Jefe de Marketing",
+            "image": "/assets/team/JorgeRosas.png",
+            "description": "Jorge, el primer empleado de Medu, tiene un título en administración de empresas. Está comprometido en ayudar a Medu a romper barreras a nivel mundial y también es un creador de contenido exitoso, conocido por construir relaciones sólidas."
+          },
+          {
+            "name": "David Zayas",
+            "ocupation": "VP de Ventas",
+            "image": "/assets/team/DavidZayas.png",
+            "description": "David tiene un MBA y se especializa en desarrollo de negocios en toda América del Norte. Con experiencia en atención médica, alimentos y Proptech, lidera los esfuerzos de expansión de Medu, enfocándose en soluciones sostenibles para múltiples industrias."
+          },
+          {
+            "name": "Adriana Ávila",
+            "ocupation": "Gerente de Producto",
+            "image": "/assets/team/AdrianaAvila.png",
+            "description": "Adriana, graduada en Ciencias Ambientales, implementa procesos de seguridad, higiene y calidad para garantizar la excelencia en la fabricación en Medu. Se especializa en la aplicación de NOMs emitidas por STPS para la seguridad en el lugar de trabajo."
+          },
+          {
+            "name": "Sophia Chayo",
+            "ocupation": "Recursos Humanos",
+            "image": "/assets/team/ShophiaChayo.png",
+            "description": "Sophia, reconocida por su excelencia académica, es experta en recursos humanos. Desempeña un papel clave en el funcionamiento del equipo de Medu y en garantizar un ambiente de trabajo cohesivo y fuerte."
+          },
+          {
+            "name": "Adrian Rosas",
+            "ocupation": "Ejecutivo de Cuenta",
+            "image": "/assets/team/AdrianRosas.png",
+            "description": "Adrián, estudiante de Diseño de Moda y DJ, se especializa en ventas y llamadas en frío en MEDU. Sus habilidades multidisciplinarias ayudan a Medu a expandirse en las industrias de la salud y los alimentos con soluciones sostenibles."
+          },
+          {
+            "name": "Saman Mortazavi",
+            "ocupation": "Desarrollador de Negocios",
+            "image": "/assets/team/Saman2.png",
+            "description": "Saman, con experiencia en startups y empresas Unicornio como Deel y Rappi, ayuda a escalar rápidamente los negocios. Le apasiona la comida, los deportes y los viajes, contribuyendo a las estrategias de acceso al mercado de Medu."
+          }
+        ]
+      },
+      "meet": {
+        "title": ["Conócenos ", "en persona", "."],
+        "description": ["Ya has conocido quiénes somos y por qué comenzamos Medu. ", "Ahora conócenos en persona.", " Contáctanos para agendar una reunión."],
+        "button": "Agendar una reunión"
+      },
+      "first": {
+        "title": ["Contáctanos para dar el ", "primer paso."],
+        "description": "Ahorra dinero, tiempo y desperdicio de una manera nunca antes posible. Contáctanos para agendar una reunión, obtener más información y empezar.",
+        "button": "Empezar"
+      }
+    },
+    "footer": {
+      "links": {
+        "our_products": "Nuestros Productos",
+        "how_it_works": "Cómo funciona",
+        "industries": "Industrias",
+        "about_us": "Sobre Nosotros",
+        "distributor_button": "Soy Distribuidor"
+      },
+      "legal": {
+        "terms": "Términos",
+        "privacy": "Privacidad",
+        "cookies": "Cookies"
+      },
+      "social_media": {
+        "facebook_alt": "Facebook",
+        "instagram_alt": "Instagram",
+        "phone_alt": "Teléfono",
+        "email_alt": "Correo electrónico"
+      },
+      "copyright": " 2024 Medu Protection"
+    },
+    "navbar": {
+      "links": {
+        "home": "Inicio",
+        "our_products": "Nuestros Productos",
+        "how_it_works": "Cómo Funciona",
+        "industries": "Industrias",
+        "about_us": "Sobre Nosotros",
+        "contact_us": "Contáctanos"
+      },
+      "buttons": {
+        "distributor": "Soy Distribuidor",
+        "contact_us": "Contáctanos"
+      },
+      "footer": {
+        "copyright": "2024 Medu Protection"
+      },
+      "social_media": {
+        "facebook_alt": "Facebook",
+        "instagram_alt": "Instagram",
+        "phone_alt": "Teléfono",
+        "email_alt": "Correo electrónico"
+      }
     }
-}
+  }
+  

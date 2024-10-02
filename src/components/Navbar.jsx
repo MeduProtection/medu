@@ -6,7 +6,7 @@ import Image from "next/image";
 import { AppContext } from "@/Context/AppContext";
 
 function Navbar() {
-  const { traduccion } = useContext(AppContext);
+  const { traduccion, idioma, setIdioma } = useContext(AppContext);
   const [active, setActive] = useState(false);
   const router = useRouter();
   return (
@@ -84,6 +84,27 @@ function Navbar() {
 
                 </Link>
               </li>
+              <li className="text-white text-[16px]">
+                  <span className={`${idioma.nombre == "EN" && "text-[#95BC67]"} cursor-pointer hover:text-[#95BC67] `}
+                  onClick={
+                    () => {
+                      setIdioma({
+                        nombre: 'EN',
+                        code: 'US',
+                      });
+                    }
+                  }
+                  >EN</span> / <span
+                  onClick={
+                    () => {
+                      setIdioma({
+                        nombre: 'ES',
+                        code: 'MX',
+                      });
+                    }
+                  }
+                  className={`${idioma.nombre == "ES" && "text-[#95BC67]"} cursor-pointer hover:text-[#95BC67] `}>ES</span>
+                </li>
             </ul>
           </div>
         </div>
@@ -180,7 +201,7 @@ function Navbar() {
                   </Link>
                 </li>
                 <li>
-                  <span>EN</span> / <span>ES</span>
+                  <span className={`${idioma.nombre == "EN" && "text-[#95BC67]"} cursor-pointer hover:text-[#95BC67] `}>EN</span> / <span className={`${idioma.nombre == "ES" && "text-[#95BC67]"} cursor-pointer hover:text-[#95BC67] `}>ES</span>
                 </li>
               </ul>
             </div>
