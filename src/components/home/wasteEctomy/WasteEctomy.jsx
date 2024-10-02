@@ -35,7 +35,7 @@ function WasteEctomy() {
       animate={inView ? "visible" : "hidden"}
     >
       <div className="w-full flex flex-col lg:flex-row items-center justify-center lg:justify-between py-12 px-4 lg:px-12 bg-white">
-        <motion.div className="max-w-lg" variants={textVariants}>
+        <motion.div className="max-w-xl" variants={textVariants}>
           <h2 className="text-[22px] md:text-[37px] md:leading-[37px] lg:leading-[52px] lg:text-[50px] font-bold mb-4 text-[#1B3954] text-center lg:text-start">
             {traduccion.home.wasteEctomy.heading[0]} <br /> {traduccion.home.wasteEctomy.heading[1]}{' '}
             <span className="text-[#4E88B0]"> {traduccion.home.wasteEctomy.heading[2]}</span>
