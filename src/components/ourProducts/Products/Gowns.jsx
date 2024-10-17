@@ -26,6 +26,7 @@ function Gowns() {
   
       return () => window.removeEventListener("resize", updateHeight);
     }, []);
+    
 
     const handlers = useSwipeable({
       onSwipedLeft: () => setCarrouselImage(prev => (prev + 1) % 8),

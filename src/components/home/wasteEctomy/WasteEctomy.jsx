@@ -1,7 +1,8 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useInView } from "react-intersection-observer";
 import { motion } from 'framer-motion'
 import { AppContext } from '@/Context/AppContext';
+import Image from 'next/image';
 
 function WasteEctomy() {
 
@@ -25,6 +26,22 @@ function WasteEctomy() {
     hidden: { opacity: 0, scale: 0 },
     visible: { opacity: 1, scale: 1, transition: { duration: 0.5, delay: 1 } },
   };
+
+  const [height, setHeight] = useState("1500px");
+
+  useEffect(() => {
+    const updateHeight = () => {
+      if (window.innerWidth <= 768) { // Ajusta el ancho según el tamaño de pantalla deseado
+        setHeight("500px");
+      } else {
+        setHeight("900px");
+      }
+    };
+    window.addEventListener("resize", updateHeight);
+    updateHeight(); // Llama a la función una vez para establecer el valor inicial
+
+    return () => window.removeEventListener("resize", updateHeight);
+  }, []);
 
   return (
     <motion.div
@@ -55,10 +72,32 @@ function WasteEctomy() {
             </motion.p>
           </div>
         </motion.div>
-        <motion.div className="lg:w-1/2 flex justify-center items-center mt-8 lg:mt-0" variants={imageVariants}>
-          <div className="relative">
-            <img src="/assets/waste/bata.png" alt="Medical Gown" className="max-w-full h-[70%]" />
-          </div>
+        <motion.div className="w-full lg:w-1/2 flex justify-center items-center mt-8 lg:mt-0 " variants={imageVariants}>
+        <model-viewer
+  className="center-block relative "
+  style={{ width: "100%", height: height, overflow:"visible" }} 
+  src={`/assets/OurProducts/Gown.glb`}
+  ar
+  ar-modes="webxr scene-viewer quick-look"
+  camera-controls
+  poster="poster.webp"
+  shadow-intensity="1.98"
+  exposure="0.86"
+  shadow-softness="0.97"
+  auto-rotate
+  camera-target="0m 1m 0m"
+  min-camera-orbit="auto 87deg auto"
+  max-camera-orbit="auto 101deg auto"
+>
+  <button
+    className="absolute -bottom-0 left-1/2 transform -translate-x-1/2 bg-[#1B3954] text-white py-2 px-4 md:py-2 md:px-8 rounded-full transition text-[14px] md:text-[22px] xl:text-[28px] flex items-center gap-2 lg:hidden z-40"
+   slot='ar-button'
+  >
+    <Image src="/assets/icons/ar.svg" width={24} height={24} alt="ar icon" />
+    {traduccion.ourProducts.gowns.buttons.arView}
+  </button>
+</model-viewer>
+
         </motion.div>
       </div>
     </motion.div>
