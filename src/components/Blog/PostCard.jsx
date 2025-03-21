@@ -19,6 +19,7 @@ export default function PostCard({ post }) {
   };
 
   return (
+    <Link href={`/blog/${post.slug.current}`}>
     <div className="flex flex-col overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-[1.02] bg-white dark:bg-gray-800">
       <div className="relative h-48 sm:h-64">
         {post.mainImage ? (
@@ -79,5 +80,6 @@ export default function PostCard({ post }) {
         </div>
       </div>
     </div>
+    </Link>
   );
 } 
