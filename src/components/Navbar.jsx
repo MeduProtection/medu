@@ -84,6 +84,15 @@ function Navbar() {
 
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/Blog"
+                  className="block py-2 pr-4 pl-3 text-white hover:text-[#95BC67] text-[16px] rounded md:bg-transparent md:p-0"
+                >
+                                {traduccion.navbar.links.blog}
+
+                </Link>
+              </li>
               <li className="text-white text-[16px]">
                   <span className={`${idioma.nombre == "EN" && "text-[#95BC67]"} cursor-pointer hover:text-[#95BC67] `}
                   onClick={
@@ -198,6 +207,12 @@ function Navbar() {
                 onClick={() => setActive(!active)}
                 >
                   <Link href={"/AboutUs"}>              {traduccion.navbar.links.about_us}
+                  </Link>
+                </li>
+                <li
+                onClick={() => setActive(!active)}
+                >
+                  <Link href={"/Blog"}>              {traduccion.navbar.links.blog}
                   </Link>
                 </li>
                 <li>
