@@ -16,7 +16,7 @@ export default function CategoryList({ categories, activeCategory = null }) {
           href="/blog"
           className={`px-4 py-2 rounded-full text-sm ${
             !activeCategory 
-              ? 'bg-blue-600 text-white' 
+              ? 'bg-[#1B3954] text-white' 
               : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
           }`}
         >

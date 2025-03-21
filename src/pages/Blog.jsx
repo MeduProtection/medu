@@ -26,7 +26,7 @@ export default function Blog({ posts, categories }) {
 
       <BlogBanner />
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 min-h-[800px]">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           <div className="lg:col-span-1">
             <CategoryList categories={categories} />

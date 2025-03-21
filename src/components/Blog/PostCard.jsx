@@ -47,7 +47,7 @@ export default function PostCard({ post }) {
         </div>
         
         <h3 className="mb-3 text-xl font-bold leading-tight text-gray-900 dark:text-white">
-          <Link href={`/blog/${post.slug.current}`} className="hover:text-blue-600 dark:hover:text-blue-400">
+          <Link href={`/blog/${post.slug.current}`} className="hover:text-[#95BC67] dark:hover:text-blue-400">
             {post.title[isSpanish ? 'es' : 'en']}
           </Link>
         </h3>
