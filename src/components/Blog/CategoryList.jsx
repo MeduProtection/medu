@@ -13,7 +13,7 @@ export default function CategoryList({ categories, activeCategory = null }) {
       </h3>
       <div className="flex flex-wrap gap-2">
         <Link 
-          href="/blog"
+          href="/Blog"
           className={`px-4 py-2 rounded-full text-sm ${
             !activeCategory 
               ? 'bg-[#1B3954] text-white' 

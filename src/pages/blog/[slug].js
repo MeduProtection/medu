@@ -148,12 +148,12 @@ export default function PostPage({ post, relatedPosts }) {
                         <h4 className="font-semibold text-gray-900 dark:text-white">
                           {post.author.name}
                         </h4>
-                        <Link 
+                        {/* <Link 
                           href={`/blog/author/${post.author.slug.current}`}
                           className="text-sm text-[#95BC67]  dark:text-blue-400 hover:underline"
                         >
                           {isSpanish ? 'Ver perfil' : 'View profile'}
-                        </Link>
+                        </Link> */}
                       </div>
                     </div>
                     {post.author.bio && (
