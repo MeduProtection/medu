@@ -32,6 +32,11 @@ const nextConfig = {
         permanent: false,
       },
       {
+        source: '/blog/:slug*',
+        destination: '/',
+        permanent: false,
+      },
+      {
         source: '/ContactUs',
         destination: '/',
         permanent: false,
