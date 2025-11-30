@@ -501,55 +501,55 @@
           {
             "name": "Tamara Chayo Romo",
             "ocupation": "CEO & Fundadora",
-            "image": "/assets/team/TamaraChayo.png",
+            "image": "/assets/team/member1.png",
             "description": "Tamara, becaria de Thiel y Halcyon, ha recaudado más de 4 millones de dólares para MEDU desde 2020. Comprometida con la sostenibilidad, asesora y apoya a jóvenes emprendedores mientras continúa impactando en la industria de las telas médicas."
           },
           {
             "name": "Alberto Yarza",
             "ocupation": "COO",
-            "image": "/assets/team/AlbertoYarza.png",
+            "image": "/assets/team/member2.png",
             "description": "Alberto ha pasado más de 12 años optimizando operaciones en varios sectores, incluidos el marketing y el comercio minorista. Apasionado por la comida y los deportes acuáticos, ha vivido en tres países y trabajado con varias fundaciones."
           },
           {
             "name": "Roberto Ayala",
             "ocupation": "Jefe de Operaciones",
-            "image": "/assets/team/RobertoAyala.png",
+            "image": "/assets/team/member3.png",
             "description": "Roberto es ingeniero químico con experiencia en auditorías y manuales de calidad. Graduado de la Universidad La Salle, actualmente cursa una Maestría en Administración mientras lidera las operaciones de Medu."
           },
           {
             "name": "Jorge Rosas",
             "ocupation": "Jefe de Marketing",
-            "image": "/assets/team/JorgeRosas.png",
+            "image": "/assets/team/member4.png",
             "description": "Jorge, el primer empleado de Medu, tiene un título en administración de empresas. Está comprometido en ayudar a Medu a romper barreras a nivel mundial y también es un creador de contenido exitoso, conocido por construir relaciones sólidas."
           },
           {
             "name": "David Zayas",
             "ocupation": "VP de Ventas",
-            "image": "/assets/team/DavidZayas.png",
+            "image": "/assets/team/member5.png",
             "description": "David tiene un MBA y se especializa en desarrollo de negocios en toda América del Norte. Con experiencia en atención médica, alimentos y Proptech, lidera los esfuerzos de expansión de Medu, enfocándose en soluciones sostenibles para múltiples industrias."
           },
           {
             "name": "Adriana Ávila",
             "ocupation": "Gerente de Producto",
-            "image": "/assets/team/AdrianaAvila.png",
+            "image": "/assets/team/member6.png",
             "description": "Adriana, graduada en Ciencias Ambientales, implementa procesos de seguridad, higiene y calidad para garantizar la excelencia en la fabricación en Medu. Se especializa en la aplicación de NOMs emitidas por STPS para la seguridad en el lugar de trabajo."
           },
           {
             "name": "Sophia Chayo",
             "ocupation": "Recursos Humanos",
-            "image": "/assets/team/ShophiaChayo.png",
+            "image": "/assets/team/member7.png",
             "description": "Sophia, reconocida por su excelencia académica, es experta en recursos humanos. Desempeña un papel clave en el funcionamiento del equipo de Medu y en garantizar un ambiente de trabajo cohesivo y fuerte."
           },
           {
             "name": "Adrian Rosas",
             "ocupation": "Ejecutivo de Cuenta",
-            "image": "/assets/team/AdrianRosas.png",
+            "image": "/assets/team/member8.png",
             "description": "Adrián, estudiante de Diseño de Moda y DJ, se especializa en ventas y llamadas en frío en MEDU. Sus habilidades multidisciplinarias ayudan a Medu a expandirse en las industrias de la salud y los alimentos con soluciones sostenibles."
           },
           {
             "name": "Saman Mortazavi",
             "ocupation": "Desarrollador de Negocios",
-            "image": "/assets/team/Saman2.png",
+            "image": "/assets/team/member9.png",
             "description": "Saman, con experiencia en startups y empresas Unicornio como Deel y Rappi, ayuda a escalar rápidamente los negocios. Le apasiona la comida, los deportes y los viajes, contribuyendo a las estrategias de acceso al mercado de Medu."
           }
         ]
