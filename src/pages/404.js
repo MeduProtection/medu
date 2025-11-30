@@ -41,18 +41,18 @@ export default function Custom404() {
             </h2>
 
             <p className="text-gray-700 text-lg md:text-2xl max-w-2xl mx-auto mb-4 leading-relaxed animate-slide-up" style={{ animationDelay: '600ms' }}>
-              Oops! The page you're looking for doesn't exist.
+              Oops! The page you&apos;re looking for doesn&apos;t exist.
             </p>
 
             <p className="text-[#4E88B0] text-base md:text-lg max-w-xl mx-auto mb-10 animate-slide-up" style={{ animationDelay: '700ms' }}>
-              It might have been moved or deleted. Let's get you back on track.
+              It might have been moved or deleted. Let&apos;s get you back on track.
             </p>
 
             {/* Decorative line with animation */}
             <div className="flex justify-center gap-2 mb-10 animate-slide-up" style={{ animationDelay: '800ms' }}>
-              <span className="h-1.5 w-16 bg-gradient-to-r from-[#95BC67] to-[#4E88B0] rounded-full animate-shimmer"></span>
-              <span className="h-1.5 w-1.5 bg-[#4E88B0] rounded-full animate-pulse"></span>
-              <span className="h-1.5 w-1.5 bg-[#1B3954] rounded-full animate-pulse" style={{ animationDelay: '200ms' }}></span>
+              <span className="h-1.5 w-16 bg-gradient-to-r from-[#95BC67] to-[#4E88B0] rounded-full"></span>
+              <span className="h-1.5 w-1.5 bg-[#4E88B0] rounded-full"></span>
+              <span className="h-1.5 w-1.5 bg-[#1B3954] rounded-full"></span>
             </div>
 
             {/* CTA Button with enhanced hover effects */}
@@ -121,10 +121,6 @@ export default function Custom404() {
             0%, 100% { opacity: 0.2; transform: scale(1); }
             50% { opacity: 0.4; transform: scale(1.15); }
           }
-          @keyframes shimmer {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(300%); }
-          }
           .animate-float { animation: float 6s ease-in-out infinite; }
           .animate-float-slow { animation: float-slow 8s ease-in-out infinite; }
           .animate-float-slower { animation: float-slower 10s ease-in-out infinite; }
@@ -132,16 +128,6 @@ export default function Custom404() {
           .animate-404 { animation: animate-404 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) both; }
           .animate-pulse-slow { animation: pulse-slow 4s ease-in-out infinite; }
           .animate-pulse-slower { animation: pulse-slower 6s ease-in-out infinite; }
-          .animate-shimmer::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent);
-            animation: shimmer 3s infinite;
-          }
         `}</style>
       </div>
     </>
