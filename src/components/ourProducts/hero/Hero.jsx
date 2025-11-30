@@ -78,7 +78,7 @@ function Hero() {
           <InfoWash/>
            
           <motion.img
-            src="/assets/OurProducts/Hero/heroFoto.png"
+            src="#/assets/OurProducts/Hero/heroFoto.png"
             alt="Antiviral Gown"
             className="w-full md:w-[534px] lg:w-[1000px]  object-cover"
             variants={imageVariants}

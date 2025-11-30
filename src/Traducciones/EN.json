@@ -102,7 +102,7 @@
         "description": "Created with a proprietary process that yields the highest levels of protection and sterility, Medu brings protective coverings into the 21st Century with reusable Level 4 gowns and coveralls that require no special laundering and prevent cross-contamination.",
         "items": [
           {
-            "icon": "/assets/features/highest.svg",
+            "icon": "#/assets/features/highest.svg",
             "title": [
 "Highest level of user ",
 "protection:"
@@ -110,25 +110,25 @@
             "description": "Level 4 AAMI PB70"
           },
           {
-            "icon": "/assets/features/features.svg",
+            "icon": "#/assets/features/features.svg",
             "title": ["Maximum resistance to ",
         "virus penetration:"
         ],
             "description": "Level 4 AAMI PB70"
           },
           {
-            "icon": "/assets/features/desinfection.svg",
+            "icon": "#/assets/features/desinfection.svg",
             "title": "Easy disinfection:",
             "description": ["between washes with integrating existing ",
             "laundry systems"]
           },
           {
-            "icon": "/assets/features/breathable.svg",
+            "icon": "#/assets/features/breathable.svg",
             "title": "Highly breathable",
             "description": ""
           },
           {
-            "icon": "/assets/features/water.svg",
+            "icon": "#/assets/features/water.svg",
             "title": "Excellent water repellency",
             "description": ["and resistance to liquid ",
             "penetration"
@@ -238,8 +238,8 @@
       "subheading": "Reducing the cost of protective gowns by up to 80% while ensuring health and safety may sound too good to be true. But it isn’t.",
       "description": "Our patent-pending, anti-viral, anti-bacterial fabric can be washed up to 50 times with conventional hospital system detergents and equipment without losing protective properties and prevents cross-contamination, enabling caregivers to dramatically reduce gown changes.",
       "video": {
-        "src": "/assets/video/video.mp4",
-        "poster": "/assets/works/poster.png"
+        "src": "#/assets/video/video.mp4",
+        "poster": "#/assets/works/poster.png"
       }
     },
     "appDemo": {
@@ -252,7 +252,7 @@
       "button": "See How Medu Works",
       "image": "#/assets/demo/demo.png",
       "icons": {
-        "check": "/assets/icons/check.svg"
+        "check": "#/assets/icons/check.svg"
       }
     },
     "headlines": {

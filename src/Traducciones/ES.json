@@ -99,7 +99,7 @@
         "description": "Creado con un proceso patentado que proporciona los niveles más altos de protección y esterilidad, Medu lleva las coberturas protectoras al siglo XXI con trajes y monos reutilizables de Nivel 4 que no requieren lavado especial y previenen la contaminación cruzada.",
         "items": [
           {
-            "icon": "/assets/features/highest.svg",
+            "icon": "#/assets/features/highest.svg",
             "title": [
               "Mayor nivel de ",
               "protección para el usuario:"
@@ -107,26 +107,26 @@
             "description": "Nivel 4 AAMI PB70"
           },
           {
-            "icon": "/assets/features/features.svg",
+            "icon": "#/assets/features/features.svg",
             "title": ["Máxima resistencia a la ",
               "penetración de virus:"
             ],
             "description": "Nivel 4 AAMI PB70"
           },
           {
-            "icon": "/assets/features/desinfection.svg",
+            "icon": "#/assets/features/desinfection.svg",
             "title": "Desinfección fácil:",
             "description": ["entre lavados, integrando sistemas de ",
               "lavandería existentes"
             ]
           },
           {
-            "icon": "/assets/features/breathable.svg",
+            "icon": "#/assets/features/breathable.svg",
             "title": "Alta transpirabilidad",
             "description": ""
           },
           {
-            "icon": "/assets/features/water.svg",
+            "icon": "#/assets/features/water.svg",
             "title": "Excelente repelencia al agua",
             "description": ["y resistencia a la ",
               "penetración de líquidos"
@@ -232,8 +232,8 @@
         "subheading": "Reducir el costo de los trajes protectores hasta en un 80 % mientras se garantiza la salud y la seguridad puede sonar demasiado bueno para ser verdad. Pero no lo es.",
         "description": "Nuestro tejido patentado, antiviral y antibacteriano puede lavarse hasta 50 veces con los detergentes y equipos del sistema hospitalario convencional sin perder propiedades protectoras y previene la contaminación cruzada, lo que permite a los cuidadores reducir drásticamente los cambios de trajes.",
         "video": {
-          "src": "/assets/video/video.mp4",
-          "poster": "/assets/works/poster.png"
+          "src": "#/assets/video/video.mp4",
+          "poster": "#/assets/works/poster.png"
         }
       },
       "appDemo": {
@@ -246,7 +246,7 @@
         "button": "Descubre Cómo Funciona Medu",
         "image": "#/assets/demo/demo.png",
         "icons": {
-          "check": "/assets/icons/check.svg"
+          "check": "#/assets/icons/check.svg"
         }
       },
       "headlines": {

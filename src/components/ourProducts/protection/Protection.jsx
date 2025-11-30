@@ -71,7 +71,7 @@ function Protection() {
         <div className="w-full  px-4 flex justify-center  lg:justify-end  items-center relative ">
          
           <motion.img
-            src="/assets/OurProducts/protection.png"
+            src="#/assets/OurProducts/protection.png"
             alt="Antiviral Gown"
             className="w-full md:w-[534px] lg:w-[1000px]  object-cover"
             variants={imageVariants}
