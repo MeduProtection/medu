@@ -47,7 +47,7 @@ export default function Home() {
         </h1>
         <button
           onClick={() => setShowPopup(true)}
-          className="text-[#4E88B0] hover:text-[#1B3954] text-lg md:text-xl font-medium underline decoration-2 underline-offset-4 transition-colors duration-300 cursor-pointer"
+          className="text-[#4E88B0] hover:text-[#1B3954] text-sm md:text-base font-normal underline decoration-1 underline-offset-4 transition-all duration-300 cursor-pointer opacity-80 hover:opacity-100"
         >
           Aviso de baja de sitio
         </button>
