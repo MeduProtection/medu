@@ -8,12 +8,12 @@ import { useRouter } from "next/router";
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
-  const isHoldPage = router.pathname === "/";
+  const isHoldPage = router.pathname === "/" || router.pathname === "/404";
 
   useEffect(() => {
     if (!isHoldPage) return;
 
-    // Hide HubSpot chat/widget and any chatwith widget on hold page.
+    // Hide HubSpot chat/widget and any chatwith widget on hold page and 404 page.
     const style = document.createElement("style");
     style.id = "hide-hubspot-chat";
     style.innerHTML = `
@@ -41,7 +41,7 @@ export default function App({ Component, pageProps }) {
       <Component {...pageProps} />
       {!isHoldPage && <Footer />}
     </AppProvider>
-      
+
     </>
   );
   
