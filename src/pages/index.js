@@ -36,21 +36,42 @@ export default function Home() {
   <link rel="icon" href="favicon.ico" />
 </Head>
 
+    {/* 404-style landing page */}
     <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-[#f2f7fa] via-white to-[#f2f7fa] overflow-hidden">
+      {/* Floating background elements */}
       <span className="pointer-events-none absolute -left-32 -top-24 h-80 w-80 rounded-full bg-[#95BC67]/20 blur-3xl animate-float-slow" />
       <span className="pointer-events-none absolute -right-24 top-10 h-72 w-72 rounded-full bg-[#4E88B0]/15 blur-3xl animate-float" />
       <span className="pointer-events-none absolute left-1/2 bottom-0 h-64 w-64 -translate-x-1/2 rounded-full bg-[#1B3954]/10 blur-3xl animate-float-slower" />
+      <span className="pointer-events-none absolute left-1/4 top-1/3 h-56 w-56 rounded-full bg-[#95BC67]/10 blur-3xl animate-pulse-slow" />
+      <span className="pointer-events-none absolute right-1/4 bottom-1/4 h-48 w-48 rounded-full bg-[#4E88B0]/10 blur-3xl animate-pulse-slower" />
 
-      <div className="relative text-center px-6 py-20 md:py-28 animate-thank-you">
-        <h1 className="text-[#1B3954] text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight drop-shadow-sm mb-8">
-          Thank you
-        </h1>
-        <button
-          onClick={() => setShowPopup(true)}
-          className="text-[#4E88B0] hover:text-[#1B3954] text-xs md:text-sm font-normal underline decoration-1 underline-offset-4 transition-all duration-300 cursor-pointer opacity-80 hover:opacity-100"
-        >
-          Aviso
-        </button>
+      {/* Giant 404 background */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
+        <span className="text-[#1B3954]/5 text-[20rem] md:text-[30rem] lg:text-[40rem] font-black leading-none animate-404">
+          404
+        </span>
+      </div>
+
+      {/* Main content */}
+      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+        <h2 className="text-[#1B3954] text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight drop-shadow-sm mb-6 animate-slide-up">
+          Page Not Found
+        </h2>
+
+        <p className="text-gray-700 text-lg md:text-2xl max-w-2xl mx-auto mb-4 leading-relaxed animate-slide-up" style={{ animationDelay: '600ms' }}>
+          Oops! The page you&apos;re looking for doesn&apos;t exist.
+        </p>
+
+        <p className="text-[#4E88B0] text-base md:text-lg max-w-xl mx-auto mb-10 animate-slide-up" style={{ animationDelay: '700ms' }}>
+          It might have been moved or deleted. Let&apos;s get you back on track.
+        </p>
+
+        {/* Decorative line with animation */}
+        <div className="flex justify-center gap-2 animate-slide-up" style={{ animationDelay: '800ms' }}>
+          <span className="h-1.5 w-16 bg-gradient-to-r from-[#95BC67] to-[#4E88B0] rounded-full"></span>
+          <span className="h-1.5 w-1.5 bg-[#4E88B0] rounded-full"></span>
+          <span className="h-1.5 w-1.5 bg-[#1B3954] rounded-full"></span>
+        </div>
       </div>
 
       {/* Popup Modal */}
@@ -179,24 +200,25 @@ export default function Home() {
           50% { transform: translateY(-10px); }
           100% { transform: translateY(0px); }
         }
+        @keyframes slide-up {
+          0% { opacity: 0; transform: translateY(30px); }
+          100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes animate-404 {
+          0% { opacity: 0; transform: scale(0.8) rotate(-5deg); }
+          100% { opacity: 1; transform: scale(1) rotate(0deg); }
+        }
+        @keyframes pulse-slow {
+          0%, 100% { opacity: 0.3; transform: scale(1); }
+          50% { opacity: 0.5; transform: scale(1.1); }
+        }
+        @keyframes pulse-slower {
+          0%, 100% { opacity: 0.2; transform: scale(1); }
+          50% { opacity: 0.4; transform: scale(1.15); }
+        }
         @keyframes fade-in {
           0% { opacity: 0; transform: translateY(12px); }
           100% { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes thank-you {
-          0% {
-            opacity: 0;
-            transform: scale(0.8) translateY(30px);
-            filter: blur(10px);
-          }
-          50% {
-            transform: scale(1.05) translateY(-5px);
-          }
-          100% {
-            opacity: 1;
-            transform: scale(1) translateY(0);
-            filter: blur(0px);
-          }
         }
         @keyframes popup {
           0% {
@@ -211,11 +233,34 @@ export default function Home() {
         .animate-float { animation: float 6s ease-in-out infinite; }
         .animate-float-slow { animation: float-slow 8s ease-in-out infinite; }
         .animate-float-slower { animation: float-slower 10s ease-in-out infinite; }
+        .animate-slide-up { animation: slide-up 800ms cubic-bezier(0.34, 1.56, 0.64, 1) both; }
+        .animate-404 { animation: animate-404 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) both; }
+        .animate-pulse-slow { animation: pulse-slow 4s ease-in-out infinite; }
+        .animate-pulse-slower { animation: pulse-slower 6s ease-in-out infinite; }
         .animate-fade-in { animation: fade-in 700ms ease-out 120ms both; }
-        .animate-thank-you { animation: thank-you 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) both; }
         .animate-popup { animation: popup 400ms cubic-bezier(0.34, 1.56, 0.64, 1) both; }
       `}</style>
     </div>
+
+    {/* COMMENTED OUT: Thank you page version
+    <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-[#f2f7fa] via-white to-[#f2f7fa] overflow-hidden">
+      <span className="pointer-events-none absolute -left-32 -top-24 h-80 w-80 rounded-full bg-[#95BC67]/20 blur-3xl animate-float-slow" />
+      <span className="pointer-events-none absolute -right-24 top-10 h-72 w-72 rounded-full bg-[#4E88B0]/15 blur-3xl animate-float" />
+      <span className="pointer-events-none absolute left-1/2 bottom-0 h-64 w-64 -translate-x-1/2 rounded-full bg-[#1B3954]/10 blur-3xl animate-float-slower" />
+
+      <div className="relative text-center px-6 py-20 md:py-28 animate-thank-you">
+        <h1 className="text-[#1B3954] text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight drop-shadow-sm mb-8">
+          Thank you
+        </h1>
+        <button
+          onClick={() => setShowPopup(true)}
+          className="text-[#4E88B0] hover:text-[#1B3954] text-xs md:text-sm font-normal underline decoration-1 underline-offset-4 transition-all duration-300 cursor-pointer opacity-80 hover:opacity-100"
+        >
+          Aviso
+        </button>
+      </div>
+    </div>
+    */}
 
     {/* <div className="overflow-hidden">
       <Hero/>
