@@ -63,7 +63,7 @@ export default function Home() {
         </p>
 
         <p className="text-[#4E88B0] text-base md:text-lg max-w-xl mx-auto mb-10 animate-slide-up" style={{ animationDelay: '700ms' }}>
-          It might have been moved or deleted. Let&apos;s get you back on track.
+          It might have been moved or deleted.
         </p>
 
         {/* Decorative line with animation */}
